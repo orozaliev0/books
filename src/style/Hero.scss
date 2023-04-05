@@ -1,0 +1,45 @@
+#Hero{
+  position: relative;
+  .Hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-right{
+      &-btn{
+        transition: .4s;
+      }
+      &-h1{
+        padding-bottom: 20px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 49px;
+        color: #FFFFFF;
+      }
+      &-p{
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 24px;
+        color: #FFFFFF;
+      }
+    }
+    &-book2{
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+    &-Book1{
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      &-two{
+        order: 1;
+      }
+      &-one{
+        transform: rotate(-70deg);
+        margin-block-end: -130px;
+        margin-left: 230px;
+      }
+    }
+  }
+}

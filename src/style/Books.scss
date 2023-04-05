@@ -1,0 +1,1054 @@
+#dion {
+  display: none;
+}
+
+#books {
+  padding: 100px 0 200px 0;
+  font-family: 'Montserrat', sans-serif;
+
+  .books {
+    a {
+      color: white;
+    }
+
+    &--tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 75px;
+
+      a {
+        border: solid 1px white;
+        background: transparent;
+        padding: 3px 14px;
+        border-radius: 10px;
+        margin-right: 15px;
+
+        &:focus {
+          background: white;
+          color: #595FEB;
+        }
+      }
+    }
+
+    &--start {
+      display: flex;
+      justify-content: space-between;
+
+      &__startBook {
+        &--block {
+          width: 100%;
+          height: 35%;
+          background: rgba(255, 255, 255, 0.1);
+          border: 1px solid #FFFFFF;
+          backdrop-filter: blur(7.5px);
+          border-radius: 10px;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-bottom: 30px;
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
+
+          h2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 150%;
+            line-height: 29px;
+            color: #FFFFFF;
+          }
+
+          h3 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+          }
+
+          h4 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+          }
+
+          &__article {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &--men {
+              display: flex;
+              justify-content: space-between;
+              width: 195px;
+              a{
+                padding: 5px;
+                background: rgba(255, 255, 255, 0.1);
+                border: 0.5px solid #FFFFFF;
+                border-radius: 5px;
+              }
+            }
+          }
+
+          &__author {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          &__line {
+            border: 1px solid #FFFFFF;
+            width: 100%;
+          }
+
+          &__peopleBook {
+
+            .life {
+
+            }
+          }
+        }
+      }
+    }
+
+    &--showMore {
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+      button {
+        width: 181px;
+        height: 46px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+        color: white;
+      }
+    }
+  }
+  .special {
+    width: 100%;
+    height: 60%;
+    background: rgba(255, 255, 256, 0.1);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
+    }
+
+    h3 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
+    h4 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
+    &__article {
+      display: flex;
+      justify-content: space-between;
+
+      &--men {
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
+      }
+    }
+
+
+    .book1{
+      width: 100%;
+      height: 44.5%;
+    }
+    .life {
+      margin-top: 60px;
+      width: 100%;
+    }
+  }
+
+}
+
+
+
+@media (max-width: 1200px) {
+  #books {
+
+    .books {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 1440px;
+      a {
+
+      }
+
+      &--tabs {
+        margin-bottom: 75px;
+        a {
+          font-size: 100%;
+        }
+      }
+
+      &--start {
+        justify-content: space-between;
+        &__startBook {
+          &--block {
+            width: 92%;
+            height: 34%;
+            h2 {
+              font-size: 126%;
+            }
+
+            h3 {
+              font-size: 14px;
+            }
+
+            h4 {
+              font-size: 13px;
+            }
+
+            &__article {
+
+
+              &--men {
+                a{
+                  font-size: 13px;
+                  padding: 2px 5px;
+                  height: 27px;
+                }
+              }
+            }
+
+            &__author {
+
+            }
+
+            &__line {
+
+            }
+
+            &__peopleBook {
+
+              .life {
+
+              }
+            }
+          }
+        }
+      }
+
+      &--showMore {
+
+        button {
+
+        }
+      }
+    }
+    .special {
+
+      width: 92%;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 14px ;
+      }
+
+      h4 {
+        font-size: 13px;
+      }
+
+      &__article {
+
+        &--men {
+
+        }
+      }
+
+      .life {
+      }
+    }
+  }
+
+}
+@media (max-width: 1024px) {
+  #books {
+
+    .books {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 1380px;
+      a {
+
+      }
+
+      &--tabs {
+        margin: 0;
+        a {
+          font-size: 100%;
+        }
+      }
+
+      &--start {
+        justify-content: space-between;
+        &__startBook {
+          &--block {
+            width: 92%;
+            height: 34%;
+            h2 {
+              font-size: 126%;
+            }
+
+            h3 {
+              font-size: 12px;            }
+
+            h4 {
+              font-size: 13px;
+            }
+
+            &__article {
+
+
+              &--men {
+                a{
+                  font-size: 13px;
+                  padding: 2px 5px;
+                  height: 27px;
+                }
+              }
+            }
+
+            &__author {
+
+            }
+
+            &__line {
+
+            }
+
+            &__peopleBook {
+
+              .life {
+
+              }
+            }
+          }
+        }
+      }
+
+      &--showMore {
+        margin: 0;
+        button {
+
+        }
+      }
+    }
+    .special {
+
+      width: 92%;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 12px;      }
+
+      h4 {
+        font-size: 13px;
+      }
+
+      &__article {
+
+        &--men {
+
+        }
+      }
+
+      .life {
+      }
+    }
+  }
+
+}
+@media (max-width: 992px) {
+  #books {
+
+    .books {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 1240px;
+      a {
+
+      }
+
+      &--tabs {
+        margin-bottom: 0;
+        a {
+          font-size: 100%;
+        }
+      }
+
+      &--start {
+        justify-content: space-evenly;
+        &__startBook {
+          &--block {
+            width: 83%;
+            height: 34%;
+            h2 {
+              font-size: 106%;
+            }
+
+            h3 {
+              font-size: 12px;
+            }
+
+            h4 {
+              font-size: 11px;
+            }
+
+            &__article {
+              align-items: center;
+              &--men {
+                a{
+                  font-size: 11px;
+                  padding: 2px 5px;
+                  height: 24px;
+                }
+              }
+            }
+
+            &__author {
+
+            }
+
+            &__line {
+
+            }
+
+            &__peopleBook {
+
+              .life {
+
+              }
+            }
+          }
+        }
+      }
+
+      &--showMore {
+
+        button {
+          width: 176px;
+          height: 44px;
+        }
+      }
+    }
+    .special {
+
+      width: 85%;
+
+      h2 {
+        font-size: 17px;
+      }
+
+      h3 {
+        font-size: 12px ;
+      }
+
+      h4 {
+        font-size: 11.5px;
+      }
+
+      &__article {
+
+        &--men {
+
+        }
+      }
+
+      .life {
+        margin-bottom: 18px;
+      }
+    }
+  }
+
+}
+@media (max-width: 768px) {
+  #books {
+    padding: 100px 0 100px;
+    .books {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      a {
+
+      }
+
+      &--tabs {
+        margin-bottom: 60px;
+        a {
+          font-size: 85%;
+        }
+      }
+
+      &--start {
+        justify-content: space-between;
+        flex-direction: column;
+        &__startBook {
+          &--block {
+            width: 55%;
+            height: 440px;
+            h2 {
+              font-size: 126%;
+            }
+
+            h3 {
+              font-size: 14px;
+            }
+
+            h4 {
+              font-size: 13px;
+            }
+
+            &__article {
+
+
+              &--men {
+                justify-content: space-around;
+                a{
+                  font-size: 13px;
+                  padding: 2px 5px;
+                  height: 27px;
+                }
+              }
+            }
+
+            &__author {
+
+            }
+
+            &__line {
+
+            }
+
+            &__peopleBook {
+
+              .life {
+
+              }
+            }
+          }
+        }
+      }
+
+      &--showMore {
+        margin: 0;
+
+        button {
+
+        }
+      }
+    }
+    .special {
+      height: 770px;
+      width: 55%;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 14px ;
+      }
+
+      h4 {
+        font-size: 13px;
+      }
+
+      &__article {
+
+        &--men {
+
+        }
+      }
+
+      .life {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+@media (max-width: 576px) {
+  #books {
+
+    .books {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      a {
+
+      }
+
+      &--tabs {
+        margin-bottom: 60px;
+
+        a {
+          font-size: 65%;
+          padding: 5px 8px;
+        }
+      }
+
+      &--start {
+        justify-content: space-between;
+        flex-direction: column;
+        &__startBook {
+          &--block {
+            width: 77%;
+            height: 458px;
+            h2 {
+              font-size: 150%;
+            }
+
+            h3 {
+              font-size: 14px;
+            }
+
+            h4 {
+              font-size: 13px;
+            }
+
+            &__article {
+              justify-content: space-between;
+              &--men {
+                justify-content: space-between;
+                a{
+                  font-size: 13px;
+                  padding: 2px 5px;
+                  height: 27px;
+                }
+              }
+            }
+
+            &__author {
+
+            }
+
+            &__line {
+
+            }
+
+            &__peopleBook {
+
+              .life {
+
+              }
+            }
+          }
+        }
+      }
+
+      &--showMore {
+        margin: 0;
+
+        button {
+
+        }
+      }
+    }
+    .special {
+      height: 785px;
+      width: 77%;
+
+      h2 {
+        font-size: 23px;
+      }
+
+      h3 {
+        font-size: 14px ;
+      }
+
+      h4 {
+        font-size: 13px;
+      }
+
+      &__article {
+
+        &--men {
+
+        }
+      }
+
+      .life {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+@media (max-width: 450px) {
+  #books {
+
+    .books {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      a {
+
+      }
+
+      &--tabs {
+        justify-content: flex-start;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        width: 220px;
+        a {
+          font-size: 14px;
+          padding: 5px 8px;
+          margin-bottom: 15px;
+        }
+      }
+
+      &--start {
+        justify-content: space-between;
+        flex-direction: column;
+        &__startBook {
+          &--block {
+            width: 100%;
+            height: 458px;
+            h2 {
+              font-size: 135%;
+            }
+
+            h3 {
+              font-size: 14px;
+            }
+
+            h4 {
+              font-size: 13px;
+            }
+
+            &__article {
+              justify-content: space-between;
+
+              &--men {
+                justify-content: space-between;
+                a{
+                  font-size: 13px;
+                  padding: 2px 5px;
+                  height: 27px;
+                }
+              }
+            }
+
+            &__author {
+
+            }
+
+            &__line {
+
+            }
+
+            &__peopleBook {
+
+              .life {
+
+              }
+            }
+          }
+        }
+      }
+
+      &--showMore {
+        margin: 0;
+
+        button {
+
+        }
+      }
+    }
+    .special {
+      height: 810px;
+      width: 100%;
+
+      h2 {
+        font-size: 23px;
+      }
+
+      h3 {
+        font-size: 14px ;
+      }
+
+      h4 {
+        font-size: 13px;
+      }
+
+      &__article {
+
+        &--men {
+
+        }
+      }
+
+      .life {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+@media (max-width: 350px) {
+  #books {
+
+    .books {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      a {
+
+      }
+
+      &--tabs {
+        justify-content: flex-start;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        width: 220px;
+        a {
+          font-size: 14px;
+          padding: 5px 8px;
+          margin-bottom: 20px;
+        }
+      }
+
+      &--start {
+        justify-content: space-between;
+        flex-direction: column;
+        &__startBook {
+          &--block {
+            width: 100%;
+            height: 390px;
+            h2 {
+              font-size: 135%;
+            }
+
+            h3 {
+              font-size: 12px;
+            }
+
+            h4 {
+              font-size: 13px;
+            }
+
+            &__article {
+              justify-content: space-between;
+              &--men {
+                justify-content: space-between;
+                width: 155px;
+
+                a{
+                  font-size: 13px;
+                  padding: 2px 5px;
+                  height: 27px;
+                }
+              }
+            }
+
+            &__author {
+
+            }
+
+            &__line {
+
+            }
+
+            &__peopleBook {
+
+              .life {
+
+              }
+            }
+          }
+        }
+      }
+
+      &--showMore {
+        margin: 0;
+
+        button {
+
+        }
+      }
+    }
+    .special {
+      height: 650px;
+      width: 100%;
+      h2 {
+        font-size: 23px;
+      }
+
+      h3 {
+        font-size: 12px ;
+      }
+
+      h4 {
+        font-size: 13px;
+      }
+
+      &__article {
+
+        &--men {
+
+        }
+      }
+
+      .life {
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+    }
+  }
+
+}
+@media (max-width: 320px) {
+  #books {
+
+    .books {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      a {
+
+      }
+
+      &--tabs {
+        justify-content: flex-start;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        width: 220px;
+        a {
+          font-size: 14px;
+          padding: 5px 8px;
+          margin-bottom: 20px;
+        }
+      }
+
+      &--start {
+        justify-content: space-between;
+        flex-direction: column;
+        &__startBook {
+          &--block {
+            width: 100%;
+            height: 350px;
+            h2 {
+              font-size: 120%;
+            }
+
+            h3 {
+              font-size: 11px;
+            }
+
+            h4 {
+              font-size: 13px;
+            }
+
+            &__article {
+              justify-content: space-between;
+              &--men {
+                justify-content: space-between;
+                width: 140px;
+
+                a{
+                  font-size: 12px;
+                  padding: 1px 3px;
+                  height: 22px;
+                }
+              }
+            }
+
+            &__author {
+
+            }
+
+            &__line {
+
+            }
+
+            &__peopleBook {
+
+              .life {
+
+              }
+            }
+          }
+        }
+      }
+
+      &--showMore {
+        margin: 0;
+
+        button {
+
+        }
+      }
+    }
+    .special {
+      height: 580px;
+      width: 100%;
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 11px ;
+      }
+
+      h4 {
+        font-size: 13px;
+      }
+
+      &__article {
+
+        &--men {
+
+        }
+      }
+
+      .life {
+        margin-bottom: 0;
+        margin-top: 40px;
+      }
+    }
+  }
+
+}
