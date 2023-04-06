@@ -10,8 +10,8 @@ import books4 from "../../img/books_follow4.png"
 import books5 from "../../img/books_follow5.png"
 import booksBlock from "../../img/books_block2.png"
 // import booksBlock2 from "../../img/books_block2.png"
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-import 'sweetalert2/src/sweetalert2.scss'
+// import Swal from 'sweetalert2/dist/sweetalert2.js'
+// import 'sweetalert2/src/sweetalert2.scss'
 
 
 const FollowPage = () => {
