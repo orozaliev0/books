@@ -5,6 +5,7 @@ import Follow from "../../components/main/Follow";
 const OurCourses = () => {
     return (
         <>
+
             <Follow/>
             <Acardion/>
 
