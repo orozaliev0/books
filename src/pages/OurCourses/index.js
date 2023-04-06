@@ -1,13 +1,10 @@
 import React from 'react';
-import Acardion from "../Acardion";
-import Follow from "../../components/main/Follow";
+import MayCourses from "./maynCours/MaynCours";
 
 const OurCourses = () => {
     return (
         <>
-            <Follow/>
-            <Acardion/>
-
+            <MayCourses/>
         </>
     );
 };
