@@ -25,7 +25,7 @@ const Header = () => {
                         <NavLink to={'/'}>
                             <a href="">Главная</a>
                         </NavLink>
-                        <NavLink to={'/our courses'}>
+                        <NavLink to={'/our-courses'}>
                             <a href="">Наши курсы</a>
                         </NavLink>
                         <NavLink to={'/about us'}>
