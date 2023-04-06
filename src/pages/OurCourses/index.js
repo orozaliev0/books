@@ -5,6 +5,9 @@ const OurCourses = () => {
     return (
         <>
             <MayCourses/>
+            <Follow/>
+            <Acardion/>
+
         </>
     );
 };

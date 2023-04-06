@@ -1,0 +1,271 @@
+.dionsAcc summary::marker{
+  color: transparent;
+
+}
+/*}*/
+.kaif12{
+  position: absolute;
+  top: 14rem;
+}
+.hrTwo{
+  margin-top: 15px;
+}
+#acc{
+  margin-top: 20px;
+  padding: 200px 0;
+}
+.dion{
+  display: flex;
+  align-items: flex-start;
+  gap: 86px;
+}
+.dion-right {
+  width: 44%;
+}
+.dion-left{
+  cursor: pointer;
+  gap: 20px;
+  width: auto;
+  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+}
+.icons:active{
+  transform: rotate(-270deg);
+}
+summary{
+  display: flex;
+  margin: 10px 0;
+  align-items: start;
+  justify-content: space-between;
+
+}
+.summary-text h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  width: 96%;
+
+}
+.summary-text {
+  transition:.4s;
+}
+summary .icons {
+  color: #fff;
+  font-size: 24px;
+  transform: rotate(270deg);
+}
+.details-parag{
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.Dion-h1{
+  font-weight: 800;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-left: -5px;
+}
+
+
+@media (max-width: 1440px) {
+  img,video{
+    max-width: none;
+  }
+}
+@media (max-width: 1200px) {
+
+  .dion-left{
+    gap: 1px;
+  }
+}
+@media (max-width: 1025px) {
+  .dion-left {
+    cursor: pointer;
+    gap: 0px;
+  }
+}
+@media (max-width: 992px) {
+  .summary-text h3 {
+    font-size: 20px;
+  }
+  .Dion-img{
+    width: 185%;
+    margin-left: -55px;
+  }
+  .details-parag {
+    padding-left: 5px;
+    font-size: 13px;
+  }
+  .dion{
+    gap: 130px;
+  }
+}
+@media (max-width: 768px)  {
+  .summary-text h3 {
+    font-size: 13px;
+  }
+  .dion-left{
+    margin-top: 40px;
+  }
+  .Dion-img {
+    width: 175%;
+    margin-left: -25px;
+  }
+  .kaif12 {
+    position: absolute;
+    top: 17rem;
+    width: 8%;
+  }
+}
+@media (max-width: 576px) {
+  .Dion-h1{
+    margin-left: 15px;
+    font-size: 40px;
+  }
+  .dion-right{
+    display: flex;
+    align-items: center;
+  }
+  .Dion-img {
+    width: 190%;
+    margin-left: 75px;
+  }
+  .dion {
+    flex-direction: column;
+    gap: 0;
+  }
+  .hrTwo {
+    margin-top: -5px;
+  }
+  .dion-left {
+    margin-top: 10px;
+  }
+  .details-parag {
+    font-size: 10px;
+    line-height: 20px;
+    padding-bottom: 5px;
+  }
+  .kaif12 {
+    position: absolute;
+    top: 16rem;
+    width: 7%;
+  }
+  .summary-text h3 {
+    font-size: 15px;
+    line-height: 25px;
+    height: 50px;
+  }
+  .details-parag {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .dion{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .summary-text h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .details-parag {
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin-top: -20px;
+  }
+  .Dion-img{
+    margin-left: 55px;
+  }
+  .Dion-h1{
+    margin-left: 90px;
+    /*text-align: center;*/
+    display: flex;
+  }
+  .kaif12 {
+    position: absolute;
+    top: 13rem;
+    width: 15%;
+  }
+  .dion-right{
+    display: flex;
+    align-items: center;
+  }
+  .Dion-img {
+    margin-left: 70px;
+  }
+  .Dion-h1{
+    margin-left: 0;
+  }
+  .dion-left{
+    margin-top: 0;
+  }
+  .get-tenHr{
+    margin-top: -5px;
+  }
+}
+@media (max-width: 400px) {
+  .summary-text h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .details-parag {
+    font-size: 14px;
+    padding-bottom: 13px;
+    margin-top: 5px;
+  }
+  .Dion-h1{
+    font-size: 34px;
+  }
+  .Dion-img{
+    width: 230%;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 350px) {
+  .Dion-h1{
+    margin-left: 70px;
+    text-align: center;
+    display: flex;
+  }
+  .kaif12 {
+    position: absolute;
+    top: 12rem;
+  }
+}
+@media (max-width: 320px) {
+  .Dion-h1 {
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .summary-text h3 {
+    font-size: 17px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    width: 252px;
+  }
+  .Dion-img {
+    width: 625%;
+    margin-left: 15px;
+  }
+  .details-parag {
+    margin-top: -5px;
+    font-weight: 600;
+    margin-left: -5px;
+  }
+  .hrTwo{
+    margin-top: -10px;
+  }
+  .BookG{
+    display: flex;
+  }
+}
