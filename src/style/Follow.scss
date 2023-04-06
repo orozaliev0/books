@@ -1,6 +1,25 @@
 #more {
   margin-bottom: 20px;
+
   .more {
+    &:hover {
+      .more__img {
+        //transform: rotate(-25deg);
+        transform: scale(1.3) rotate(-14deg);
+        margin-top: -50px;
+        margin-left: -10px;
+        filter: blur(3px);
+      }
+
+      .more__img2 {
+        filter: blur(3px);
+        transform: scale(1.4) rotate(28deg);
+        margin-top: 20px;
+      }
+
+
+    }
+
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -11,42 +30,29 @@
     border-radius: 10px;
     width: 1300px;
     height: 259px;
-    z-index: 999;
+    z-index: 1;
     overflow: hidden;
+    margin-left: 35px;
 
     &__img {
       position: absolute;
       left: 0;
       top: 0;
-      width: 100px;
-      height: 100px;
+      width: 141.95px;
+      height: 130.29px;
       border-radius: 10px;
-      z-index: -1;
-      &:hover{
-        position: fixed;
-        left: 10px;
-        top: -20px;
-        transition: .4s;
-        transform: scaleX(1.3)  scaleY(1.3);
-        width: 110px;
-        height: 110px;
-        z-index: -1;
-      };
+      transition: .2s;
+
+
     }
+
     &__img2 {
       position: absolute;
-      left: 800px;
-      top: 90px;
-      width: 300px;
-      height: 200px;
-      z-index: -1;
-      &:hover{
-        position: absolute;
-        transition: .4s;
-        transform: scale(1.1);
-        top: 100px;
-        zoom: inherit;
-      }
+      left: 804px;
+      top: 105px;
+      filter: blur(6.5px);
+      transform: rotate(10deg);
+      transition: .4s;
     }
 
     &__title {
@@ -54,7 +60,7 @@
       h1 {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 40px;
         line-height: 49px;
         color: #FFFFFF;
@@ -64,8 +70,7 @@
       p {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
+        font-size: 31px;
         line-height: 39px;
         color: #FFFFFF;
 
@@ -84,7 +89,9 @@
         border: 1px solid #FFFFFF;
         border-radius: 10px;
         color: blue;
-        font-weight: 600;
+        font-weight: 500;
+        font-size: 20px;
+
       }
 
       &--btn2 {
@@ -93,6 +100,8 @@
         border: 1px solid #FFFFFF;
         border-radius: 10px;
         color: white;
+        background-color: transparent;
+        font-size: 20px;
       }
 
       button {
