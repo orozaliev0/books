@@ -12,6 +12,9 @@ import booksBlock from "../../img/books_block2.png"
 import Swal from 'sweetalert2/dist/sweetalert2.js'
 import 'sweetalert2/src/sweetalert2.scss'
 import {useDispatch, useSelector} from "react-redux";
+// import booksBlock2 from "../../img/books_block2.png"
+// import Swal from 'sweetalert2/dist/sweetalert2.js'
+// import 'sweetalert2/src/sweetalert2.scss'
 
 
 const FollowPage = () => {
