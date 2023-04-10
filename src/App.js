@@ -19,7 +19,6 @@ function App() {
 
             <Header/>
             <Routes>
-
                 <Route path={'/'} element={<MainPage/>}/>
                 <Route path={"/our-courses"} element={<OurCourses/>}/>
                 <Route path={'/followPage'} element={<FollowPage/>}/>
@@ -27,6 +26,7 @@ function App() {
                 <Route path={'/wait'} element={<Wait/>}/>
                 <Route path={'/success'} element={<Success/>}/>
                 <Route path={'/new-books'} element={<PageBooks/>}/>
+
                 {/*<Route path={'/creatingCommand'} element={<CreatingCommand/>}*/}
             </Routes>
             <Footer/>

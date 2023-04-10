@@ -49,9 +49,9 @@ const FollowPage = () => {
         setEmail(e.target.value)
     }
 
-    function handleText(e) {
-        setText(e.target.value)
-    }
+    // function handleText(e) {
+    //     setText(e.target.value)
+    // }
 
     // function handleRadio(e) {
     //     setRadio(e.target.value)
@@ -68,7 +68,7 @@ const FollowPage = () => {
 
     const handleSubmit = () => {
         dispatch({type: 'PAYMENT', payload: false})
-        if (!email || !num || !name || !text) {
+        if (!email || !num || !name ) {
             Swal.fire('Error!')
         } else {
             dispatch({type: 'PAYMENT', payload: true})
@@ -111,7 +111,7 @@ const FollowPage = () => {
 
                         <div className='page__block__inp'>
                             <h2>Промокод</h2>
-                            <input onChange={handleText} type="text" placeholder="If you do have"/>
+                            <input  type="text" placeholder="If you do have"/>
                         </div>
 
 

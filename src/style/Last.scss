@@ -9,15 +9,15 @@
     height: 100px;
     position: absolute;
     left: 0;
-    top: 590px;
+    bottom:-860px;
   }
 
   &_img2 {
     width: 150px;
     height: 150px;
     position: absolute;
-    bottom: -400px;
-    left: 510px;
+    bottom: -1250px;
+    left: 540px;
   }
 
   &__title {
@@ -48,7 +48,6 @@
 
     h3 {
       padding-top: 14px;
-      //padding: 10px 0;
       font-weight: 500;
       font-size: 16px;
       line-height: 20px;
@@ -77,12 +76,10 @@
 
     &--inp {
       padding: 10px 10px;
-      //padding-left: 14px;
       background: transparent;
       color: white;
       outline: none;
       width: 495px;
-      //height: 150px;
       border: 1px solid #FFFFFF;
       border-radius: 10px;
       margin-bottom: 10px;
