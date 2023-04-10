@@ -16,20 +16,17 @@ function App() {
     return (
         <div className="App">
 
-            <Routes>
-                <Route path={'/'} element={<MainPage/>}/>
-                <Route path={'/new-books'} element={<PageBooks/>}/>
-            </Routes>
 
             <Header/>
             <Routes>
-
                 <Route path={'/'} element={<MainPage/>}/>
                 <Route path={"/our-courses"} element={<OurCourses/>}/>
                 <Route path={'/followPage'} element={<FollowPage/>}/>
                 <Route path={'/more'} element={<More/>}/>
                 <Route path={'/wait'} element={<Wait/>}/>
                 <Route path={'/success'} element={<Success/>}/>
+                <Route path={'/new-books'} element={<PageBooks/>}/>
+
             </Routes>
             <Footer/>
             {/*{Routes.map(({path, element} => {*/}
