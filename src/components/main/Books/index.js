@@ -230,7 +230,7 @@ const Books = () => {
                     </div>
                     <div className="books--showMore">
 
-                        <NavLink to={"/newBooks"}> <button>Показать больше</button></NavLink>
+                        <NavLink to={"/new-books"}> <button>Показать больше</button></NavLink>
 
                     </div>
                 </div>
