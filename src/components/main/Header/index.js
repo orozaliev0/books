@@ -5,14 +5,21 @@ import '../../../style/Header.scss'
 import vector from '../../../img/Vector.svg'
 import {PageConText} from "../Context/ContextWrapper";
 import AfterButton from "./AfterButton";
+import {useDispatch, useSelector} from "react-redux";
 
 const Header = () => {
 
     const navigate = useNavigate()
     const {page, setPage} = useContext(PageConText)
 
+    const dispatch = useDispatch()
+    const {payment} = useSelector(state => state)
+
+
     return (
-        <header id="header">
+        <header style={{
+            display : !payment  ? 'block' : 'none'
+        }} id="header">
             <div className="container">
                 <div className="header">
                     <NavLink to={'/'}>
@@ -25,7 +32,9 @@ const Header = () => {
                         <NavLink to={'/'}>
                             <a href="">Главная</a>
                         </NavLink>
-                        <NavLink to={'/our courses'}>
+                        <NavLink to={'/our-courses'} style={{
+                            transition: '.4'
+                        }}>
                             <a href="">Наши курсы</a>
                         </NavLink>
                         <NavLink to={'/about us'}>

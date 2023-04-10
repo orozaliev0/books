@@ -1,12 +1,14 @@
 import React from 'react';
-import Acardion from "../Acardion";
-import Follow from "../../components/main/Follow";
+import MayCourses from "./maynCours/MaynCours";
+import Last from "./lastr/Last";
 
+import Review from "./Review/review";
 const OurCourses = () => {
     return (
         <>
-            <Follow/>
-            <Acardion/>
+            <MayCourses/>
+            <Last/>
+            <Review/>
 
         </>
     );
