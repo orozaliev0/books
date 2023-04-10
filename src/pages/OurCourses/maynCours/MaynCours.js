@@ -4,8 +4,14 @@ import tol from '../../../img/cupofteam.png'
 import soft from '../../../img/cofeeteam.svg'
 import shop from '../../../img/shop.svg'
 import tol2 from '../../../img/boobek.svg'
+import { useNavigate } from "react-router-dom";
+
+
 
 const MayCourses = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div>
             <div id="Curs">
@@ -17,7 +23,7 @@ const MayCourses = () => {
                                 <h1>Наши курсы</h1>
                                 <p>Получайте новые знания, навыки и возможности для эффективной жизни.</p>
                                 <div className="Curs--team__lead--blossom">
-                                    <button>Подобрать пакет</button>
+                                    <button onClick={() => navigate('/more')}>Подобрать пакет</button>
                                     <button className='navbar'>Войти</button>
                                 </div>
                             </div>
