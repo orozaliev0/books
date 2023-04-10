@@ -9,7 +9,9 @@ import More from "./pages/More";
 import Success from "./pages/Success";
 import Header from "./components/main/Header";
 import Footer from "./components/main/Footer";
+import CreatingCommand from "./pages/OurCourses/CreatingCommand";
 // import { Transition } from 'react-transition-group';
+import AcardionTwo from "./pages/OurCourses/CreatingCommand/AcardionTwo";
 
 
 function App() {
@@ -26,8 +28,7 @@ function App() {
                 <Route path={'/wait'} element={<Wait/>}/>
                 <Route path={'/success'} element={<Success/>}/>
                 <Route path={'/new-books'} element={<PageBooks/>}/>
-
-                {/*<Route path={'/creatingCommand'} element={<CreatingCommand/>}*/}
+                <Route path={'/creatingCommand'} element={<CreatingCommand/>}/>
             </Routes>
             <Footer/>
             {/*{Routes.map(({path, element} => {*/}
@@ -41,6 +42,8 @@ function App() {
             {/*}*/}
             {/*    </Route>*/}
             {/*}))}*/}
+
+
         </div>
     );
 }
