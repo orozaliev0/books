@@ -19,15 +19,12 @@
 }
 
 .to {
-
   display: flex;
   margin-left: 310px;
   padding-top: 40px;
 
   &--block {
-    &:focus {
-      transform: scale(1.1);
-    }
+
 
     &-div {
       display: flex;
@@ -48,7 +45,7 @@
     width: 240px;
     height: 511px;
     background: rgba(255, 255, 255, 0.2);
-    border: 1.26419px solid #FFFFFF;
+    border: 1.11546px solid rgba(223, 172, 77, 0.6);
     backdrop-filter: blur(3.79256px);
     border-radius: 13px;
     padding-left: 10px;
@@ -101,10 +98,14 @@
   }
 
   &--block2 {
+    &:focus {
+      transform: scale(2);
+      border: 1.26419px solid #FFFFFF;
+    }
     &-btn {
       display: flex;
       flex-direction: column;
-      margin-top: 25px;
+      margin-top: 10px;
 
       h1 {
         align-items: center;
@@ -154,7 +155,7 @@
     width: 240px;
     height: 511px;
     background: rgba(255, 255, 255, 0.2);
-    border: 1.26419px solid #FFFFFF;
+    border: 1.11546px solid rgba(223, 172, 77, 0.6);
     backdrop-filter: blur(3.79256px);
     border-radius: 13px;
     padding-left: 10px;
@@ -188,53 +189,53 @@
   }
 }
 
-.booksAcc {
-  position: absolute;
-  left: 105px;
-  top: 1640px;
-}
-
-.booksAcc2 {
-  position: absolute;
-  left: 738px;
-  top: 1666px;
-
-}
+//.booksAcc {
+//  position: absolute;
+//  left: 105px;
+//  top: 1640px;
+//}
+//
+//.booksAcc2 {
+//  position: absolute;
+//  left: 738px;
+//  top: 1666px;
+//
+//}
 
 .to_block {
   margin-left: 60px;
 
-  &__books {
-    position: absolute;
-    left: 28.41px;
-    top: 889px;
-  }
-
-  &__books2 {
-    position: absolute;
-    left: 685px;
-    top: 1287px;
-  }
-
-  &__books3 {
-    position: absolute;
-    left: 1399px;
-    top: 1023px;
-  }
-
-  &__books4 {
-    position: absolute;
-    left: 878px;
-    top: 956px;
-  } &__books5 {
-      position: absolute;
-      left: 1078px;
-      top: 456px;
-    } &__books6 {
-        position: absolute;
-        left: 0;
-        top: 426px;
-      }
+  //&__books {
+  //  position: absolute;
+  //  left: 28.41px;
+  //  top: 889px;
+  //}
+  //
+  //&__books2 {
+  //  position: absolute;
+  //  left: 685px;
+  //  top: 1287px;
+  //}
+  //
+  //&__books3 {
+  //  position: absolute;
+  //  left: 1399px;
+  //  top: 1023px;
+  //}
+  //
+  //&__books4 {
+  //  position: absolute;
+  //  left: 878px;
+  //  top: 956px;
+  //} &__books5 {
+  //    position: absolute;
+  //    left: 1078px;
+  //    top: 456px;
+  //  } &__books6 {
+  //      position: absolute;
+  //      left: 0;
+  //      top: 426px;
+  //    }
 
   h1 {
     margin-top: 100px;

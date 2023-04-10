@@ -20,7 +20,7 @@ const Follow = () => {
                     <div className='more__btn'>
                         <button onClick={() => navigate("/followPage")} className='more__btn--btn1'>Подписаться
                         </button>
-                        <button onClick={() => navigate('/wait')} className='more__btn--btn2'>Узнать больше</button>
+                        <button onClick={() => navigate('/more')} className='more__btn--btn2'>Узнать больше</button>
                     </div>
                     <img src={more} alt="" className='more__img2'/>
                 </div>

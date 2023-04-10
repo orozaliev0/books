@@ -90,7 +90,7 @@
         color: white;
         margin-bottom: 20px;
       }input::placeholder{
-         color: white;
+         color: rgba(255, 255, 255, 0.58);
        }
     }
 
@@ -105,7 +105,6 @@
       }
 
       input {
-        //margin-right: 10px;
         margin: 0 7px;
       }
 
@@ -121,9 +120,8 @@
       margin-bottom: 10px;
 
       h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
+        font-weight: 400;
+        font-size: 14px;
         color: #FFFFFF;
         padding-bottom: 1px;
 
@@ -142,7 +140,7 @@
           margin-right: 14px;
           color: white;
         }input::placeholder{
-           color: white;
+                   color: rgba(255, 255, 255, 0.58);
          }
       }
 
@@ -159,8 +157,7 @@
           color: white;
 
         }input::placeholder{
-           color: white;
-         }
+                   color: rgba(255, 255, 255, 0.58);         }
       }
 
       &__3 {
@@ -175,8 +172,7 @@
           color: white;
 
         }input::placeholder{
-           color: white;
-         }
+                   color: rgba(255, 255, 255, 0.58);         }
       }
     }
 
@@ -257,7 +253,7 @@
 
       &--block2 {
         &-btn {
-          margin-top: 40px;
+          margin-top: 10px;
 
           display: flex;
           flex-direction: column;
@@ -351,7 +347,7 @@
         height: 40px;
         background: #FFFFFF;
         border-radius: 10px;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 20px;
         color: #6363DF;
       }
@@ -360,6 +356,10 @@
     &__last {
       display: flex;
 
+      input{
+        margin-right: 5px;
+      }
+
       h2 {
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
@@ -367,7 +367,7 @@
         font-size: 16px;
         line-height: 20px;
         color: rgba(255, 255, 255, 0.71);
-        margin-left: 5px;
+        //margin-left: 5px;
       }
 
     }
