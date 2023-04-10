@@ -12,7 +12,7 @@ const MainPage = () => {
             <Books/>
             <Follow/>
             <Accordion/>
-            <Footer/>
+            
         </div>
     );
 };
