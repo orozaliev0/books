@@ -11,11 +11,10 @@ const OurCourses = () => {
     return (
         <>
             <MayCourses/>
-            <CreatingCommand/>
             <Courses/>
-            <Last/>
             <Review/>
             <Last/>
+
 
         </>
     );

@@ -6,11 +6,14 @@ import gold from "../../../img/mdi_gold.png"
 import timer from "../../../img/fluent_time-and-weather-20-regular.png"
 import pf from "../../../img/pf.png"
 import rate from "../../../img/rate.png"
+import AcardionTwo from "./AcardionTwo";
+import '../../../App'
+import {IoIosArrowDown} from "react-icons/io";
 
 const CreatingCommand = () => {
     const [block, setBlock] = useState([1, 2, 3])
     return (
-        <div id={"ctgCom"}>
+        <div id={"ctgCom"}          >
             <div className="container">
                 <div className="ctgCom">
                     <h4 className={"cr"}>Наши курсы / Курсы по созданию команды</h4>
@@ -29,7 +32,12 @@ const CreatingCommand = () => {
 
                     </div>
                 </div>
-                <div className="video"></div>
+                <div className="video">
+                    <iframe width="1300" height="736" src="https://www.youtube.com/embed/vBzJMmeGgao"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen></iframe>
+                </div>
                 <div className="aboutCourse">
                     <h1>О КУРСЕ</h1>
                     <h4>Как правильно строить команду и эффективно ею управлять, чтобы достигать все поставленные
@@ -110,6 +118,24 @@ const CreatingCommand = () => {
 
 
                 </div>
+                <div className="aboutAccordionApps">
+                    <div style={{paddingBottom:'10px'}} className="AccordionApp">
+                        <AcardionTwo mode={1} text={"Введение"}/>
+                    </div>
+                    <div style={{paddingBottom:'10px'}}>
+                        <AcardionTwo mode={2} text={"Команда"}/>
+                    </div>
+                    <div style={{paddingBottom:'10px'}}>
+                        <AcardionTwo mode={3} text={'Лидер'}/>
+                    </div>
+                    <div style={{paddingBottom:'10px'}}>
+                        <AcardionTwo mode={4} text={'Построение команды'}/>
+                    </div>
+                    <div>
+                        <AcardionTwo mode={5} text={'Динамика команды'}/>
+                    </div>
+                </div>
+
                 <div className="material">
                     <div className="material--mat">
                         <img src={you} alt=""/>
