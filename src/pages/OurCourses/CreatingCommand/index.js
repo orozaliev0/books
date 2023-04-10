@@ -8,7 +8,6 @@ import pf from "../../../img/pf.png"
 import rate from "../../../img/rate.png"
 import AcardionTwo from "./AcardionTwo";
 import '../../../App'
-import {IoIosArrowDown} from "react-icons/io";
 
 const CreatingCommand = () => {
     const [block, setBlock] = useState([1, 2, 3])
