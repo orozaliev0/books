@@ -18,9 +18,31 @@ a{
 }
 
 body{
-    background: linear-gradient(152.23deg, #D78B59 6.77%, #595FEB 47.79%);
+    background: linear-gradient(155deg, #D78B59 6.77%, #595FEB 57.79%) fixed;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     min-height: 100vh;
+}
+
+//@keyframes fade-in {
+//    0%{
+//        opacity: 0;
+//        transform: translateY(-400px);
+//    }
+//    100%{
+//        transform: translateX(0);
+//        opacity: 1;
+//    }
+//}
+//@keyframes fade-out {
+//    0%{
+//        opacity: 1;
+//        transform: translateX(0);
+//    }
+//    100%{
+//        transform: translateX(100%);
+//        opacity: 0;
+//    }
+//}
     font-family: 'Montserrat',sans-serif;
 
 }

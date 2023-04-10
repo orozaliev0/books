@@ -1,0 +1,99 @@
+.last {
+  display: flex;
+  padding: 0 120px;
+  margin-bottom: 220px;
+  justify-content: space-around;
+
+  .last_img1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 590px;
+  }
+
+  &_img2 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -400px;
+    left: 510px;
+  }
+
+  &__title {
+    h1 {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 49px;
+      color: #ffffff;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.89);
+    }
+  }
+
+  &__block {
+    padding-left: 30px;
+    width: 555px;
+    height: 484px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+
+    h3 {
+      padding-top: 14px;
+      //padding: 10px 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }
+
+    &-inp {
+      background: transparent;
+      color: white;
+      width: 495px;
+      height: 40px;
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+      outline: none;
+      padding-left: 14px;
+      margin: 5px 0;
+    }
+
+    &-inp::placeholder {
+      color: rgba(255, 255, 255, 0.67);
+    }
+
+    &--inp::placeholder {
+      color: rgba(255, 255, 255, 0.67);
+    }
+
+    &--inp {
+      padding: 10px 10px;
+      //padding-left: 14px;
+      background: transparent;
+      color: white;
+      outline: none;
+      width: 495px;
+      //height: 150px;
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      color: blue;
+      width: 495px;
+      height: 44px;
+      background: #FFFFFF;
+      border-radius: 10px;
+    }
+  }
+}

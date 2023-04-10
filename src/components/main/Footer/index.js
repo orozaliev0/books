@@ -9,11 +9,17 @@ import master from "../../../img/mastercard.png"
 import {HiOutlineLocationMarker} from "react-icons/hi";
 import {Tb123} from "react-icons/tb";
 import {RiVisaLine} from "react-icons/ri";
+import {useDispatch, useSelector} from "react-redux";
 
 
 const Footer = () => {
+    const dispatch = useDispatch()
+    const {payment} = useSelector(state => state)
+
     return (
-        <div id="footer">
+        <div style={{
+            display : !payment  ? 'block' : 'none'
+        }} id="footer">
             <div className="container">
                 <div className="footer">
                     <div className="footer--footNav">

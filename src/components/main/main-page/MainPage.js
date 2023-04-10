@@ -4,6 +4,7 @@ import Books from "../Books";
 import Follow from "../Follow";
 import Accordion from "../Accordion";
 
+
 const MainPage = () => {
     return (
         <div>

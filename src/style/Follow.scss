@@ -4,7 +4,6 @@
   .more {
     &:hover {
       .more__img {
-        //transform: rotate(-25deg);
         transform: scale(1.3) rotate(-14deg);
         margin-top: -50px;
         margin-left: -10px;
@@ -42,8 +41,6 @@
       height: 130.29px;
       border-radius: 10px;
       transition: .2s;
-
-
     }
 
     &__img2 {
