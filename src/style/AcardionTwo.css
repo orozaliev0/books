@@ -1,0 +1,157 @@
+.acc-df{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+.accc{
+  margin-left: 10%;
+}
+.acc-br-one,.acc-br-two{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.acc-br-two{
+  margin-top: 0.5rem;
+}
+.accordions{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+.aboutAccordionApps{
+  padding-bottom: 10%;
+}
+.введения h1{
+  font-weight: 600;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+.модуль{
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+  width: 152px;
+  height: 49px;
+  padding-left: 20px;
+  padding-top: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.acc-br button{
+  width: 152px;
+  height: 49px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 24px;
+  color: #595FEB;
+}
+.accordion__button {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.df{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.accordion__button-icon{
+  margin-left: 0;
+}
+.accordion__button-icon:active{
+  transform: rotate(180deg);
+  transition: .4s;
+}
+.accordion__button.accordion__button-icon{
+  transform: rotate(180deg);
+}
+
+
+
+.accordion__button-icon.rotate:after {
+  transform: rotate(180deg);
+}
+.accordion__button-icon.rotate {
+  transform: rotate(180deg);
+}
+.accordion__content{
+  padding-top: 5rem;
+}
+.btn-br{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+
+  width: 148px;
+  height: 49px;
+
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 24px;
+  line-height: 29px;
+  color: #595FEB;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.text-left{
+
+}
+.accordion{
+  transition: .4s;
+  width: 1078px;
+  height: 1%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  backdrop-filter: blur(7px);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.accordion_text_one{
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  margin-left: 10.5rem;
+}
+.accordion_text_two{
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  margin-left: 10.5rem;
+}
+.accordion_text_three{
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  margin-left: 10.5rem;
+}
+.accordion_text_fo{
+  margin-left: 10.5rem;
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  width: 453px;
+}
