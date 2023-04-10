@@ -27,6 +27,7 @@ function App() {
                 <Route path={'/success'} element={<Success/>}/>
                 <Route path={'/new-books'} element={<PageBooks/>}/>
 
+                {/*<Route path={'/creatingCommand'} element={<CreatingCommand/>}*/}
             </Routes>
             <Footer/>
             {/*{Routes.map(({path, element} => {*/}
