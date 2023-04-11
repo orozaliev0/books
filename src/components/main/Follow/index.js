@@ -7,6 +7,10 @@ import more from '../../../img/more.svg'
 const Follow = () => {
 
     const navigate = useNavigate()
+    const follow =()=>{
+        navigate("/followPage")
+        window.scroll(0,0)
+    }
 
     return (
         <div id='more'>
@@ -18,7 +22,7 @@ const Follow = () => {
                         <p>И получи доступ ко всем нашим материалам и <br/>начинай развиватся сейчас вместе со всеми</p>
                     </div>
                     <div className='more__btn'>
-                        <button onClick={() => navigate("/followPage")} className='more__btn--btn1'>Подписаться
+                        <button onClick={() => follow()} className='more__btn--btn1'>Подписаться
                         </button>
                         <button onClick={() => navigate('/more')} className='more__btn--btn2'>Узнать больше</button>
                     </div>
