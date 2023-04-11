@@ -7,19 +7,17 @@
     height: 506px;
     left: 70px;
     top: 0;
-
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #FFFFFF;
     backdrop-filter: blur(7px);
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 189px;
+    margin-top: 200px;
+
     &--team {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
+
 
       &__lead {
         h1 {
@@ -37,8 +35,8 @@
           font-size: 24px;
           line-height: 29px;
           color: #FFFFFF;
-          width: 60%;
-          padding: 25px 0 25px 0;
+          width: 550px;
+          padding: 25px 0 25px 0 ;
         }
 
         &--blossom {
@@ -46,7 +44,7 @@
           align-items: center;
           justify-content: flex-start;
 
-          button {
+          .face {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
@@ -63,20 +61,25 @@
             flex: none;
             order: 0;
             flex-grow: 0;
+            animation: ani 1s ease-in;
+            @keyframes ani {
+              0%{
+                transform: translate(-200px, 150px);
+              }
+            }
             &:hover{
               cursor: pointer;
-              transform: scale(1.1);
             }
           }
 
+
           .navbar {
             margin-left: 20px;
+            padding: 10px 24px;
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid #FFFFFF;
             backdrop-filter: blur(7px);
             border-radius: 10px;
-
-
             font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -88,7 +91,6 @@
             flex-grow: 0;
             &:hover{
               cursor: pointer;
-              transform: scale(1.1);
             }
           }
 
