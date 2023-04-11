@@ -10,14 +10,11 @@ import Success from "./pages/Success";
 import Header from "./components/main/Header";
 import Footer from "./components/main/Footer";
 import CreatingCommand from "./pages/OurCourses/CreatingCommand";
-// import { Transition } from 'react-transition-group';
-import AcardionTwo from "./pages/OurCourses/CreatingCommand/AcardionTwo";
 
 
 function App() {
     return (
         <div className="App">
-
 
             <Header/>
             <Routes>
@@ -31,18 +28,6 @@ function App() {
                 <Route path={'/creatingCommand'} element={<CreatingCommand/>}/>
             </Routes>
             <Footer/>
-            {/*{Routes.map(({path, element} => {*/}
-            {/*    <Route key={patch} exact patch={patch}>*/}
-            {/*{({match}) =>*/}
-            {/*    <CSSTransition*/}
-            {/*    */}
-            {/*    >*/}
-            {/*    <element/>*/}
-            {/*    </CSSTransition>*/}
-            {/*}*/}
-            {/*    </Route>*/}
-            {/*}))}*/}
-
 
         </div>
     );

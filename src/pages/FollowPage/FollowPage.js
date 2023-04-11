@@ -68,11 +68,10 @@ const FollowPage = () => {
 
     const handleSubmit = () => {
         dispatch({type: 'PAYMENT', payload: false})
-        if (!email || !num || !name ) {
+        if (!email || !num || !name) {
             Swal.fire('Error!')
         } else {
             dispatch({type: 'PAYMENT', payload: true})
-
             navigate('/wait')
             setTimeout(() => {
                 navigate('/success')
@@ -111,14 +110,14 @@ const FollowPage = () => {
 
                         <div className='page__block__inp'>
                             <h2>Промокод</h2>
-                            <input  type="text" placeholder="If you do have"/>
+                            <input type="text" placeholder="If you do have"/>
                         </div>
 
 
                         <h2 className='page__block__title'>Оплата</h2>
                         <div className='page__block__check'>
                             <div>
-                                <input  type="radio" name="radio" className={"radio"}/>
+                                <input type="radio" name="radio" className={"radio"}/>
                                 <p>Visa</p>
                             </div>
 
@@ -150,7 +149,7 @@ const FollowPage = () => {
                             <div className='page__block__price--block'>
                                 <h3>Обычный</h3>
                                 <div className='page__block__price--block-div'>
-                                    <input  type="radio" name='price'/>
+                                    <input type="radio" name='price'/>
                                     <p>Ежемесячно</p>
                                     <img src={booksBlock} alt="" className='booksBlock'/>
                                 </div>
@@ -240,9 +239,6 @@ const FollowPage = () => {
                             <h2 className='page__block__bottom'>Я ознакомился и согласен с Условиями оказания услуг</h2>
                         </div>
                     </div>
-                   
-
-            
                 </form>
                 <img src={books} alt="" className='page__booksF'/>
                 <img src={books4} alt="" className='page__books4'/>

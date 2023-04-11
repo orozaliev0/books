@@ -18,12 +18,12 @@ const Last = () => {
                         <p>Если вам понравилась наша <br/>платфрома, вы можете <br/>оставить отзыв, а также <br/>увидеть остальные отзывы в <br/>нашем телеграм канале.</p>
                     </div>
                     <div className="last__block">
-                        <h3>ФИО:</h3>
-                        <input type="text" className='last__block-inp' placeholder='Muslim Bolot Joodarovich'/>
+                        <h3 className='last__block__title'>ФИО:</h3>
+                        <input type="text"  className='last__block-inp' name='name' placeholder='Muslim Bolot Joodarovich'/>
                         <h3>Кем вы работаете? :</h3>
-                        <input type="text" className='last__block-inp' placeholder='Частный предпрениматель'/>
+                        <input type="text" className='last__block-inp' name='' placeholder='Частный предпрениматель'/>
                         <h3>Отзыв:</h3>
-                        <textarea  className='last__block--inp'placeholder='Мне очень понравилась эта школа...' >defe</textarea>
+                        <input type="text" className='last__block--inp'  placeholder='Мне очень понравилась эта школа...' />
                         <button>Оставить отзыв</button>
                     </div>
                 </div>
