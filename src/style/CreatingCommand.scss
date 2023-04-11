@@ -332,11 +332,17 @@
       }
     }
 
+    ::-webkit-scrollbar{
+      width: 0;
+    }
     &--blocks {
       display: flex;
       justify-content: space-between;
       width: 95%;
       margin-left: 60px;
+      overflow-x: scroll;
+
+
       &__revs {
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid #FFFFFF;

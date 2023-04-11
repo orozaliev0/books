@@ -9,8 +9,8 @@ const OurCourses = () => {
         <>
             <MayCourses/>
             <Courses/>
-            <Last/>
             <Review/>
+
 
         </>
     );
