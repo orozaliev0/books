@@ -11,7 +11,7 @@ import '../../../App'
 import {IoIosArrowDown} from "react-icons/io";
 
 const CreatingCommand = () => {
-    const [block, setBlock] = useState([1, 2, 3])
+    const [block, setBlock] = useState([1, 2, 3  ])
     return (
         <div id={"ctgCom"}          >
             <div className="container">
