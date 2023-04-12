@@ -21,7 +21,7 @@ const Hero = () => {
                 </div>
                 <div className="Hero">
                     <div style={{paddingTop:'7%'}} className="Hero--right">
-                        <h1 className="Hero-right-h1">Само развитие лучше <br/>
+                        <h1 className="Hero-right-h1">Само развитие лучше
                             чем школьное обучение</h1>
                         <p className="Hero-right-p">Здесь вы найдете все для само-обучения.</p>
                         <button  type="button"
