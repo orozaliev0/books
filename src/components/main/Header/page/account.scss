@@ -1,0 +1,57 @@
+.account {
+  background: linear-gradient(152.23deg, #D78B59 6.77%, #595FEB 47.79%);
+  padding: 50px 0 0 0;
+  .h  {
+    font-weight: 500;
+    font-size: 27.8281px;
+    line-height: 34px;
+    color: #FFFFFF;
+    opacity: 0.3;
+    padding: 0 0 50px 0;
+  }
+  .block {
+    width: 400px;
+    height: 306px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    h1 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
+      opacity: 0.3;
+    }
+    input {
+      width: 360px;
+      padding-left: 10px;
+      height: 40px;
+      opacity: 0.3;
+      border-radius: 10px;
+      background: transparent;
+      outline: none;
+    }
+    button {
+      width: 360px;
+      height: 40px;
+      background: #FFFFFF;
+      border-radius: 10px;
+      color: white;
+      h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #6363DF;
+        opacity: 0.3;
+      }
+    }
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;
+      opacity: 0.3;
+    }
+  }
+}
