@@ -1,6 +1,30 @@
 .to-more {
-  margin-left: 60px;
-  padding-top: 250px;
+  &_img {
+    position: absolute;
+    right: 120px;
+    top: 100px;
+  }
+
+  &_img2 {
+    position: absolute;
+    left: 340px;
+    top: 220px;
+  } &_img3 {
+    position: absolute;
+    left: 740px;
+    top: 330px;
+  }&_img5 {
+    position: absolute;
+    left: 0;
+    top: 590px;
+  }&_img4 {
+    position: absolute;
+    right: 40px;
+              top: 590px;
+  }
+
+  margin-left: 0;
+  padding-top: 200px;
 
   h1 {
     font-weight: 600;
@@ -21,11 +45,20 @@
 .to {
   display: flex;
   margin-left: 310px;
-  padding-top: 40px;
+  padding-top: 60px;
+
 
   &--block {
-
-
+    &_img{
+      position: absolute;
+      left: 150px;
+      top: 20px;
+    }
+    &_img2{
+      position: absolute;
+      left: 0;
+      top: 170px;
+    }
     &-div {
       display: flex;
       padding-bottom: 7px;
@@ -48,8 +81,9 @@
     border: 1.11546px solid rgba(223, 172, 77, 0.6);
     backdrop-filter: blur(3.79256px);
     border-radius: 13px;
-    padding-left: 10px;
-    margin-right: 70px;
+    padding-left: 20px;
+    margin-right: 80px;
+    position: relative;
 
     h3 {
       padding-top: 12px;
@@ -80,7 +114,7 @@
       }
 
       button {
-        width: 210px;
+        width: 195px;
         height: 40px;
         background: transparent;
         border: 1px solid #FFFFFF;
@@ -98,10 +132,8 @@
   }
 
   &--block2 {
-    &:focus {
-      transform: scale(2);
-      border: 1.26419px solid #FFFFFF;
-    }
+
+
     &-btn {
       display: flex;
       flex-direction: column;
@@ -122,7 +154,7 @@
       }
 
       button {
-        width: 210px;
+        width: 195px;
         height: 40px;
         background: transparent;
         border: 1px solid #FFFFFF;
@@ -158,7 +190,7 @@
     border: 1.11546px solid rgba(223, 172, 77, 0.6);
     backdrop-filter: blur(3.79256px);
     border-radius: 13px;
-    padding-left: 10px;
+    padding-left: 20px;
     margin-right: 50px;
 
     h3 {
@@ -189,53 +221,24 @@
   }
 }
 
-//.booksAcc {
-//  position: absolute;
-//  left: 105px;
-//  top: 1640px;
-//}
-//
-//.booksAcc2 {
-//  position: absolute;
-//  left: 738px;
-//  top: 1666px;
-//
-//}
-
 .to_block {
-  margin-left: 60px;
+  margin: 150px 0 0 40px;
 
-  //&__books {
-  //  position: absolute;
-  //  left: 28.41px;
-  //  top: 889px;
-  //}
-  //
-  //&__books2 {
-  //  position: absolute;
-  //  left: 685px;
-  //  top: 1287px;
-  //}
-  //
-  //&__books3 {
-  //  position: absolute;
-  //  left: 1399px;
-  //  top: 1023px;
-  //}
-  //
-  //&__books4 {
-  //  position: absolute;
-  //  left: 878px;
-  //  top: 956px;
-  //} &__books5 {
-  //    position: absolute;
-  //    left: 1078px;
-  //    top: 456px;
-  //  } &__books6 {
-  //      position: absolute;
-  //      left: 0;
-  //      top: 426px;
-  //    }
+  &__books {
+    position: absolute;
+    left: 28.41px;
+    top: 68rem;
+  }
+  &__books2 {
+    position: absolute;
+    left: 52rem;
+    top: 69rem;
+  }&__books3 {
+    position: absolute;
+       right: 0;
+    top: 74rem;
+  }
+
 
   h1 {
     margin-top: 100px;
@@ -266,8 +269,24 @@
 }
 
 .to_block2 {
-  margin-left: 0;
-  padding: 100px;
+  margin: 150px 0 40px 40px;
+  &_img2 {
+    position: absolute;
+    left: 90px;
+    top: 115rem;
+  }
+  &_img3 {
+    position: absolute;
+    left: 708px;
+    top: 117rem;
+
+  }
+
+  &_img{
+    position: absolute;
+    left: 650px;
+    top: 91rem;
+  }
   h1 {
     font-weight: 600;
     font-size: 36px;
@@ -282,3 +301,343 @@
     line-height: 30px;
   }
 }
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+  .to-more_img4 {
+    position: absolute;
+    right: 11px;
+    top: 590px;
+  }
+  .to_block2_img2 {
+    position: absolute;
+    left: 90px;
+    top: 118rem;
+  }
+  .to_block2_img3 {
+    position: absolute;
+    left: 708px;
+    top: 121rem;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .to {
+    display: flex;
+    margin-left: 169px;
+    padding-top: 60px;
+  }
+  .to-more_img3 {
+    position: absolute;
+    left: 606px;
+    top: 330px;
+  }
+}
+
+@media (max-width: 992px) {
+  .to_block2_img3 {
+    position: absolute;
+    left: 542px;
+    top: 126rem;
+    width: 99px;
+  }
+  .to_block2_img2 {
+    position: absolute;
+    left: 90px;
+    top: 121rem;
+  }
+  .to-more_img5 {
+    position: absolute;
+    left: 0;
+    top: 590px;
+    width: 75px;
+  }
+
+
+  .to-more_img4 {
+    position: absolute;
+    right: 11px;
+    top: 590px;
+    width: 121px;
+  }
+}
+
+@media (max-width: 768px) {
+  .to {
+    margin-left: 82px;
+  }
+  .to_block__books2 {
+    left: 36rem;
+    top: 72rem;
+  }
+  .to_block__books3 {
+    right: 0;
+    top: 78rem;
+    width: 66px;
+  }
+  .to_block h1 {
+    font-size: 21px;
+  }
+  .to_block_div h4 {
+    font-size: 20px;
+  }
+  .to_block__books {
+    top: 71rem;
+  }
+  .to_block2_img {
+      left: 482px;
+    top: 96rem;
+    width: 144px;
+  }
+  .to_block2 p {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .to_block2 {
+    margin: 150px 0 -71px 40px;
+  }
+  .to_block2_img2 {
+    left: 48px;
+    top: 116rem;
+  }
+  .to_block2_img3 {
+    left: 525px;
+    top: 123rem;
+    width: 99px;
+  }
+  .to-more_img {
+    right: 77px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .to--block2 {
+    display: none;
+  }
+  .to {
+    margin-left: 134px;
+  }
+  .to-more_img {
+    right: 2px;
+    top: 100px;
+  }
+  .to-more_img3 {
+    display: none;
+  }
+  .to-more_img5 {
+    width: 36px;
+  }
+  .to-more_img4 {
+    width: 79px;
+  }
+  .to_block__books2 {
+    left: 30rem;
+    top: 72rem;
+  }
+  .to_block__books3 {
+    display: none;
+  }
+  .to-more_img2 {
+    left: 273px;
+    top: 242px;
+  }
+  .to_block__books {
+    top: 77rem;
+  }
+  .to_block2_img3 {
+    display: none;
+  }
+  .to_block2_img2 {
+    left: 48px;
+    top: 121rem;
+  }
+  .to_block2_img {
+    left: 485px;
+    top: 107rem;
+    width: 92px;
+  }
+}
+
+@media (max-width: 451px) {
+  .to_block2_img2 {
+    left: 12px;
+    top: 125rem;
+  }
+  .to_block2_img {
+    left: 353px;
+    top: 104rem;
+    width: 92px;
+  }
+  .to {
+    margin-left: 82px;
+  }
+  .to--block_img {
+    left: 166px;
+    top: 9px;
+  }
+  .to-more_img4 {
+    right: 18px;
+    top: 692px;
+  }
+  .to-more h1 {
+    font-size: 32px;
+    margin-left: 0;
+  }
+  .to_block__books2 {
+    left: 24rem;
+    top: 66rem;
+  }
+  .to_block_div h4 {
+    font-size: 20px;
+    line-height: 21px;
+  }
+  .to_block {
+    margin: 150px 0 0 0;
+  }
+  .to_block2 {
+    margin: 150px 0 40px 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container{
+  }
+  .to--block-btn button {
+    width: 196px;
+  }
+  .to-more_img {
+    right: 2px;
+    top: 122px;
+  }
+  .to-more h1 {
+    font-size: 32px;
+    margin-left: -10px;
+  }
+  .to-more_img2 {
+    left: 1px;
+    top: 283px;
+    width: 73px;
+  }
+  .to_block__books2 {
+    left: 21rem;
+    top: 66rem;
+  }
+  .to_block2 {
+    margin: 150px 0 40px 0;
+  }
+  .to_block2_img {
+    left: 308px;
+    top: 104rem;
+    width: 92px;
+  }
+  .to_block2_img2 {
+    left: 12px;
+    top: 132rem;
+    width: 80px;
+  }
+  .to {
+    margin-left: 42px;
+  }
+}
+
+@media (max-width: 376px) {
+  .to_block2_img {
+    left: 275px;
+    top: 109rem;
+  }
+  .to_block2 p {
+    font-size: 19px;
+    line-height: 26px;
+  }
+  .to_block__books2 {
+    left: 19rem;
+    top: 66rem;
+  }
+  .to {
+    margin-left: 40px;
+  }
+  .to--block2 {
+    display: block;
+    height: 493px;
+  } .to--block {
+      display: none;
+    }
+  .to--block2-btn button {
+    width: 189px;
+  }
+}
+
+@media (max-width: 351px) {
+  .to--block2-btn button {
+    width: 173px;
+  }
+  .to {
+    margin-left: 46px;
+  }
+  .to_block__books2 {
+    left: 17rem;
+    top: 66rem;
+  }
+  .to_block2_img {
+    left: 252px;
+    top: 109rem;
+  }
+  .to--block2 {
+    display: block;
+    height: 493px;
+  } .to--block {
+      display: none;
+    }
+
+}
+
+@media (max-width: 320px) {
+  .to--block2 {
+    display: block;
+    height: 493px;
+  } .to--block {
+    display: none;
+  }
+  .to--block2-btn button {
+    width: 163px;
+  }
+  .to-more_img {
+    right: 2px;
+    top: 138px;
+  }
+  .to-more h1 {
+    font-size: 28px;
+    margin-left: -10px;
+  }
+  .to {
+    margin-left: 31px;
+  }
+  .to_block__books2 {
+    left: 15rem;
+    top: 64rem;
+  }
+  .to_block2_img {
+    left: 226px;
+    top: 109rem;
+  }.to_block2_img2 {
+     left: 12px;
+     top: 140rem;
+     width: 80px;
+   }
+  .Dion-h1 {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+}
+
+
+
+
+

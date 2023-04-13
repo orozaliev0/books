@@ -10,6 +10,7 @@ import Success from "./pages/Success";
 import Header from "./components/main/Header";
 import Footer from "./components/main/Footer";
 import CreatingCommand from "./pages/OurCourses/CreatingCommand";
+import Account from "./components/main/Header/page";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
                 <Route path={'/success'} element={<Success/>}/>
                 <Route path={'/new-books'} element={<PageBooks/>}/>
                 <Route path={'/creatingCommand'} element={<CreatingCommand/>}/>
+                <Route path={"/form"} element={<Account/>} />
             </Routes>
             <Footer/>
 

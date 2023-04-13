@@ -1,6 +1,25 @@
 #review{
   padding: 200px 0;
 
+  .slick-list{
+    width: 100% !important;
+  }
+  .slick-slide{
+    width: 910px !important;
+  }
+  .slick-track{
+    width: 14636px !important;
+  }
+  .slick-prev{
+    z-index: 2;
+  }
+.slick-next{
+  right: 27px !important;
+}
+
+.slick-prev{
+  left: 27px!important;
+}
   h1{
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
@@ -23,8 +42,6 @@
       border: 1px solid #FFFFFF;
       backdrop-filter: blur(12px);
       border-radius: 10px;
-      margin-left: 230px;
-
        span{
          margin-left: 20px;
          font-family: 'Montserrat',sans-serif;
@@ -76,5 +93,7 @@
   img {
     width: 100px !important;
     height: 40px !important;
+    z-index: 99
   }
 }
+

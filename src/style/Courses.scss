@@ -48,6 +48,7 @@
           border: 0.5px solid #FFFFFF;
           border-radius: 5px;
           padding: 3px 3px;
+
         }
         &__allTabs{
           display: flex;
@@ -96,6 +97,10 @@
       border: 1px solid #FFFFFF;
       border-radius: 10px;
       padding: 12px 24px;
+      transition: .2s;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
   }
 }

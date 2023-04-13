@@ -8,7 +8,6 @@ const Accordion = () => {
     return (
 
         <div id="acc">
-            {/*<img className="kaif12" src={kail12} alt=""/>*/}
             <div className="container">
                 <div className="dion">
                     <div className="dion-right">
