@@ -105,6 +105,10 @@ summary .icons {
   }
 }
 @media (max-width: 768px)  {
+  .dion {
+    gap: 125px;
+    margin: 0 0 -70px 0;
+  }
   .summary-text h3 {
     font-size: 13px;
   }

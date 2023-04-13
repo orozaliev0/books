@@ -2,11 +2,13 @@
   .header--tran-cl {
     display: none;
   }
+
   backdrop-filter: blur(5px);
   position: fixed;
   width: 100%;
   z-index: 10;
   padding: 10px 0;
+
   .header {
     display: flex;
     align-items: center;
@@ -21,11 +23,13 @@
       color: #FFFFFF;
       text-align: center;
     }
-    &--text   {
+
+    &--text {
       width: 25%;
       display: flex;
       justify-content: space-around;
       align-items: center;
+
       a {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -33,7 +37,8 @@
         line-height: 20px;
         color: #FFFFFF;
       }
-      .active{
+
+      .active {
         border-bottom: 1px solid #fff;
       }
     }
@@ -54,6 +59,7 @@
         line-height: 24px;
         color: #595FEB;
         transition: .4s;
+
         &:hover {
           transform: scale(0.9);
         }
@@ -61,11 +67,11 @@
     }
 
 
-
-    }
   }
+}
+
 .header--menu {
-  display: none ;
+  display: none;
 }
 
 @media (max-width: 1440px) {
@@ -74,30 +80,27 @@
     display: none;
   }
 }
+
 @media (max-width: 1200px) {
-#header{
-  width: 84%;
+
 }
-}
+
 @media (max-width: 1140px) {
-hr{
-  width: 97%;
+  hr {
+    width: 97%;
+  }
 }
-}
+
 @media (max-width: 1024px) {
-  hr{
-    width: 88%;
-  }
+
 }
+
 @media (max-width: 992px) {
-  #header{
-    width: 78%;
+  #header .header--text {
+    width: 40%;
   }
-  .lol{
+  .lol {
     padding-left: 2rem;
-  }
-  .l {
-    display: none;
   }
   .header--tran {
     display: flex;
@@ -108,7 +111,7 @@ hr{
     height: 260px;
   }
   .header--tran-cl {
-    display: none;
+    display: block;
     transition: .4s;
   }
   .header--menu-h {
@@ -119,13 +122,14 @@ hr{
     color: #FFFFFF;
     margin-left: -243px;
   }
-  .header--text-mn   {
+  .header--text-mn {
     transition: .6s;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     height: 130px;
+
     a {
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
@@ -133,7 +137,8 @@ hr{
       line-height: 20px;
       color: #FFFFFF;
     }
-    .active{
+
+    .active {
       border-bottom: 1px solid #fff;
     }
   }
@@ -156,6 +161,7 @@ hr{
       line-height: 24px;
       color: #595FEB;
       transition: .4s;
+
       &:hover {
         transform: scale(0.9);
       }
@@ -165,20 +171,25 @@ hr{
     transition: .6s;
 
     backdrop-filter: blur(40px);
+
     &--text {
-      display: none !important;
+      display: block;
     }
+
     &--btn {
-      display: none;
+      display: block;
     }
+
     &--hr {
       transform: translateY(16px);
       transition: .4s;
     }
+
     &--hr-close {
       transform: translateY(0);
       transition: .4s;
     }
+
     &--header--menu {
 
       button {
@@ -189,29 +200,27 @@ hr{
     }
   }
   .menu-icon {
-    display: block !important;
+    display: block;
     color: white;
     font-size: 30px;
   }
 }
+
 @media (max-width: 768px) {
+  #header .header--text {
+    display: none;
+  }
   .header--menu {
-    display: block ;
+    display: block;
   }
-  #header{
-    width: 58%;
+  #header .header--btn button {
+    display: none;
   }
-  hr{
-    width: 95%;
-  }
-  .lol{
-    padding-left: 0rem;
-  }
+
+
 }
+
 @media (max-width: 576px) {
-  #header{
-    width: 43%;
-  }
   .header--menu-h {
     margin-left: -172px;
     padding: 25px;
@@ -220,8 +229,9 @@ hr{
 
 
 }
+
 @media (max-width: 450px) {
-  #header{
+  #header {
     width: 34%;
   }
   .header--menu-h {
@@ -230,25 +240,31 @@ hr{
     height: 50px;
   }
 }
+
 @media (max-width: 400px) {
-  #header{
-    width: 31%;
+  #header {
+    width: 90%;
   }
   .header--menu-h {
     margin-left: -102px;
   }
 }
+
 @media (max-width: 380px) {
-  #header{
+  #header {
     width: 29%;
   }
 }
-@media (max-width: 375px) {
 
+@media (max-width: 376px) {
+  #header {
+    width: 93%;
+  }
 }
+
 @media (max-width: 320px) {
-  #header{
-    width: 90%;
+  #header {
+    width: 96%;
   }
   .header--menu-h {
     margin-left: -65px;
