@@ -11,8 +11,6 @@ const OurCourses = () => {
             <Courses/>
             <Review/>
             <Last/>
-
-
         </>
     );
 };

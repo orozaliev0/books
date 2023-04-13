@@ -9,6 +9,7 @@ import rate from "../../../img/rate.png"
 import AcardionTwo from "./AcardionTwo";
 import '../../../App'
 import {IoIosArrowDown} from "react-icons/io";
+import Accord from "../Accord";
 const CreatingCommand = () => {
     const [block, setBlock] = useState([1, 2, 3  ])
     return (
@@ -115,23 +116,7 @@ const CreatingCommand = () => {
 
 
                 </div>
-                <div className="aboutAccordionApps">
-                    <div style={{paddingBottom:'10px'}} className="AccordionApp">
-                        <AcardionTwo mode={1} text={"Введение"}/>
-                    </div>
-                    <div style={{paddingBottom:'10px'}}>
-                        <AcardionTwo mode={2} text={"Команда"}/>
-                    </div>
-                    <div style={{paddingBottom:'10px'}}>
-                        <AcardionTwo mode={3} text={'Лидер'}/>
-                    </div>
-                    <div style={{paddingBottom:'10px'}}>
-                        <AcardionTwo mode={4} text={'Построение команды'}/>
-                    </div>
-                    <div>
-                        <AcardionTwo mode={5} text={'Динамика команды'}/>
-                    </div>
-                </div>
+                <Accord/>
 
                 <div className="material">
                     <div className="material--mat">
