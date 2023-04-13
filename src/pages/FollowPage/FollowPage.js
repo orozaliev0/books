@@ -133,14 +133,14 @@ const FollowPage = () => {
                                 <h2>Номер карты</h2>
                                 <input type='number' placeholder='1234 4567 7788 9210'/>
                             </div>
-                            <div className='page__block__card__2'>
-                                <h2>Срок</h2>
-                                <input type="number" placeholder='12/25'/>
-                            </div>
-                            <div className='page__block__card__3'>
-                                <h2>CVV</h2>
-                                <input type="number" placeholder='398'/>
-                            </div>
+                               <div className='page__block__card__2'>
+                                   <h2>Срок</h2>
+                                   <input type="number" placeholder='12/25'/>
+                               </div>
+                               <div className='page__block__card__3'>
+                                   <h2>CVV</h2>
+                                   <input type="number" placeholder='398'/>
+                               </div>
                         </div>
 
                         <h2 className='page__block__h2'>Уровень пакета</h2>
