@@ -10,8 +10,6 @@ const OurCourses = () => {
             <MayCourses/>
             <Courses/>
             <Review/>
-
-
         </>
     );
 };
