@@ -64,8 +64,12 @@
 
     }
   }
+.header--menu {
+  display: none ;
+}
 
 @media (max-width: 1440px) {
+
   .menu-icon {
     display: none;
   }
@@ -191,6 +195,9 @@ hr{
   }
 }
 @media (max-width: 768px) {
+  .header--menu {
+    display: block ;
+  }
   #header{
     width: 58%;
   }
@@ -241,7 +248,7 @@ hr{
 }
 @media (max-width: 320px) {
   #header{
-    width: 26%;
+    width: 90%;
   }
   .header--menu-h {
     margin-left: -65px;
