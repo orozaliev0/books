@@ -3,17 +3,17 @@
   justify-content: center;
   align-items: center;
   padding-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 259px;
 
   &__booksF {
     position: absolute;
-    right: 140px;
-    top: 120px;
+    right: 119px;
+    top: 102px;
 
   }
   &__books2 {
     position: absolute;
-    left: 325px;
+    left: 266px;
     top: 279px;
   }
   &__books3 {
@@ -28,8 +28,8 @@
   }
   &__books5 {
     position: absolute;
-    left: 440.41px;
-    top: 1368px;
+    left: 382.41px;
+    top: 1461px;
   }
   &__block {
     padding-left: 50px;
@@ -367,9 +367,296 @@
         font-size: 16px;
         line-height: 20px;
         color: rgba(255, 255, 255, 0.71);
-        //margin-left: 5px;
       }
 
     }
+  }
+}
+
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+  .page__books5 {
+    left: 272.41px;
+    top: 1461px;
+  }
+  .page__books4 {
+    left: 965.89px;
+    top: 600px;
+  }
+  .page__books2 {
+    left: 181px;
+    top: 224px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .page__books4 {
+    left: 862.89px;
+    top: 600px;
+    width: 142px;
+  }
+  .page__books2 {
+    left: 87px;
+    top: 224px;
+  }
+  .page__block__price--block .booksBlock {
+    left: 163px;
+    top: 20px;
+  }
+  .page__books5 {
+    left: 178.41000000000003px;
+    top: 1461px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page__books4 {
+    left: 845.89px;
+  }
+  .page__books2 {
+    left: 58px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page__books4 {
+    left: 626.89px;
+  }
+  .page__block {
+    padding-left: 24px;
+    width: 553px;
+  }
+  .page__booksF {
+    right: 76px;
+    top: 98px;
+  }
+  .page__books2 {
+    left: 1px;
+  }
+  .page__books5 {
+    left: 98.41px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page__block {
+    padding-left: 27px;
+    width: 444px;
+    height: 113rem;
+  }
+  .page__block__inp input {
+    width: 383px;
+  }
+  .page__block__button button {
+    width: 387px;
+  }
+  .page__block__last h2 {
+    font-size: 13px;
+  }
+  .page__block__price {
+    margin-bottom: 50px;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+  }
+  .page__block__price--block {
+    margin-bottom: 20px;
+  }
+  .page__books3 {
+    width: 62px;
+  }
+  .page__books4 {
+    left: 454px;
+    top: 676px;
+    width: 96px;
+  }
+  .page__books5 {
+    left: 55.41px;
+    top: 125rem;
+  }
+}
+
+@media (max-width: 451px) {
+  .page__block {
+    padding-left: 27px;
+    width: 377px;
+    height: 113rem;
+  }
+  .page__block__inp input {
+    width: 316px;
+  }
+  .page__books4 {
+    left: 377px;
+    top: 676px;
+    width: 72px;
+  }
+  .page__booksF {
+    right: 66px;
+    top: 115px;
+  }
+  .page__block__price {
+    margin-left: 42px;
+  }
+  .page__block__button button {
+    width: 327px;
+  }
+}
+
+@media (max-width: 400px) {
+  .page__block__card__1 input {
+    width: 264px;
+  }
+  .page__block__card__3 h2 {
+    position: absolute;
+    top: 35rem;
+    left: 185px;
+  }
+  .page__block__card__2 h2 {
+    position: absolute;
+    top: 35rem;
+    left: 33px;
+  }
+  .page__block__card__3 input {
+    margin: 100px 0 0 -159px;
+    width: 111px;
+    padding-left: 10px;
+  }
+  .page__block__card__2 input {
+    width: 111px;
+    height: 40px;
+    margin: 100px 193px 0 -277px;
+  }
+  .page__block {
+    width: 320px;
+    height: 118rem;
+  }
+  .page__block__price {
+    margin-left: 13px;
+  }
+  .page__block__button button {
+    width: 265px;
+  }
+  .page__books5 {
+    left: 44.41px;
+    width: 140px;
+    top: 126rem;
+  }
+  .page {
+    padding-top: 154px;
+    margin-bottom: 190px;
+  }
+  .page__block__inp input {
+    width: 263px;
+  }
+  .page__books4 {
+    left: 317px;
+    top: 676px;
+    width: 72px;
+  }
+}
+
+@media (max-width: 376px) {
+  .page__books4 {
+    left: 297px;
+    top: 698px;
+    width: 72px;
+  }
+  .page__booksF {
+    right: 0;
+    top: 115px;
+  }
+  .page__books2 {
+    left: -11px;
+  }
+}
+
+@media (max-width: 351px) {
+  .page__books5 {
+    left: 17.41px;
+    width: 140px;
+    top: 126rem;
+  }
+  .page__block__price {
+    margin-left: 8px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .page {
+    padding-top: 184px;
+    margin-bottom: 190px;
+  }
+  .page__books5 {
+    display: none;
+  }
+  .page__block {
+    width: 265px;
+    height: 121rem;
+  }
+  .page__block__button button {
+    width: 216px;
+  }
+  .page__block__inp input {
+    width: 212px;
+  }
+  .page__block__card__1 input {
+    width: 206px;
+  }
+  .page__block__card__2 input {
+    width: 90px;
+    height: 40px;
+    margin: 100px 172px 0 -220px;
+  }
+  .page__block__card__3 input {
+    width: 95px;
+  }
+  .page__block__card__2 h2 {
+    top: 37.5rem;
+  }
+  .page__block__card__3 h2 {
+    top: 37.5rem;
+    left: 135px;
+  }
+  .page__books4 {
+    left: 249px;
+    top: 786px;
+    width: 72px;
+  }
+  .page__booksF {
+    right: 0;
+    top: 137px;
+  }
+  .page__books2 {
+    left: -11px;
+    width: 74px;
+    top: 312px;
+  }
+  .page__block__price--block {
+    width: 193px;
+  }
+  .page__block__price--block2 {
+    width: 193px;
+  }
+  .page__block__price--block2-btn button {
+    width: 164px;
+    margin-top: -10px;
+  }
+  .page__block__price--block .booksBlock {
+    left: 127px;
+    top: 20px;
+  }
+  .page__block__price--block-btn button {
+    width: 164px;
+    margin-top: -10px;
+  }
+  .page__block__price--block2-btn h1 {
+    font-size: 20px;
   }
 }

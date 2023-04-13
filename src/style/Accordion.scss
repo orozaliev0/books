@@ -164,7 +164,12 @@ summary .icons {
     padding-bottom: 10px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 451px) {
+  .Dion-h1 {
+    font-weight: 600;
+    font-size: 37px;
+    line-height: 38px;
+  }
   .dion{
     display: flex;
     flex-direction: column;
@@ -182,11 +187,7 @@ summary .icons {
   .Dion-img{
     margin-left: 55px;
   }
-  .Dion-h1{
-    margin-left: 90px;
-    /*text-align: center;*/
-    display: flex;
-  }
+
   .kaif12 {
     position: absolute;
     top: 13rem;
@@ -197,7 +198,8 @@ summary .icons {
     align-items: center;
   }
   .Dion-img {
-    margin-left: 70px;
+    width: 390%;
+    margin-left: 27px;
   }
   .Dion-h1{
     margin-left: 0;
@@ -211,8 +213,11 @@ summary .icons {
 }
 @media (max-width: 400px) {
   .summary-text h3 {
-    font-size: 13px;
-    margin-bottom: 5px;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  .dion-left {
+    margin-top: -29px;
   }
   .details-parag {
     font-size: 14px;
@@ -225,6 +230,12 @@ summary .icons {
   .Dion-img{
     width: 230%;
     margin-left: 50px;
+  }
+}
+@media (max-width: 376px) {
+  .Dion-img {
+    width: 383%;
+    margin-left: 19px;
   }
 }
 @media (max-width: 350px) {
