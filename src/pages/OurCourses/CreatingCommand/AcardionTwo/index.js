@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {IoIosArrowDown} from "react-icons/io";
 import '../../../../style/AcardionTwo.css'
-
 const AcardionTwo = ({mode,text}) => {
     const [isOpen ,setIsOpen] = useState(false)
     const handleClick = () => {

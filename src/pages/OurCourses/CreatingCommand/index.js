@@ -1,4 +1,4 @@
-
+import './iframew.css'
 import React, {useState} from 'react';
 import "../../../style/CreatingCommand.scss"
 import you from "../../../img/you.png"
@@ -11,7 +11,7 @@ import '../../../App'
 import {IoIosArrowDown} from "react-icons/io";
 import Accord from "../Accord";
 const CreatingCommand = () => {
-    const [block, setBlock] = useState([1, 2, 3  ])
+    const [block, setBlock] = useState([1, 2, 3])
     return (
         <div id={"ctgCom"}          >
             <div className="container">
@@ -33,7 +33,7 @@ const CreatingCommand = () => {
                     </div>
                 </div>
                 <div className="video">
-                    <iframe width="1300" height="736" src="https://www.youtube.com/embed/vBzJMmeGgao"
+                    <iframe className="iframe" src="https://www.youtube.com/embed/vBzJMmeGgao"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
