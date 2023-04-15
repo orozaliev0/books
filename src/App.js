@@ -16,7 +16,6 @@ import Account from "./components/main/Header/page";
 function App() {
     return (
         <div className="App">
-
             <Header/>
             <Routes>
                 <Route path={'/'} element={<MainPage/>}/>

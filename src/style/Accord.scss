@@ -15,7 +15,6 @@
     &--blocks {
       display: flex;
       justify-content: center;
-      align-items: center;
       flex-direction: column;
       &__acc {
         width: 1078px;
@@ -38,7 +37,9 @@
           background: rgba(255, 255, 255, 0.1);
           border: 1px solid #FFFFFF;
           border-radius: 10px;
-          padding: 7px 20px;
+          padding: -1px 20px;
+          height: 50px;
+          width: 150px;
         }
 
         &--secondBtn {
@@ -48,7 +49,9 @@
           background: #FFFFFF;
           border: 1px solid #FFFFFF;
           border-radius: 10px;
-          padding: 7px 20px;
+          padding: -1px 20px;
+          width: 148px;
+          height: 49px;
         }
 
 
@@ -107,5 +110,68 @@
 
       }
     }
+  }
+}
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1140px) {
+  #courseProgramme .courseProgramme--blocks {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 960px) {
+  #courseProgramme .courseProgramme--blocks__acc{
+    width: 770px;
+  }
+  #courseProgramme .courseProgramme--blocks__acc--text h1{
+    margin-left: 20px;
+  }
+}
+@media (max-width: 720px) {
+  #courseProgramme .courseProgramme--blocks__acc {
+    width: 610px;
+  }
+  #courseProgramme .courseProgramme--blocks__acc--firstBtn {
+    font-size: 20px;
+    width: 170px;
+  }
+  #courseProgramme .courseProgramme--blocks__acc--text h1{
+    font-size: 25px;
+  }
+  #courseProgramme .courseProgramme--blocks__acc--secondBtn{
+    font-size: 15px;
+    width: 170px;
+  }
+  }
+@media (max-width: 580px) {
+  #courseProgramme .courseProgramme--blocks__acc {
+    width: 500px;
+  }
+  #courseProgramme .courseProgramme--blocks__acc--firstBtn {
+    width: 200px;
+    font-size: 15px;
+  }
+  #courseProgramme .courseProgramme--blocks__acc--text h1{
+    font-size: 20px;
+    padding-bottom: 30px;
+    width: 80px;
+  }
+  #courseProgramme .courseProgramme--blocks__acc--secondBtn {
+    width: 200px;
+  }
+  #courseProgramme .courseProgramme--blocks__acc--text p {
+    padding-top: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 320px) {
+  #courseProgramme .courseProgramme--blocks__acc {
+
   }
 }
