@@ -21,7 +21,7 @@ const Courses = () => {
                             <div className="abCourses--comm__block--tabs">
                                 <h3>Обучение</h3>
                                 <div className="abCourses--comm__block--tabs__allTabs">
-                                    <button>Все</button>
+                                   <button>Все</button>
                                     <button onClick={() => navigation("/creatingCommand")}>Новое</button>
                                     <button>Книги</button>
                                 </div>
@@ -94,7 +94,7 @@ const Courses = () => {
                             ))
                         }
                     </div>
-                    <div className="crtCom--crtComBlock2">
+                    <div className="crtCom--crtComBlock">
                         {
                             creatingComm2.map(el => (
                                 <div className={"abCourses--comm__block"}>
