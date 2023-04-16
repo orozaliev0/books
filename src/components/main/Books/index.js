@@ -2,8 +2,7 @@ import React from 'react';
 import "../../../style/Books.scss"
 import book from "../../../img/image 1.png"
 import life from "../../../img/image 2.png"
-import {Link , NavLink} from "react-router-dom";
-
+import {Link, NavLink} from "react-router-dom";
 
 
 const Books = () => {
@@ -230,7 +229,9 @@ const Books = () => {
                     </div>
                     <div className="books--showMore">
 
-                        <NavLink to={"/new-books"}> <button>Показать больше</button></NavLink>
+                        <NavLink to={"/new-books"}>
+                            <button>Показать больше</button>
+                        </NavLink>
 
                     </div>
                 </div>

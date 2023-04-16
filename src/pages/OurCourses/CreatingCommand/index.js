@@ -1,4 +1,4 @@
-
+import './iframew.css'
 import React, {useState} from 'react';
 import "../../../style/CreatingCommand.scss"
 import you from "../../../img/you.png"
@@ -11,12 +11,12 @@ import '../../../App'
 import {IoIosArrowDown} from "react-icons/io";
 import Accord from "../Accord";
 const CreatingCommand = () => {
-    const [block, setBlock] = useState([1, 2, 3  ])
+    const [block, setBlock] = useState([1, 2, 3])
     return (
         <div id={"ctgCom"}          >
             <div className="container">
                 <div className="ctgCom">
-                    <h4 className={"cr"}>Наши курсы / Курсы по созданию команды</h4>
+                    <h4 className={"cr"}>Наши курсы / <br/> Курсы по созданию команды</h4>
                     <div className="ctgCom--ourCour">
                         <div className="ctgCom--ourCour__create">
                             <h2>Создание команды</h2>
@@ -32,8 +32,12 @@ const CreatingCommand = () => {
 
                     </div>
                 </div>
+
+
+
                 <div className="video">
-                    <iframe width="1300" height="736" src="https://www.youtube.com/embed/vBzJMmeGgao"
+
+                    <iframe className="iframe" src="https://www.youtube.com/embed/vBzJMmeGgao"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen></iframe>
@@ -81,7 +85,7 @@ const CreatingCommand = () => {
                 <div className="review">
                     <div className="review--thisCourse">
                         <div className="review--thisCourse__ver"></div>
-                        <h1>Этот курс будет особо актуален для тех, кто хочет:</h1>
+                        <h1>В этом курсе мы рассмотрим:</h1>
                     </div>
                     <ul className={"block"}>
                         <li>Что такое команда, какие бывают виды команд, для чего и как они создаются, что
@@ -116,8 +120,7 @@ const CreatingCommand = () => {
 
 
                 </div>
-                <Accord/>
-
+                    <Accord/>
                 <div className="material">
                     <div className="material--mat">
                         <img src={you} alt=""/>
@@ -177,7 +180,7 @@ const CreatingCommand = () => {
                                 <div className={"test--blocks__revs"}>
                                     <div className={"test--blocks__revs--profile"}>
                                         <div className="test--blocks__revs--profile__photo">
-                                            <img src={pf} alt=""/>
+                                            <img  src={pf} alt=""/>
                                         </div>
                                         <div className="test--blocks__revs--profile__names">
                                             <h2>Muslim Bolot</h2>

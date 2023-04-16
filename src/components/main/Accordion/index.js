@@ -6,7 +6,6 @@ import dions from "../../../img/acardion-img.png"
 
 const Accordion = () => {
     return (
-
         <div id="acc">
             <div className="container">
                 <div className="dion">

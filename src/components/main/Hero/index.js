@@ -13,10 +13,10 @@ const Hero = () => {
             <div className="container">
                 <div className="Hero-Book1">
                     <div className="Hero-Book1-one">
-                        <img src={Kaif11} alt=""/>
+                        <img className='always' src={Kaif11} alt=""/>
                     </div>
                     <div className="Hero-Book2-two" style={{marginTop: '120px'}}>
-                        <img src={Kaif2} alt=""/>
+                        <img className='become' src={Kaif2} alt=""/>
                     </div>
                 </div>
                 <div className="Hero">
@@ -40,7 +40,7 @@ const Hero = () => {
                     <img style={{marginLeft:"5px"}} src={kaif4} alt="" className='img2'/>
                 </div>
                 <div>
-                    <img src={Kaif3} alt="" className='img'/>
+                    <img  src={Kaif3} alt="" className='img w-[90%]'/>
                 </div>
             </div>
         </div>
