@@ -32,9 +32,11 @@ const CreatingCommand = () => {
 
                     </div>
                 </div>
+
+
+
                 <div className="video">
 
-                    <iframe  src="https://www.youtube.com/embed/vBzJMmeGgao"
 
                     <iframe className="iframe" src="https://www.youtube.com/embed/vBzJMmeGgao"
                             title="YouTube video player" frameBorder="0"
@@ -119,9 +121,7 @@ const CreatingCommand = () => {
 
 
                 </div>
-                <div className="accordion">
                     <Accord/>
-                </div>
                 <div className="material">
                     <div className="material--mat">
                         <img src={you} alt=""/>
