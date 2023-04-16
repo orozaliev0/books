@@ -1,5 +1,6 @@
 #ctgCom {
   padding-top: 120px;
+  font-family: 'Montserrat',sans-serif;
   .ctgCom {
     padding: 100px 0;
 
@@ -9,6 +10,9 @@
       font-size: 16px;
       line-height: 20px;
       color: #FFFFFF;
+      br{
+        display: none;
+      }
     }
 
     &--ourCour {
@@ -73,6 +77,10 @@
 
   .video{
     padding-bottom: 120px;
+    iframe{
+      width: 100%;
+      height: 736px;
+    }
   }
 
   .aboutCourse {
@@ -393,6 +401,628 @@
             letter-spacing: 1px;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #ctgCom{
+    .cr{
+      br{
+        display: none;
+      }
+    }
+    .video{
+      iframe{
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  #ctgCom{
+    .cr{
+      br{
+        display: none;
+      }
+    }
+    .video{
+      iframe{
+        width: 100%;
+        height: 500px;
+      }
+    }
+    .material{
+      h3{
+        font-size: 21px;
+      }
+        h4{
+          font-size: 16px;
+          line-height: 20px;
+        }
+    }
+    .speaker{
+      h4{
+        font-size: 18px;
+        line-height: 21px;
+      }
+      &--photo{
+        width: 47%;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  #ctgCom{
+    .cr{
+      br{
+        display: none;
+      }
+    }
+    .video{
+      iframe{
+        width: 100%;
+        height: 420px;
+      }
+    }
+    .material{
+      h3{
+        font-size: 15px;
+        }
+        h4{
+          font-size: 13px;
+          line-height: 16px;
+        }
+    }
+    .speaker{
+      h4{
+        font-size: 18px;
+        line-height: 21px;
+      }
+      &--photo{
+        width: 47%;
+      }
+    }
+    .aboutCourse{
+      h4{
+        font-size: 16px;
+      }
+    }
+    .whoWant{
+      li{
+        font-size: 18px;
+      }
+    }
+    .review{
+      li{
+        font-size: 18px;
+      }
+    }
+    .registration{
+      li{
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #ctgCom{
+    .ctgCom{
+      .cr{
+        font-size: 14px;
+        margin-left: 36px;
+        br{
+          display: none;
+        }
+      }
+      &--ourCour{
+        justify-content: space-around;
+        &__create{
+          h2{
+            font-size: 36px;
+          }
+          h4{
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    .video{
+      iframe{
+        width: 100%;
+        height: 376px;
+      }
+    }
+    .material{
+      h3{
+        font-size: 15px;
+        }
+        h4{
+          font-size: 13px;
+          line-height: 16px;
+        }
+    }
+    .speaker{
+      h2{
+        font-size: 32px;
+      }
+      h4{
+        font-size: 12px;
+        line-height: 8px;
+      }
+      &--photo{
+        width: 47%;
+        height: 240px;
+      }
+    }
+    .aboutCourse{
+      h4{
+        font-size: 16px;
+      }
+    }
+    .whoWant{
+      li{
+        font-size: 18px;
+      }
+    }
+    .review{
+      li{
+        font-size: 18px;
+      }
+    }
+    .registration{
+      li{
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  #ctgCom{
+    .ctgCom{
+      padding: 0 0 120px 0;
+      .cr{
+        font-size: 14px;
+        margin-left: 0;
+        br{
+          display: block;
+        }
+      }
+      &--ourCour{
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 500px;
+        &__create{
+          button{
+            margin-top: 0;
+          }
+          br{
+            display: none;
+          }
+          h2{
+            font-size: 36px;
+            width: 200px;
+            line-height: 40px;
+          }
+          h4{
+            font-size: 17px;
+            width: 307px;
+          }
+        }
+        &__include{
+          margin-top: 100px;
+        }
+      }
+    }
+    .video{
+      iframe{
+        width: 100%;
+        height: 376px;
+      }
+    }
+    .material{
+      flex-direction: column;
+      h3{
+        font-size: 15px;
+        }
+        h4{
+          font-size: 13px;
+          line-height: 16px;
+        }
+    }
+    .speaker{
+      flex-direction: column;
+      &--name{
+        margin-bottom: 80px;
+      }
+      h2{
+        font-size: 40px;
+      }
+      h4{
+        font-size: 16px;
+        line-height: 8px;
+      }
+      &--photo{
+        width: 47%;
+        height: 180px;
+      }
+    }
+    .aboutCourse{
+      h4{
+        font-size: 16px;
+      }
+    }
+    .whoWant{
+      li{
+        font-size: 18px;
+      }
+    }
+    .review{
+      li{
+        font-size: 18px;
+      }
+    }
+    .registration{
+      li{
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  #ctgCom{
+    .ctgCom{
+      padding: 0 0 120px 0;
+      .cr{
+        font-size: 14px;
+        margin-left: 0;
+        br{
+          display: block;
+        }
+      }
+      &--ourCour{
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 500px;
+        &__create{
+          button{
+            margin-top: 0;
+          }
+          br{
+            display: none;
+          }
+          h2{
+            font-size: 36px;
+            width: 200px;
+            line-height: 40px;
+          }
+          h4{
+            font-size: 17px;
+            width: 307px;
+          }
+        }
+        &__include{
+          margin-top: 100px;
+        }
+      }
+    }
+    .video{
+      iframe{
+        width: 100%;
+        height: 225px;
+      }
+    }
+    .material{
+      img{
+        margin-bottom: 5px;
+      }
+      flex-direction: column;
+      height: 650px;
+      h3{
+        font-size: 18px;
+        margin-bottom: 5px;
+        }
+        h4{
+          font-size: 14px;
+          line-height: 16px;
+        }
+    }
+    .youLearn{
+      li{
+        margin-left: 30px;
+      }
+    }
+    .speaker{
+      flex-direction: column;
+      &--name{
+        margin-bottom: 80px;
+        &__was{
+          margin-left: 30px;
+        }
+      }
+      h2{
+        font-size: 40px;
+      }
+      h4{
+        font-size: 16px;
+        line-height: 8px;
+      }
+      &--photo{
+
+        width: 100%;
+        height: 225px;
+      }
+    }
+    .aboutCourse{
+      h4{
+        font-size: 16px;
+      }
+    }
+    .whoWant{
+      .block{
+        margin-left: 15px;
+      }
+      li{
+        font-size: 18px;
+      }
+    }
+    .review{
+
+      .block {
+        margin-left: 15px;
+      }
+      li{
+        font-size: 18px;
+      }
+    }
+    .registration{
+      li{
+        font-size: 18px;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  #ctgCom{
+    .ctgCom{
+      padding: 0 0 120px 0;
+      .cr{
+        font-size: 14px;
+        margin-left: 0;
+        br{
+          display: block;
+        }
+      }
+      &--ourCour{
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 500px;
+        &__create{
+          button{
+            margin-top: 0;
+          }
+          br{
+            display: none;
+          }
+          h2{
+            font-size: 36px;
+            width: 200px;
+            line-height: 40px;
+          }
+          h4{
+            font-size: 17px;
+            width: 307px;
+          }
+        }
+        &__include{
+          margin-top: 100px;
+        }
+      }
+    }
+    .video{
+      iframe{
+        width: 100%;
+        height: 225px;
+      }
+    }
+    .material{
+      img{
+        margin-bottom: 5px;
+      }
+      flex-direction: column;
+      height: 650px;
+      h3{
+        font-size: 18px;
+        margin-bottom: 5px;
+        }
+        h4{
+          font-size: 14px;
+          line-height: 16px;
+        }
+    }
+    .youLearn{
+      li{
+        margin-left: 30px;
+      }
+    }
+    .speaker{
+      flex-direction: column;
+      &--name{
+        margin-bottom: 80px;
+        &__was{
+          margin-left: 30px;
+        }
+      }
+      h2{
+        font-size: 40px;
+      }
+      h4{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+      &--photo{
+
+        width: 100%;
+        height: 195px;
+      }
+    }
+    .aboutCourse{
+      h4{
+        font-size: 16px;
+      }
+    }
+    .whoWant{
+      .block{
+        margin-left: 15px;
+      }
+      li{
+        font-size: 18px;
+      }
+    }
+    .review{
+
+      .block {
+        margin-left: 15px;
+      }
+      li{
+        font-size: 18px;
+      }
+    }
+    .registration{
+      li{
+        font-size: 18px;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  #ctgCom{
+    .ctgCom{
+      padding: 0 0 120px 0;
+      .cr{
+        font-size: 14px;
+        margin-left: 0;
+        br{
+          display: block;
+        }
+      }
+      &--ourCour{
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 500px;
+        &__create{
+          button{
+            margin-top: 0;
+          }
+          br{
+            display: none;
+          }
+          h2{
+            font-size: 36px;
+            width: 200px;
+            line-height: 40px;
+          }
+          h4{
+            font-size: 17px;
+            width: 307px;
+          }
+        }
+        &__include{
+          margin-top: 100px;
+        }
+      }
+    }
+    .video{
+      iframe{
+        width: 100%;
+        height: 225px;
+      }
+    }
+    .material{
+      img{
+        margin-bottom: 5px;
+      }
+      flex-direction: column;
+      height: 650px;
+      h3{
+        font-size: 18px;
+        margin-bottom: 5px;
+        }
+        h4{
+          font-size: 14px;
+          line-height: 16px;
+        }
+    }
+    .youLearn{
+      li{
+        margin-left: 30px;
+      }
+    }
+    .speaker{
+      flex-direction: column;
+      &--name{
+        margin-bottom: 80px;
+        &__was{
+          margin-left: 30px;
+        }
+      }
+      h2{
+        font-size: 40px;
+      }
+      h4{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 15px;
+      }
+      &--photo{
+
+        width: 100%;
+        height: 195px;
+      }
+    }
+    .aboutCourse{
+      h4{
+        font-size: 16px;
+      }
+    }
+    .whoWant{
+      .block{
+        margin-left: 15px;
+      }
+      li{
+        font-size: 18px;
+      }
+    }
+    .review{
+
+      .block {
+        margin-left: 15px;
+      }
+      li{
+        font-size: 18px;
+      }
+    }
+    .registration{
+      &--thisCourse{
+        h1{
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 34px;
+        }
+
+      }
+      li{
+        font-size: 18px;
+        margin-left: 15px;
       }
     }
   }
