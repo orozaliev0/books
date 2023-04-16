@@ -15,12 +15,12 @@ const MayCourses = () => {
     return (
         <div id="Curs">
             <div className="container">
-                <img className='ml-[67rem] mt-[-6rem]' src={pop} alt=""/>
+                <img className='old ml-[67rem] mt-[-6rem]' src={pop} alt=""/>
 
                 <div className="Curs">
                     <div className="Curs--team">
                         <div className="Curs--team__lead">
-                            <img className='w-[11%] ml-[9rem] ' src={tol} alt=""/>
+                            <img className='newImg   w-[11%] ml-[9rem] ' src={tol} alt=""/>
                             <h1>Наши курсы</h1>
                             <p>Получайте новые знания, навыки и возможности для эффективной жизни.</p>
                             <div className="Curs--team__lead--blossom">
@@ -33,7 +33,7 @@ const MayCourses = () => {
                         </div>
                     </div>
                 </div>
-                <img className=' ml-[1036px] mt-[28rem]' src={shop} alt=""/>
+                <img className='abandon  ml-[992px] mt-[28rem]' src={shop} alt=""/>
                 <img className='ml-[-256px] mt-[-14rem] ' src={tol2} alt=""/>
             </div>
         </div>
