@@ -34,8 +34,6 @@ const CreatingCommand = () => {
                 </div>
                 <div className="video">
 
-                    <iframe  src="https://www.youtube.com/embed/vBzJMmeGgao"
-
                     <iframe className="iframe" src="https://www.youtube.com/embed/vBzJMmeGgao"
                             title="YouTube video player" frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
