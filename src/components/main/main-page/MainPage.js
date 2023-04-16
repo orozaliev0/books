@@ -7,7 +7,9 @@ import Accordion from "../Accordion";
 
 const MainPage = () => {
     return (
+
         <div>
+
             <Hero/>
             <Books/>
             <Follow/>
