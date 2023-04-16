@@ -15,9 +15,9 @@
         font-size: 40px;
         line-height: 49px;
         color: #FFFFFF;
+        width: 85%;
       }
       &-p{
-
         font-family: 'Montserrat',sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -66,13 +66,27 @@
 }
 @media (max-width: 1024px) {
 #Hero{
-  .Hero{
+  .Hero-Book1{
+    &-Book1{
+      &-one{
+        img{
+          margin-left: 88%;
+        }
+      }
+    }
+    &--Book2{
+      &-two{
+        img{
+          margin-left:50%;
+        }
+      }
+    }
     &--right{
       p{
         font-size: 22px;
       }
       h1{
-        font-size: 37px;
+        font-size: 35px;
       }
     }
     &--left img{
@@ -86,10 +100,10 @@
     .Hero{
       &--right{
         p{
-          font-size: 16px;
+          font-size: 19px;
         }
         h1{
-          font-size: 26px;
+          font-size: 34px;
         }
       }
       &--left img{
@@ -126,30 +140,22 @@
     margin-block-end: -194px;
     margin-left: 37px;
   }
+  #Hero{
+    .Hero--right h1{
+      font-size: 36px;
+    }
+  }
 
 }
 @media (max-width: 450px) {
   #Hero{
     .Hero{
       &--right {
-        p{
-          font-size: 27px;
-          width: 100%;
-          text-align: center;
-          line-height: normal;
-        }
-        h1 {
-          font-size: 42px;
-          text-align: center;
-        }
       }
-      button{
-        margin-left: 131px;
-      }
+
     }
   }
 }
-
 @media (max-width: 400px) {
   #Hero{
     .Hero{
@@ -158,10 +164,6 @@
       }
     }
   }
-}
-
-@media (max-width: 380px) {
-
 }
 @media (max-width: 376px) {
   #Hero .Hero button {
@@ -174,6 +176,13 @@
       button{
         margin-left: 78px;
       }
+    }
+  }
+}
+@media (max-width: 300px) {
+  #Hero{
+    .Hero{
+
     }
   }
 }
