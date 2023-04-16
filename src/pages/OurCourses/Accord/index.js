@@ -22,7 +22,6 @@ const CourseProgramme = () => {
                             }}
                             className="courseProgramme--blocks__acc"
                         >
-                            <div className="coluwn">
                                 <button className="courseProgramme--blocks__acc--firstBtn">
                                     Модуль 1
                                 </button>
@@ -39,7 +38,6 @@ const CourseProgramme = () => {
                                 <button className="courseProgramme--blocks__acc--secondBtn">
                                     1 неделя
                                 </button>
-                            </div>
                             <div className="courseProgramme--blocks__acc--icon">
                                 <div>{!acc ? <span>More</span> : <span>Main</span>}</div>
 
