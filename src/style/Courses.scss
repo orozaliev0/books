@@ -20,6 +20,12 @@
     display: flex;
     justify-content: space-around;
     &__block{
+      img{
+        width: 360px;
+        height: 289px;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+      }
       width: 400px;
       height: 455px;
       background: rgba(255, 255, 255, 0.1);
