@@ -155,6 +155,11 @@
 }
 
 @media (max-width: 1200px) {
+  .abCourses--comm__block img {
+    width: 265px;
+    height: 289px;
+    margin: 7px 0;
+  }
   .abCourses{
     &--comm{
       &__block{
@@ -166,7 +171,7 @@
   .abCourses--comm__block--tabs__allTabs {
     display: flex;
     justify-content: space-between;
-    width: 175px;
+    width: 135px;
   }
   .abCourses--comm__block--tabs button {
     padding: 3px;
@@ -375,6 +380,7 @@
   }
 }
 @media (max-width: 450px) {
+
   .abCourses{
     &--title{
       margin-left: 0;
@@ -428,11 +434,7 @@
             font-weight:500;
             font-size: 19px;
             line-height: 20px;
-
           }
-        }
-        &--line{
-
         }
         &--showMore{
           display: flex;
@@ -470,6 +472,16 @@
     }
   }
 }
+@media (max-width: 400px) {
+  .abCourses--comm__block {
+    width: 346px;
+    height: 426px;
+    margin-bottom: 50px;
+  }
+  .abCourses--comm__block--tabs__allTabs {
+    width: 161px;
+  }
+}
 @media (max-width: 350px) {
   .abCourses--comm__block {
     width: 100%;
@@ -486,6 +498,18 @@
   }
 }
 @media (max-width: 320px) {
+  .crtCom--crtBtn button {
+    padding: 13px 15px;
+    font-size: 11px;
+  }
+  .crtCom--crtBtn {
+    margin-top: -32px;
+  }
+  .abCourses--button {
+    display: flex;
+    justify-content: center;
+    margin-top: -3px;
+  }
   .abCourses--comm__block {
     width: 100%;
     height: 345px;
