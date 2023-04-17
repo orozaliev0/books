@@ -172,8 +172,6 @@ const CreatingCommand = () => {
                         <h1>Отзывы</h1>
                     </div>
                     <div className="test--blocks">
-                        {
-                            block.map(el => (
                                 <div className={"test--blocks__revs"}>
                                     <div className={"test--blocks__revs--profile"}>
                                         <div className="test--blocks__revs--profile__photo">
@@ -190,8 +188,38 @@ const CreatingCommand = () => {
                                             актуальность материалов</h4>
                                     </div>
                                 </div>
-                            ))
-                        }
+                                <div className={"test--blocks__revs"}>
+                                    <div className={"test--blocks__revs--profile"}>
+                                        <div className="test--blocks__revs--profile__photo">
+                                            <img src={pf} alt=""/>
+                                        </div>
+                                        <div className="test--blocks__revs--profile__names">
+                                            <h2>Muslim Bolot</h2>
+                                            <p>09.09.22</p>
+                                            <img src={rate} alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className={"test--blocks__revs--text"}>
+                                        <h4>Oрганизованность сайта направление и навигация по материалам. А так же
+                                            актуальность материалов</h4>
+                                    </div>
+                                </div>
+                                <div className={"test--blocks__revs"}>
+                                    <div className={"test--blocks__revs--profile"}>
+                                        <div className="test--blocks__revs--profile__photo">
+                                            <img src={pf} alt=""/>
+                                        </div>
+                                        <div className="test--blocks__revs--profile__names">
+                                            <h2>Muslim Bolot</h2>
+                                            <p>09.09.22</p>
+                                            <img src={rate} alt=""/>
+                                        </div>
+                                    </div>
+                                    <div className={"test--blocks__revs--text"}>
+                                        <h4>Oрганизованность сайта направление и навигация по материалам. А так же
+                                            актуальность материалов</h4>
+                                    </div>
+                                </div>
                     </div>
 
                 </div>

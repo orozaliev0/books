@@ -85,19 +85,15 @@
   #Hero{
     .Hero{
       &--right{
-        p{
-          font-size: 16px;
-        }
         h1{
-          font-size: 26px;
+          font-size: 33px;
         }
-      }
-      &--left img{
-        width: 90%;
+        &-p{
+          padding: 15px 0 33px 0;
+        }
       }
     }
   }
-
 }
 @media (max-width: 768px) {
   .img2{
@@ -111,8 +107,18 @@
   #Hero{
     .Hero{
       flex-direction: column;
-      &--right h1 {
-        font-size: 42px;
+      &--right{
+        text-align: center;
+        h1 {
+          font-size: 50px;
+        }
+        &-btn{
+          width: 215px;
+          height: 55px;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: cursive;
+        }
       }
     }
   }
@@ -126,7 +132,18 @@
     margin-block-end: -194px;
     margin-left: 37px;
   }
-
+#Hero{
+  .Hero{
+  &--right {
+    h1 {
+      font-size: 40px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+  }
+}
 }
 @media (max-width: 450px) {
   #Hero{
@@ -149,30 +166,36 @@
     }
   }
 }
-
 @media (max-width: 400px) {
   #Hero{
     .Hero{
       button{
-        margin-left: 108px;
+        margin-left: 5px;
       }
     }
   }
 }
-
 @media (max-width: 380px) {
 
 }
 @media (max-width: 376px) {
   #Hero .Hero button {
-    margin-left: 72px;
+    margin-left: 0;
   }
 }
 @media (max-width: 320px) {
   #Hero{
     .Hero{
+      &--right{
+        h1{
+          font-size: 36px;
+        }
+        p{
+          font-size: 23px;
+        }
+      }
       button{
-        margin-left: 78px;
+        margin-left: 0;
       }
     }
   }

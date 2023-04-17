@@ -19,7 +19,7 @@ const Last = () => {
                     </div>
                     <div className="last__block">
                         <h3 className='last__block__title'>ФИО:</h3>
-                        <input type="text"  className='last__block-inp' name='name' placeholder='Muslim Bolot Joodarovich'/>
+                        <input  type="text"  className='last__block-inp' name='name' placeholder='Muslim Bolot Joodarovich'/>
                         <h3>Кем вы работаете? :</h3>
                         <input type="text" className='last__block-inp' name='' placeholder='Частный предпрениматель'/>
                         <h3>Отзыв:</h3>
