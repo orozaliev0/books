@@ -25,6 +25,7 @@ function App() {
                     <Route path={'/wait'} element={<Wait/>}/>
                     <Route path={'/success'} element={<Success/>}/>
                     <Route path={'/new-books'} element={<PageBooks/>}/>
+                    <Route path={'/new-books/2'} element={<PageBooks/>}/>
                     <Route path={'/creatingCommand'} element={<CreatingCommand/>}/>
                     <Route path={"/form"} element={<Account/>} />
             </Routes>
