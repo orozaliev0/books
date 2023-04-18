@@ -3,6 +3,7 @@ import {useState} from "react";
 import command from "../../../img/comm.png"
 import "../../../style/Courses.scss"
 import {useNavigate} from "react-router-dom";
+import {courses, data} from "../../../components/fake-backend/backend";
 
 const Courses = () => {
     const [creatingComm, setCreatingComm] = useState([1, 2, 3])
@@ -16,53 +17,57 @@ const Courses = () => {
                         <h1>Курсы</h1>
                     </div>
                     <div className="abCourses--comm">
-                        <div className={"abCourses--comm__block"}>
-                            <h1 className="abCourses--comm__block--subTitle">Создание команды</h1>
-                            <div className="abCourses--comm__block--tabs">
-                                <h3>Обучение</h3>
-                                <div className="abCourses--comm__block--tabs__allTabs">
-                                   <button>Все</button>
-                                    <button onClick={() => navigation("/creatingCommand")}>Новое</button>
-                                    <button>Книги</button>
+                        {
+                            courses.slice(0,3).map(el => (
+                                <div className={"abCourses--comm__block"}>
+                                    <h1 className="abCourses--comm__block--subTitle">Создание команды</h1>
+                                    <div className="abCourses--comm__block--tabs">
+                                        <h3>{el.education}</h3>
+                                        <div className="abCourses--comm__block--tabs__allTabs">
+                                            <button>Все</button>
+                                            <button onClick={() => navigation("/creatingCommand")}>Новое</button>
+                                            <button>Книги</button>
+                                        </div>
+                                    </div>
+                                    <img src={el.img} alt=""/>
+                                    <div className="abCourses--comm__block--showMore">
+                                        <a href=""><h3>Подробнее...</h3></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src={command} alt=""/>
-                            <div className="abCourses--comm__block--showMore">
-                                <a href=""><h3>Подробнее...</h3></a>
+                            ))
+                        }
 
-                            </div>
-                        </div>
-                        <div className={"abCourses--comm__block"}>
-                            <h1 className="abCourses--comm__block--subTitle">Создание команды</h1>
-                            <div className="abCourses--comm__block--tabs">
-                                <h3>Обучение</h3>
-                                <div className="abCourses--comm__block--tabs__allTabs">
-                                    <button>Все</button>
-                                    <button>Новое</button>
-                                    <button>Книги</button>
-                                </div>
-                            </div>
-                            <img src={command} alt=""/>
-                            <div className="abCourses--comm__block--showMore">
-                                <a href=""><h3>Подробнее...</h3></a>
-                                <p>Если нет подписки</p>
-                            </div>
-                        </div>
-                        <div className={"abCourses--comm__block"}>
-                            <h1 className="abCourses--comm__block--subTitle">Создание команды</h1>
-                            <div className="abCourses--comm__block--tabs">
-                                <h3>Обучение</h3>
-                                <div className="abCourses--comm__block--tabs__allTabs">
-                                    <button>Все</button>
-                                    <button>Новое</button>
-                                    <button>Книги</button>
-                                </div>
-                            </div>
-                            <img src={command} alt=""/>
-                            <div className="abCourses--comm__block--showMore">
-                                <a href=""><h3>Подробнее...</h3></a>
-                            </div>
-                        </div>
+                        {/*<div className={"abCourses--comm__block"}>*/}
+                        {/*    <h1 className="abCourses--comm__block--subTitle">Создание команды</h1>*/}
+                        {/*    <div className="abCourses--comm__block--tabs">*/}
+                        {/*        <h3>Обучение</h3>*/}
+                        {/*        <div className="abCourses--comm__block--tabs__allTabs">*/}
+                        {/*            <button>Все</button>*/}
+                        {/*            <button>Новое</button>*/}
+                        {/*            <button>Книги</button>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*    <img src={command} alt=""/>*/}
+                        {/*    <div className="abCourses--comm__block--showMore">*/}
+                        {/*        <a href=""><h3>Подробнее...</h3></a>*/}
+                        {/*        <p>Если нет подписки</p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className={"abCourses--comm__block"}>*/}
+                        {/*    <h1 className="abCourses--comm__block--subTitle">Создание команды</h1>*/}
+                        {/*    <div className="abCourses--comm__block--tabs">*/}
+                        {/*        <h3>Обучение</h3>*/}
+                        {/*        <div className="abCourses--comm__block--tabs__allTabs">*/}
+                        {/*            <button>Все</button>*/}
+                        {/*            <button>Новое</button>*/}
+                        {/*            <button>Книги</button>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*    <img src={command} alt=""/>*/}
+                        {/*    <div className="abCourses--comm__block--showMore">*/}
+                        {/*        <a href=""><h3>Подробнее...</h3></a>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                     <div className="abCourses--button">
                         <button>Смотреть все курсы</button>
@@ -74,21 +79,20 @@ const Courses = () => {
                     </div>
                     <div className="crtCom--crtComBlock">
                         {
-                            creatingComm.map(el => (
+                            courses.slice(0,3).map(el => (
                                 <div className={"abCourses--comm__block"}>
                                     <h1 className="abCourses--comm__block--subTitle">Создание команды</h1>
                                     <div className="abCourses--comm__block--tabs">
-                                        <h3>Обучение</h3>
+                                        <h3>{el.education}</h3>
                                         <div className="abCourses--comm__block--tabs__allTabs">
                                             <button>Все</button>
                                             <button>Новое</button>
                                             <button>Книги</button>
                                         </div>
                                     </div>
-                                    <img src={command} alt=""/>
+                                    <img src={el.img} alt=""/>
                                     <div className="abCourses--comm__block--showMore">
                                         <a href=""><h3>Подробнее...</h3></a>
-
                                     </div>
                                 </div>
                             ))
@@ -96,18 +100,18 @@ const Courses = () => {
                     </div>
                     <div className="crtCom--crtComBlock">
                         {
-                            creatingComm2.map(el => (
+                            courses.slice(0,3).map(el => (
                                 <div className={"abCourses--comm__block"}>
                                     <h1 className="abCourses--comm__block--subTitle">Создание команды</h1>
                                     <div className="abCourses--comm__block--tabs">
-                                        <h3>Обучение</h3>
+                                        <h3>{el.education}</h3>
                                         <div className="abCourses--comm__block--tabs__allTabs">
                                             <button>Все</button>
                                             <button>Новое</button>
                                             <button>Книги</button>
                                         </div>
                                     </div>
-                                    <img src={command} alt=""/>
+                                    <img src={el.img} alt=""/>
                                     <div className="abCourses--comm__block--showMore">
                                         <a href=""><h3>Подробнее...</h3></a>
 

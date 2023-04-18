@@ -2,6 +2,29 @@
   color: transparent;
 
 }
+details{
+  transition: max-height 0.3s ease-in-out;
+}
+
+summary{
+  transition: .4s;
+}
+summary::after {
+  content: "\219F";
+  font-family: "Material Icons",sans-serif;
+  font-size: 30px;
+  color: white;
+  transition: transform 0.5s ease-in-out;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+details[open]{
+  transition: max-height 3s ease-in-out;
+}
+
 /*}*/
 .kaif12{
   position: absolute;

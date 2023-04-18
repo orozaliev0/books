@@ -32,9 +32,13 @@
       justify-content: space-between;
 
       &__startBook {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
         &--block {
-          width: 100%;
-          height: 35%;
+          width: 415px;
+          height: 450px;
           background: rgba(255, 255, 255, 0.1);
           border: 1px solid #FFFFFF;
           backdrop-filter: blur(7.5px);
@@ -43,11 +47,13 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          margin-bottom: 30px;
+          margin: 0 20px 40px 30px;
 
           img{
-            width: 100%;
-            height: 100%;
+            border: 1px solid #FFFFFF;
+            border-radius: 10px;
+            width: 380px;
+            height: 300px;
           }
 
           h2 {
@@ -114,7 +120,7 @@
     &--showMore {
       display: flex;
       justify-content: center;
-      margin-top: 150px;
+      margin-top: 13px;
       button {
         width: 181px;
         height: 46px;
@@ -126,7 +132,7 @@
     }
   }
   .special {
-    width: 100%;
+    width: 430px;
     height: 60%;
     background: rgba(255, 255, 256, 0.1);
     border: 1px solid #FFFFFF;
@@ -136,7 +142,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
+    margin: 0 0 0 17px;
 
     h2 {
       font-style: normal;
@@ -190,15 +197,11 @@
 
 @media (max-width: 1200px) {
   #books {
-
     .books {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 1440px;
-      a {
-
-      }
 
       &--tabs {
         margin-bottom: 75px;
@@ -226,8 +229,6 @@
             }
 
             &__article {
-
-
               &--men {
                 a{
                   font-size: 13px;
@@ -236,29 +237,7 @@
                 }
               }
             }
-
-            &__author {
-
-            }
-
-            &__line {
-
-            }
-
-            &__peopleBook {
-
-              .life {
-
-              }
-            }
           }
-        }
-      }
-
-      &--showMore {
-
-        button {
-
         }
       }
     }
@@ -276,16 +255,6 @@
 
       h4 {
         font-size: 13px;
-      }
-
-      &__article {
-
-        &--men {
-
-        }
-      }
-
-      .life {
       }
     }
   }
