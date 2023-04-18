@@ -1,9 +1,9 @@
 #Curs {
   padding: 200px;
-
   .Curs {
+
     position: absolute;
-    width: 1380px;
+    width: 90%;
     height: 506px;
     left: 57px;
     top: 0;
@@ -101,6 +101,19 @@
       }
     }
   }
+  .joy{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    &--small{
+      width: 90%;
+      margin-left: -25%;
+    }
+  .abandon{
+    width: 90%;
+    margin-left: 30%;
+  }
+  }
 }
 
 @media (max-width: 1440px) {
@@ -109,27 +122,13 @@
 
 @media (max-width: 1200px) {
   #Curs {
-    .old{
-      margin-left: 50rem;
-    }
-    .Curs {
-      img{
-          margin-left: 0%;
-      }
-      width: 90%;
-      height: 121%;
-      &--team {
-        flex-direction: column;
-        &__lead p{
-          width: 58%;
-        }
-      }
-    }
-    .abandon{
-      margin-left: 97%;
-      margin-top: 105%;
-    }
+   .Curs{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 90%;
 
+   }
   }
 }
 

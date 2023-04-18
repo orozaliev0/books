@@ -36,7 +36,7 @@
 
     &--block{
       box-sizing: border-box;
-      width: 856px;
+      width: 71.33%;
       height: 224px;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid #FFFFFF;
@@ -97,3 +97,44 @@
   }
 }
 
+
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1200px) {
+#review{
+  .review{
+    width: 90%;
+  }
+}
+}
+@media (max-width: 1140px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 450px) {
+
+}
+@media (max-width: 400px) {
+
+}
+@media (max-width: 380px) {
+
+}
+@media (max-width: 375px) {
+
+}
+@media (max-width: 320px) {
+
+}
