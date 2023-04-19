@@ -1,17 +1,18 @@
 #Curs {
-  padding: 200px;
-  .Curs {
+  padding: 200px 0;
 
-    position: absolute;
-    width: 90%;
-    height: 506px;
-    left: 57px;
-    top: 0;
+  .old {
+    margin-left: 87%;
+  }
+
+  .Curs {
+    width: 1300px;
+    height: 500px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #FFFFFF;
     backdrop-filter: blur(7px);
     border-radius: 10px;
-    margin-top: 200px;
+
 
     &--team {
       display: flex;
@@ -20,6 +21,7 @@
 
 
       &__lead {
+
         h1 {
           font-family: 'Montserrat', sans-serif;
           font-style: normal;
@@ -99,20 +101,27 @@
 
         }
       }
+      &__left{
+        img{
+          width: 90%;
+        }
+      }
     }
   }
-  .joy{
+
+  .joy {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    &--small{
-      width: 90%;
-      margin-left: -25%;
+
+    .small {
+      //width: 90%;
+      margin-left: -6%;
     }
-  .abandon{
-    width: 90%;
-    margin-left: 30%;
-  }
+
+    .abandon {
+      margin-top: -6%;
+    }
   }
 }
 
@@ -123,122 +132,155 @@
 @media (max-width: 1200px) {
   #Curs {
    .Curs{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     width: 90%;
-
+     width: 1103px;
    }
-  }
+   .joy .small{
+  margin-left: -9%;
+  //width: 90%;
 }
 
-@media (max-width: 1140px) {
+    .joy .abandon{
+      //width: 90%;
+      margin-left: 9px;
+    }
+    }
+  }
 
+@media (max-width: 1140px) {
+#Curs{
+  .Curs--team{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
 }
 
 @media (max-width: 1024px) {
   #Curs {
-    .old{
-      margin-left: 43rem;
-    }
-    .Curs {
-      img{
-        margin-left: 0%;
-      }
-      width: 90%;
-      height: 125%;
-      &--team {
+    .Curs{
+      width: 600px;
+      &--team{
+        display:flex;
+        align-items: center;
         flex-direction: column;
-        &__lead p{
-          width: 58%;
-        }
       }
     }
-    .abandon{
-      margin-left: 97%;
-      margin-top: 117%;
-    }
-
   }
 
 }
 
 @media (max-width: 992px) {
-  #Curs {
-    .old{
-      margin-left: 40rem;
-    }
-    .Curs {
-      img{
-        margin-left: 0%;
-      }
-      width: 90%;
-      height: 125%;
-      &--team {
-        flex-direction: column;
-        &__lead p{
-          width: 58%;
-        }
-      }
-    }
-    .abandon{
-      margin-left: 97%;
-      margin-top: 129%;
-    }
+#Curs{
 
-  }
-
+}
 }
 
 @media (max-width: 768px) {
-#Curs{
-  .old{
-    margin-left: 27rem;
-  }
-  .abandon{
-    margin-top: 227%;
-}
-  .Curs--team{
-    margin-left: 13%;
-    &__lead p{
-      width: 73%;
-    }
-  }
-}
 }
 
 @media (max-width: 576px) {
-#Curs{
-  .old{
-    margin-left: 17rem;
-  }
-  .abandon{
-    margin-top: 470%;
-  }
-}
-}
-
-@media (max-width: 450px) {
-#Curs{
-  .old{
-    margin-left: 10rem;
-  }
-  .Curs--team{
-    &__lead{
-      &--blossom{
-        flex-direction: column;
-      }
+  #Curs{
+    .Curs{
+      width: 500px;
     }
   }
 }
+
+@media (max-width: 450px) {
+  #Curs {
+    .Curs{
+      width: 380px;
+      height: 665px;
+      &--team__lead {
+        &--blossom{
+          display: flex;
+          flex-direction: column;
+          .face{
+            margin: 0 0 25px ;
+            padding: 10px 45px;
+          }
+          .navbar{
+            padding: 9px 85px;
+            margin-left: 0;
+          }
+
+        }
+        h1{
+          font-size: 34px;
+          text-align: center;
+        }
+        p{
+          width: 100%;
+          text-align: center;
+          font-size: 26px;
+        }
+      }
+    }
+    .joy .small {
+      margin-left: -5%;
+      width: 18%;
+      margin-top: -37%;
+    }
+    .joy .abandon{
+      width: 30%;
+      margin-top: 0%;
+    }
+  }
+
 }
+
 
 @media (max-width: 400px) {
+  #Curs {
+    .Curs{
+      width: 355px;
+      height: 667px;
+      &--team__lead {
+        &--blossom{
+          display: flex;
+          flex-direction: column;
+          .face{
+            margin: 0 0 25px ;
+            padding: 10px 45px;
+          }
+          .navbar{
+            padding: 9px 85px;
+            margin-left: 0;
+          }
 
-}
+        }
+        h1{
+          font-size: 34px;
+          text-align: center;
+        }
+        p{
+          width: 100%;
+          text-align: center;
+          font-size: 23px;
+        }
+      }
+    }
+    .joy .small {
+      margin-left: -5%;
+      width: 18%;
+      margin-top: -37%;
+    }
+    .joy .abandon{
+      width: 30%;
+      margin-top: 0%;
+    }
+}}
 
 @media (max-width: 380px) {
-
+#Curs{
+  .Curs{
+    width: 336px;
+    &--team__lead p{
+      font-weight: 300;
+    }
+  }
+}
 }
 
 @media (max-width: 375px) {
@@ -246,5 +288,26 @@
 }
 
 @media (max-width: 320px) {
+#Curs{
+  .Curs{
+    width: 284px;
+    &--team__lead
+    {
+      &--blossom{
+        .face{
+          padding: 10px 35px;
+        }
+        .navbar{
+          padding: 9px 80px;
+        }
+      }
 
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+  }
+}
 }
