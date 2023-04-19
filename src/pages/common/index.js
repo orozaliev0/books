@@ -1,11 +1,11 @@
 import React from 'react';
 
-const common = () => {
+const Common = () => {
     return (
         <div>
-
+qwe4te5r6
         </div>
     );
 };
 
-export default common;
+export default Common;

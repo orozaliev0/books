@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import "../../style/avtor.css"
+import {useNavigate} from "react-router-dom";
+
 
 const Avtorizatsiya = () => {
+    const navigate = useNavigate()
     const [email, setEmail] = useState(localStorage.getItem("email") || "");
     const [isPassword, setIsPassword] = useState(false);
     const [error, setError] = useState(false);
     const [userName, setUserName] = useState(localStorage.getItem("userName") || "");
     const [password, setPassword] = useState(""); // Добавляем состояние для пароля
-
     useEffect(() => {
         localStorage.setItem("email", email);
         localStorage.setItem("userName", userName);
@@ -24,9 +26,19 @@ const Avtorizatsiya = () => {
         }
     };
 
+
     const passwordClick = () => {
         setIsPassword(!isPassword);
     };
+
+    const handleClicker = () => {
+        if (email === "myemail@gmail.com" && password === "123"){
+            setUserName(email.split('@')[0]);
+            navigate("/regis")
+        }else{
+           alert("не правильный email или пароль ")
+        }
+    }
 
     const handleClick = () => {
         // Извлекаем только имя пользователя из email
@@ -51,9 +63,9 @@ const Avtorizatsiya = () => {
                         className={error ? "border-2 border-red-700" : "border-2 border-amber-50"}
                         name={"password"}
                         onChange={handleChange}
-                        type={isPassword ? "password" : "email"}
+                        type={isPassword ? "password" : "text"}
                         placeholder="Password"
-                        value={password} // Используем значение из состояния пароля
+                        value={password}
                     />
                 </div>
                 <div className="chexavtori">
@@ -62,8 +74,8 @@ const Avtorizatsiya = () => {
                     </div>
                 </div>
             </div>
-            <button onClick={handleClick}>
-                <h2>{userName ? `Привет, ${userName}` : "Войти"}</h2>
+            <button onClick={handleClicker}>
+                   <h2 onClick={handleClick}>{userName ? `Привет, ${userName}` : "Войти"}</h2>
             </button>
             <span>Забыли пароль?</span>
         </div>
