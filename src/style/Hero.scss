@@ -198,21 +198,24 @@
   }
 }
 @media (max-width: 320px) {
-  #Hero{
-    .Hero{
-      &--right{
-        h1{
+  #Hero {
+    .Hero {
+      &--right {
+        h1 {
           font-size: 36px;
         }
-        p{
+
+        p {
           font-size: 23px;
         }
       }
-      button{
+
+      button {
         margin-left: 0;
       }
     }
   }
+}
 }
 @media (max-width: 300px) {
   #Hero{
