@@ -11,6 +11,7 @@ import Header from "./components/main/Header";
 import Footer from "./components/main/Footer";
 import CreatingCommand from "./pages/OurCourses/CreatingCommand";
 import Account from "./components/main/Header/page";
+import Common from "./pages/common";
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
                     <Route path={'/new-books'} element={<PageBooks/>}/>
                     <Route path={'/new-books/2'} element={<PageBooks/>}/>
                     <Route path={'/creatingCommand'} element={<CreatingCommand/>}/>
-                    <Route path={"/form"} element={<Account/>} />
+                    <Route path={"/form"} element={<Account/>}/>
+                    <Route path={"/regis"} element={<Common/>}/>
             </Routes>
             <Footer/>
         </div>
