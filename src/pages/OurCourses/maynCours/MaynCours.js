@@ -5,7 +5,6 @@ import soft from '../../../img/cofeeteam.svg'
 import shop from '../../../img/shop.svg'
 import tol2 from '../../../img/boobek.svg'
 import {useNavigate} from "react-router-dom";
-import pop from '../../../img/pop.svg'
 
 
 const MayCourses = () => {
@@ -15,8 +14,7 @@ const MayCourses = () => {
     return (
         <div id="Curs">
             <div className="container">
-                <img className='old' src={pop} alt=""/>
-
+                {/*<div className="old"><img src={pop} alt=""/></div>*/}
                 <div className="Curs">
                     <div className="Curs--team">
                         <div className="Curs--team__lead">
@@ -34,7 +32,7 @@ const MayCourses = () => {
                     </div>
                 </div>
                 <div className='joy'>
-                   <div className="joy--small"> <img className=' ' src={tol2} alt=""/></div>
+                    <img className='small' src={tol2} alt=""/>
                     <img className='abandon' src={shop} alt=""/>
                 </div>
             </div>
