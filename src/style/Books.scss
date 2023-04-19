@@ -36,8 +36,9 @@
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
+
         &--block {
-          width: 400px;
+          width: 415px;
           height: 450px;
           background: rgba(255, 255, 255, 0.1);
           border: 1px solid #FFFFFF;
@@ -49,7 +50,7 @@
           justify-content: space-between;
           margin: 0 20px 40px 30px;
 
-          img{
+          img {
             border: 1px solid #FFFFFF;
             border-radius: 10px;
             width: 380px;
@@ -84,11 +85,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             &--men {
               display: flex;
               justify-content: space-between;
               width: 195px;
-              a{
+
+              a {
                 padding: 5px;
                 background: rgba(255, 255, 255, 0.1);
                 border: 0.5px solid #FFFFFF;
@@ -120,7 +123,8 @@
     &--showMore {
       display: flex;
       justify-content: center;
-      margin-top: 150px;
+      margin-top: 13px;
+
       button {
         width: 181px;
         height: 46px;
@@ -131,6 +135,7 @@
       }
     }
   }
+
   .special {
     width: 430px;
     height: 60%;
@@ -142,7 +147,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
+    margin: 0 0 0 17px;
 
     h2 {
       font-style: normal;
@@ -180,10 +186,11 @@
     }
 
 
-    .book1{
+    .book1 {
       width: 100%;
       height: 44.5%;
     }
+
     .life {
       margin-top: 60px;
       width: 100%;
@@ -193,21 +200,17 @@
 }
 
 
-
 @media (max-width: 1200px) {
   #books {
-
     .books {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 1440px;
-      a {
-
-      }
 
       &--tabs {
         margin-bottom: 75px;
+
         a {
           font-size: 100%;
         }
@@ -215,10 +218,12 @@
 
       &--start {
         justify-content: space-between;
+
         &__startBook {
           &--block {
             width: 92%;
             height: 34%;
+
             h2 {
               font-size: 126%;
             }
@@ -232,42 +237,19 @@
             }
 
             &__article {
-
-
               &--men {
-                a{
+                a {
                   font-size: 13px;
                   padding: 2px 5px;
                   height: 27px;
                 }
               }
             }
-
-            &__author {
-
-            }
-
-            &__line {
-
-            }
-
-            &__peopleBook {
-
-              .life {
-
-              }
-            }
           }
         }
       }
-
-      &--showMore {
-
-        button {
-
-        }
-      }
     }
+
     .special {
 
       width: 92%;
@@ -277,128 +259,150 @@
       }
 
       h3 {
-        font-size: 14px ;
+        font-size: 14px;
       }
 
       h4 {
         font-size: 13px;
       }
-
-      &__article {
-
-        &--men {
-
-        }
-      }
-
-      .life {
-      }
     }
+  }
+  #books .books--start__startBook--block img {
+    width: 266px;
+    height: 218px;
+    margin: 8px 0;
   }
 
 }
+
 @media (max-width: 1024px) {
-  #books {
-
-    .books {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 1380px;
-      a {
-
-      }
-
-      &--tabs {
-        margin: 0;
-        a {
-          font-size: 100%;
-        }
-      }
-
-      &--start {
-        justify-content: space-between;
-        &__startBook {
-          &--block {
-            width: 92%;
-            height: 34%;
-            h2 {
-              font-size: 126%;
-            }
-
-            h3 {
-              font-size: 12px;            }
-
-            h4 {
-              font-size: 13px;
-            }
-
-            &__article {
-
-
-              &--men {
-                a{
-                  font-size: 13px;
-                  padding: 2px 5px;
-                  height: 27px;
-                }
-              }
-            }
-
-            &__author {
-
-            }
-
-            &__line {
-
-            }
-
-            &__peopleBook {
-
-              .life {
-
-              }
-            }
-          }
-        }
-      }
-
-      &--showMore {
-        margin: 0;
-        button {
-
-        }
-      }
-    }
-    .special {
-
-      width: 92%;
-
-      h2 {
-        font-size: 20px;
-      }
-
-      h3 {
-        font-size: 12px;      }
-
-      h4 {
-        font-size: 13px;
-      }
-
-      &__article {
-
-        &--men {
-
-        }
-      }
-
-      .life {
-      }
-    }
+  #books .books--start__startBook--block img {
+    width: 242px;
+    height: 186px;
+  }
+  #books .books--start__startBook--block {
+    width: 280px;
+    height: 323px;
+    padding: 18px;
+  }
+  #books .books--tabs {
+    margin-bottom: -133px;
   }
 
+  .books--start__secondStart {
+
+    margin: 0 -20px 0 -20px;
+  }
+  #books .books {
+    height: 1211px;
+  }
+  #books .books--showMore {
+    margin-top: -171px;
+  }
+
+  //#books {
+  //
+  //  .books {
+  //    display: flex;
+  //    flex-direction: column;
+  //    justify-content: space-between;
+  //    height: 1380px;
+  //    a {
+  //
+  //    }
+  //
+  //    &--tabs {
+  //      margin: 0;
+  //      a {
+  //        font-size: 100%;
+  //      }
+  //    }
+  //
+  //    &--start {
+  //      justify-content: space-between;
+  //      &__startBook {
+  //        &--block {
+  //          width: 92%;
+  //          height: 34%;
+  //          h2 {
+  //            font-size: 126%;
+  //          }
+  //
+  //          h3 {
+  //            font-size: 12px;            }
+  //
+  //          h4 {
+  //            font-size: 13px;
+  //          }
+  //
+  //          &__article {
+  //
+  //
+  //            &--men {
+  //              a{
+  //                font-size: 13px;
+  //                padding: 2px 5px;
+  //                height: 27px;
+  //              }
+  //            }
+  //          }
+  //
+  //          &__author {
+  //
+  //          }
+  //
+  //          &__line {
+  //
+  //          }
+  //
+  //          &__peopleBook {
+  //
+  //            .life {
+  //
+  //            }
+  //          }
+  //        }
+  //      }
+  //    }
+  //
+  //    &--showMore {
+  //      margin: 0;
+  //      button {
+  //
+  //      }
+  //    }
+  //  }
+  //  .special {
+  //
+  //    width: 92%;
+  //
+  //    h2 {
+  //      font-size: 20px;
+  //    }
+  //
+  //    h3 {
+  //      font-size: 12px;      }
+  //
+  //    h4 {
+  //      font-size: 13px;
+  //    }
+  //
+  //    &__article {
+  //
+  //      &--men {
+  //
+  //      }
+  //    }
+  //
+  //    .life {
+  //    }
+  //  }
+  //}
+
 }
+
 @media (max-width: 992px) {
+
   #books {
 
     .books {
@@ -406,12 +410,14 @@
       flex-direction: column;
       justify-content: space-between;
       height: 1240px;
+
       a {
 
       }
 
       &--tabs {
         margin-bottom: 0;
+
         a {
           font-size: 100%;
         }
@@ -419,10 +425,12 @@
 
       &--start {
         justify-content: space-evenly;
+
         &__startBook {
           &--block {
             width: 83%;
-            height: 34%;
+            height: 20rem;
+
             h2 {
               font-size: 106%;
             }
@@ -437,8 +445,9 @@
 
             &__article {
               align-items: center;
+
               &--men {
-                a{
+                a {
                   font-size: 11px;
                   padding: 2px 5px;
                   height: 24px;
@@ -472,6 +481,7 @@
         }
       }
     }
+
     .special {
 
       width: 85%;
@@ -481,7 +491,7 @@
       }
 
       h3 {
-        font-size: 12px ;
+        font-size: 12px;
       }
 
       h4 {
@@ -489,9 +499,8 @@
       }
 
       &__article {
-
         &--men {
-
+          width: 145px;
         }
       }
 
@@ -502,32 +511,52 @@
   }
 
 }
+
 @media (max-width: 768px) {
+  #books .special {
+    height: 770px;
+    width: 55%;
+    margin: 0 0 33px 32px;
+  }
+
   #books {
     padding: 100px 0 100px;
+
     .books {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+
       a {
 
       }
 
       &--tabs {
         margin-bottom: 60px;
+
         a {
           font-size: 85%;
         }
       }
 
       &--start {
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+
         &__startBook {
+            width: 61%;
+
           &--block {
-            width: 55%;
+            width: 89%;
             height: 440px;
+
+            img {
+              width: 338px;
+              height: 301px;
+            }
+
             h2 {
               font-size: 126%;
             }
@@ -545,7 +574,8 @@
 
               &--men {
                 justify-content: space-around;
-                a{
+
+                a {
                   font-size: 13px;
                   padding: 2px 5px;
                   height: 27px;
@@ -579,16 +609,17 @@
         }
       }
     }
+
     .special {
       height: 770px;
-      width: 55%;
+      width: 87%;
 
       h2 {
         font-size: 20px;
       }
 
       h3 {
-        font-size: 14px ;
+        font-size: 14px;
       }
 
       h4 {
@@ -609,14 +640,23 @@
   }
 
 }
+
 @media (max-width: 576px) {
+  #books .special {
+    height: 770px;
+    width: 55%;
+    margin: 0 0 33px 32px;
+  }
+
   #books {
+    padding: 100px 0 100px;
 
     .books {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+
       a {
 
       }
@@ -625,20 +665,29 @@
         margin-bottom: 60px;
 
         a {
-          font-size: 65%;
-          padding: 5px 8px;
+          font-size: 81%;
         }
       }
 
       &--start {
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+
         &__startBook {
+          width: 82%;
+
           &--block {
-            width: 77%;
-            height: 458px;
+            width: 89%;
+            height: 440px;
+
+            img {
+              width: 338px;
+              height: 301px;
+            }
+
             h2 {
-              font-size: 150%;
+              font-size: 126%;
             }
 
             h3 {
@@ -650,10 +699,12 @@
             }
 
             &__article {
-              justify-content: space-between;
+
+
               &--men {
-                justify-content: space-between;
-                a{
+                justify-content: space-around;
+
+                a {
                   font-size: 13px;
                   padding: 2px 5px;
                   height: 27px;
@@ -687,16 +738,17 @@
         }
       }
     }
+
     .special {
-      height: 785px;
-      width: 77%;
+      height: 770px;
+      width: 87%;
 
       h2 {
-        font-size: 23px;
+        font-size: 20px;
       }
 
       h3 {
-        font-size: 14px ;
+        font-size: 14px;
       }
 
       h4 {
@@ -717,7 +769,10 @@
   }
 
 }
-@media (max-width: 450px) {
+
+@media (max-width: 451px) {
+
+
   #books {
 
     .books {
@@ -725,6 +780,7 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+
       a {
 
       }
@@ -734,6 +790,7 @@
         margin-bottom: 60px;
         flex-wrap: wrap;
         width: 220px;
+
         a {
           font-size: 14px;
           padding: 5px 8px;
@@ -744,10 +801,13 @@
       &--start {
         justify-content: space-between;
         flex-direction: column;
+
         &__startBook {
+          width: 104%;
           &--block {
-            width: 100%;
+            width: 89%;
             height: 458px;
+
             h2 {
               font-size: 135%;
             }
@@ -765,7 +825,10 @@
 
               &--men {
                 justify-content: space-between;
-                a{
+                width: 153px;
+
+
+                a {
                   font-size: 13px;
                   padding: 2px 5px;
                   height: 27px;
@@ -799,16 +862,17 @@
         }
       }
     }
+
     .special {
-      height: 810px;
-      width: 100%;
+      height: 746px;
+      width: 86%;
 
       h2 {
         font-size: 23px;
       }
 
       h3 {
-        font-size: 14px ;
+        font-size: 14px;
       }
 
       h4 {
@@ -829,7 +893,12 @@
   }
 
 }
-@media (max-width: 350px) {
+
+@media (max-width: 400px) {
+  .books--start__thirdStart {
+    width: 112%;
+  }
+
   #books {
 
     .books {
@@ -837,35 +906,44 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+
       a {
 
       }
 
       &--tabs {
         justify-content: flex-start;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         flex-wrap: wrap;
         width: 220px;
+
         a {
           font-size: 14px;
           padding: 5px 8px;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
         }
       }
 
       &--start {
         justify-content: space-between;
         flex-direction: column;
+
         &__startBook {
+          width: 112%;
           &--block {
-            width: 100%;
-            height: 390px;
+            width: 83%;
+            height: 438px;
+
+            img{
+              width: 296px;
+              height: 301px;
+            }
             h2 {
               font-size: 135%;
             }
 
             h3 {
-              font-size: 12px;
+              font-size: 14px;
             }
 
             h4 {
@@ -874,11 +952,13 @@
 
             &__article {
               justify-content: space-between;
+
               &--men {
                 justify-content: space-between;
-                width: 155px;
+                width: 153px;
 
-                a{
+
+                a {
                   font-size: 13px;
                   padding: 2px 5px;
                   height: 27px;
@@ -912,15 +992,17 @@
         }
       }
     }
+
     .special {
-      height: 650px;
-      width: 100%;
+      height: 746px;
+      width: 83%;
+
       h2 {
         font-size: 23px;
       }
 
       h3 {
-        font-size: 12px ;
+        font-size: 14px;
       }
 
       h4 {
@@ -936,13 +1018,17 @@
 
       .life {
         margin-bottom: 0;
-        margin-top: 40px;
       }
     }
   }
 
 }
-@media (max-width: 320px) {
+
+@media (max-width: 351px) {
+  .books--start__thirdStart {
+    width: 112%;
+  }
+
   #books {
 
     .books {
@@ -950,35 +1036,44 @@
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
+
       a {
 
       }
 
       &--tabs {
         justify-content: flex-start;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         flex-wrap: wrap;
         width: 220px;
+
         a {
           font-size: 14px;
           padding: 5px 8px;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
         }
       }
 
       &--start {
         justify-content: space-between;
         flex-direction: column;
+
         &__startBook {
+          width: 112%;
           &--block {
-            width: 100%;
-            height: 350px;
+            width: 83%;
+            height: 438px;
+
+            img{
+              width: 254px;
+              height: 301px;
+            }
             h2 {
-              font-size: 120%;
+              font-size: 135%;
             }
 
             h3 {
-              font-size: 11px;
+              font-size: 14px;
             }
 
             h4 {
@@ -987,14 +1082,16 @@
 
             &__article {
               justify-content: space-between;
+
               &--men {
                 justify-content: space-between;
-                width: 140px;
+                width: 153px;
 
-                a{
-                  font-size: 12px;
-                  padding: 1px 3px;
-                  height: 22px;
+
+                a {
+                  font-size: 13px;
+                  padding: 2px 5px;
+                  height: 27px;
                 }
               }
             }
@@ -1025,15 +1122,17 @@
         }
       }
     }
+
     .special {
-      height: 580px;
-      width: 100%;
+      height: 607px;
+      width: 83%;
+
       h2 {
-        font-size: 20px;
+        font-size: 23px;
       }
 
       h3 {
-        font-size: 11px ;
+        font-size: 14px;
       }
 
       h4 {
@@ -1049,9 +1148,26 @@
 
       .life {
         margin-bottom: 0;
-        margin-top: 40px;
       }
     }
   }
 
+}
+
+@media (max-width: 320px) {
+  #books .special h2 {
+    font-size: 20px;
+  }
+  #books .books--start__startBook--block img {
+    width: 233px;
+    height: 301px;
+  }
+  #books .books--start__startBook--block {
+    width: 83%;
+    height: 390px;
+  }
+  #books .books--start__startBook--block img {
+    width: 233px;
+    height: 257px;
+  }
 }

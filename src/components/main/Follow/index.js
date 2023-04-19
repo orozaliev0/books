@@ -2,8 +2,7 @@ import React from 'react';
 import '../../../style/Follow.scss'
 import {useNavigate} from "react-router-dom";
 import more1 from '../../../img/more1.svg'
-import more from '../../../img/more.svg'
-import transition from "react-transition-group/Transition";
+import img from '../../../img/more.svg'
 
 const Follow = () => {
 
@@ -31,7 +30,7 @@ const Follow = () => {
                         </button>
                         <button onClick={() => more()} className='more__btn--btn2'>Узнать больше</button>
                     </div>
-                    <img src={more} alt="" className='more__img2'/>
+                    <img src={img} alt="" className='more__img2'/>
                 </div>
             </div>
         </div>
