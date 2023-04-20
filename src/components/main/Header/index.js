@@ -36,7 +36,7 @@ const Header = ({userName}) => {
                         <NavLink to={'/our-courses'}>
                             <a href="">Наши курсы</a>
                         </NavLink>
-                        <NavLink to={'/about us'}>
+                        <NavLink to={'/aboutUs'}>
                             <a href="">О нас</a>
                         </NavLink>
                     </div>
@@ -63,7 +63,7 @@ const Header = ({userName}) => {
                            <NavLink to={'/our-courses'}>
                                <a href="">Наши курсы</a>
                            </NavLink>
-                           <NavLink to={'/about us'}>
+                           <NavLink to={'/about_us'}>
                                <a href="">О нас</a>
                            </NavLink>
                        </div>
