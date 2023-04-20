@@ -11,6 +11,7 @@ import Header from "./components/main/Header";
 import Footer from "./components/main/Footer";
 import CreatingCommand from "./pages/OurCourses/CreatingCommand";
 import Account from "./components/main/Header/page";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
                     <Route path={'/new-books/2'} element={<PageBooks/>}/>
                     <Route path={'/creatingCommand'} element={<CreatingCommand/>}/>
                     <Route path={"/form"} element={<Account/>} />
+                    <Route path={"/aboutUs"} element={<AboutUs/>} />
             </Routes>
             <Footer/>
         </div>
