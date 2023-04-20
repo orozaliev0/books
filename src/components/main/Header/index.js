@@ -8,8 +8,7 @@ import AfterButton from "./AfterButton";
 import {useDispatch, useSelector} from "react-redux";
 import {IoMdClose} from "react-icons/io";
 import {GiHamburgerMenu} from "react-icons/gi";
-
-const Header = () => {
+const Header = ({userName}) => {
     const [burger, setBurger] = useState(false)
     const navigate = useNavigate()
     const {page, setPage} = useContext(PageConText)
@@ -37,7 +36,7 @@ const Header = () => {
                         <NavLink to={'/our-courses'}>
                             <a href="">Наши курсы</a>
                         </NavLink>
-                        <NavLink to={'/about us'}>
+                        <NavLink to={'/aboutUs'}>
                             <a href="">О нас</a>
                         </NavLink>
                     </div>
@@ -64,12 +63,12 @@ const Header = () => {
                            <NavLink to={'/our-courses'}>
                                <a href="">Наши курсы</a>
                            </NavLink>
-                           <NavLink to={'/about us'}>
+                           <NavLink to={'/about_us'}>
                                <a href="">О нас</a>
                            </NavLink>
                        </div>
                        <div className="header--btn-mn">
-                           <button style={{}} onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>Войти</button>
+                           <button style={{}} onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{userName || "войти"}</button>
                        </div>
                    </div>
                 </div>
