@@ -5,7 +5,7 @@
     width: 100% !important;
   }
   .slick-slide{
-    width: 910px !important;
+    width: 895px !important;
   }
   .slick-track{
     width: 14636px !important;
@@ -36,7 +36,7 @@
 
     &--block{
       box-sizing: border-box;
-      width: 71.33%;
+      width: 86.33%;
       height: 224px;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid #FFFFFF;
@@ -103,10 +103,17 @@
 }
 @media (max-width: 1200px) {
 #review{
-  .review{
-    width: 90%;
+  .review--block p{
+    padding: 24px 37px 36px 32px;
   }
+  .slick-slide{
+    width: 733px !important;
+  }
+
 }
+
+
+
 }
 @media (max-width: 1140px) {
 
@@ -124,7 +131,53 @@
 
 }
 @media (max-width: 450px) {
+#review{
+  .slick-slide{
+    width: 430px !important;
+  }
+  .slick-prev{
+    left: 37px !important;
+    top: 302px !important;
+  }
 
+  .slick-next{
+    left: 301px !important;
+    top: 307px!important;
+  }
+  .review{
+    &--block{
+      width: 85%;
+      height: 365px;
+      p{
+        font-size: 18px;
+      }
+      span{
+        font-size: 18px;
+        margin-left: 0;
+      }
+      &__shift{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 71px;
+        margin-left: -104px;
+
+        &--line h1{
+          margin-top: -94px;
+          font-size: 24px;
+          margin-left: 33px;
+        }
+        h2{
+          margin-left: -247px;
+          margin-top: -109px;
+          font-size: 17px;
+          font-weight: 300;
+        }
+      }
+    }
+
+  }
+}
 }
 @media (max-width: 400px) {
 

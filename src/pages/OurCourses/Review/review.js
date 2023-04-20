@@ -17,7 +17,7 @@ const Review = () => {
         centerMode: true,
         infinite: true,
         centerPadding: "10px",
-        slidesToShow: 1.64,
+        slidesToShow: 1.56,
         speed: 500,
         prevArrow: <img  src={icon} className="images-slick" alt="" onDoubleClick={() => setIndex(!index)}/>,
         nextArrow: <img src={icon2} className="images-slick" alt="" />,

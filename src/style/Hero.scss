@@ -1,15 +1,18 @@
-#Hero{
+#Hero {
   position: relative;
-  .Hero{
+
+  .Hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &-right{
-      &-btn{
+
+    &-right {
+      &-btn {
         transition: .4s;
       }
-      &-h1{
-        font-family: 'Montserrat',sans-serif;
+
+      &-h1 {
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 40px;
@@ -18,8 +21,9 @@
         width: 58%;
         width: 85%;
       }
-      &-p{
-        font-family: 'Montserrat',sans-serif;
+
+      &-p {
+        font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
@@ -29,20 +33,24 @@
 
       }
     }
-    &-book2{
+
+    &-book2 {
       display: flex;
       justify-content: space-between;
 
 
     }
-    &-Book1{
+
+    &-Book1 {
       display: flex;
       justify-content: space-between;
       align-items: end;
-      &-two{
+
+      &-two {
         order: 1;
       }
-      &-one{
+
+      &-one {
         transform: rotate(-70deg);
         margin-block-end: -130px;
         margin-left: 230px;
@@ -54,48 +62,56 @@
 @media (max-width: 1440px) {
 
 }
+
 @media (max-width: 1200px) {
-  .Hero-Book2-two{
+  .Hero-Book2-two {
     margin: 107px 188px 0 0;
   }
-  .img{
+  .img {
     margin: 0 20px 0 0;
   }
 }
+
 @media (max-width: 1140px) {
 
 }
+
 @media (max-width: 1024px) {
-#Hero{
-  .Hero-Book1{
-    &-Book1{
-      &-one{
-        img{
-          margin-left: 88%;
+  #Hero {
+    .Hero-Book1 {
+      &-Book1 {
+        &-one {
+          img {
+            margin-left: 88%;
+          }
         }
       }
-    }
-    &--Book2{
-      &-two{
-        img{
-          margin-left:50%;
+
+      &--Book2 {
+        &-two {
+          img {
+            margin-left: 50%;
+          }
         }
       }
-    }
-    &--right{
-      p{
-        font-size: 22px;
+
+      &--right {
+        p {
+          font-size: 22px;
+        }
+
+        h1 {
+          font-size: 35px;
+        }
       }
-      h1{
-        font-size: 35px;
+
+      &--left img {
+        width: 90%;
       }
-    }
-    &--left img{
-      width: 90%;
     }
   }
 }
-}
+
 @media (max-width: 992px) {
   #Hero {
     .Hero {
@@ -118,88 +134,94 @@
       }
     }
   }
-  @media (max-width: 768px) {
-    .img2 {
-      margin-left: 0;
-      margin-top: -94px;
-    }
-    .img {
-      margin: 0 20px 0 0;
-      width: 100px;
-    }
-    #Hero {
-      .Hero {
-        flex-direction: column;
+}
 
-        &--right {
-          text-align: center;
+@media (max-width: 768px) {
+  .img2 {
+    margin-left: 0;
+    margin-top: -94px;
+  }
+  .img {
+    margin: 0 20px 0 0;
+    width: 100px;
+  }
+  #Hero {
+    .Hero {
+      flex-direction: column;
 
-          h1 {
-            font-size: 50px;
-          }
+      &--right {
+        text-align: center;
 
-          &-btn {
-            width: 215px;
-            height: 55px;
-            font-size: 20px;
-            font-weight: 500;
-            font-family: cursive;
-          }
+        h1 {
+          font-size: 50px;
+        }
+
+        &-btn {
+          width: 215px;
+          height: 55px;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: cursive;
         }
       }
     }
-  }
-  @media (max-width: 576px) {
-    .Hero-Book2-two {
-      margin: 106px -13px 0 0;
-    }
-    #Hero .Hero-Book1-one {
-      transform: rotate(-70deg);
-      margin-block-end: -194px;
-      margin-left: 37px;
-    }
-    #Hero {
-      .Hero {
-        &--right {
-          h1 {
-            font-size: 40px;
-          }
-
-          p {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-    #Hero {
-      .Hero--right h1 {
-        font-size: 36px;
-      }
-    }
-
-  }
-  @media (max-width: 450px) {
-    #Hero {
-      .Hero {
-        &--right {
-        }
-
-      }
-    }
-  }
-  @media (max-width: 400px) {
-    #Hero {
-      .Hero {
-        button {
-          margin-left: 5px;
-        }
-      }
-    }
-  }
-  @media (max-width: 380px) {
-
   }
 }
+
+@media (max-width: 576px) {
+  .Hero-Book2-two {
+    margin: 106px -13px 0 0;
+  }
+  #Hero .Hero-Book1-one {
+    transform: rotate(-70deg);
+    margin-block-end: -194px;
+    margin-left: 37px;
+  }
+  #Hero {
+    .Hero {
+      &--right {
+        h1 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  #Hero {
+    .Hero--right h1 {
+      font-size: 36px;
+    }
+  }
+
+}
+
+@media (max-width: 450px) {
+  #Hero {
+    .Hero {
+      &--right {
+      }
+
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #Hero {
+    .Hero {
+      button {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+
+}
+
 @media (max-width: 320px) {
   #Hero {
     .Hero {
@@ -219,34 +241,37 @@
     }
   }
 }
-}
-@media (max-width: 300px) {
-  #Hero{
-    .Hero{
-=======
-  @media (max-width: 376px) {
-    #Hero .Hero button {
-      margin-left: 0;
-    }
+
+@media (max-width: 376px) {
+  #Hero .Hero button {
+    margin-left: 0;
   }
-  @media (max-width: 320px) {
-    #Hero {
-      .Hero {
-        &--right {
-          h1 {
-            font-size: 36px;
-          }
+}
 
-          p {
-            font-size: 23px;
-          }
+@media (max-width: 320px) {
+  #Hero {
+    .Hero {
+      &--right {
+        h1 {
+          font-size: 36px;
         }
 
-        button {
-          margin-left: 0;
+        p {
+          font-size: 23px;
         }
+      }
+
+      button {
+        margin-left: 0;
       }
     }
   }
 
+}
+
+@media (max-width: 300px) {
+  #Hero {
+    .Hero {
+    }
+  }
 }
