@@ -1,4 +1,69 @@
 #header {
+  .dropdown{
+    &_dropbtn {
+      display: flex;
+      align-items: center;
+      padding: 12px 24px 12px 24px;
+      width:136px;
+      background: #FFFFFF;
+      border-radius: 0 10px 10px 10px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #595FEB;
+    }
+    &_drop-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 135px;
+      border-radius: 0 10px 10px 10px;
+      transition: .4s;
+      z-index: 1;
+
+      a{
+        color: #B3B5FF;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        &:hover{
+          color: #595FEB;
+        }
+      }
+      &_line {
+        margin: 0 0 0 15px;
+        width: 60px;
+        height: 2px;
+        background: #DBDCFF;
+      }
+    }
+  }
+  .show {
+    display: block;
+    &_drop-content{
+      border-radius: 0 10px 10px 0;
+    }
+  }
+.dropdown_drop-content{
+  position: absolute;
+  top: 68px;
+  z-index: -1;
+  margin-left: 2px;
+  //transition: .5s;
+  animation: ani .3s;
+}
+  @keyframes ani {
+    0%{
+      transform: translateY(-10%);
+    }
+    100%{
+      transform: translateY(0);
+
+    }
+  }
+  .dropdown_dropbtn{
+    transition: .4s ease-out;
+  }
+
   .header--tran-cl {
     display: none;
   }
@@ -44,25 +109,18 @@
     }
 
     &--btn {
-      button {
+      display: flex;
+      button{
         display: flex;
-        flex-direction: row;
         align-items: center;
+        flex-direction: row;
         padding: 12px 24px 12px 24px;
         gap: 10px;
         background: #FFFFFF;
         border-radius: 0 10px 10px 10px;
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
         color: #595FEB;
-        transition: .4s;
-
-        &:hover {
-          transform: scale(0.9);
-        }
       }
     }
 
@@ -95,11 +153,11 @@
 
 }
 
-@media (max-width: 992px)   {
+@media (max-width: 992px) {
   #header .header--text {
     width: 40%;
   }
-  .header h1{
+  .header h1 {
     display: none;
   }
   .lol {
@@ -264,10 +322,12 @@
     width: 93%;
   }
 }
+
 @media (max-width: 350px) {
   #header {
   }
 }
+
 @media (max-width: 320px) {
   #header {
   }
