@@ -55,3 +55,53 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .account .block {
+    width: 345px;
+    height: 306px;
+  }
+  .account .block input {
+    width: 303px;
+    padding-left: 10px;
+    height: 40px;
+  }
+  .account .block button {
+    width: 302px;
+    height: 40px;
+  }
+}
+@media (max-width: 351px) {
+  .account .h {
+    font-size: 22.8281px;
+    padding: 0 0 50px 0;
+  }
+  .account .block {
+    width: 322px;
+    height: 306px;
+  }
+  .account .block input {
+    width: 281px;
+    padding-left: 10px;
+    height: 40px;
+  }
+  .account .block button {
+    width: 283px;
+    height: 40px;
+  }
+
+}
+@media (max-width: 320px) {
+  .account .block {
+    width: 287px;
+    height: 294px;
+  }
+  .account .block input {
+    width: 243px;
+  }
+  .account .block button {
+    width: 243px;
+    height: 40px;
+  }
+
+}

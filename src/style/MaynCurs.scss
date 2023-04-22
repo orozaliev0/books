@@ -63,7 +63,7 @@
             flex: none;
             order: 0;
             flex-grow: 0;
-            animation: ani 1s ease-in;
+            animation: ani 1s ease-out;
             @keyframes ani {
               0% {
                 transform: translate(-80px, 10px);
