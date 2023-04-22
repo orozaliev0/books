@@ -13,6 +13,7 @@ import CreatingCommand from "./pages/OurCourses/CreatingCommand";
 import Account from "./components/main/Header/page";
 import AboutUs from "./pages/AboutUs";
 import Common from "./pages/common";
+import Restoration from "./pages/restoration";
 
 function App() {
 
@@ -33,7 +34,8 @@ function App() {
                     <Route path={"/aboutUs"} element={<AboutUs/>} />
                     <Route path={"/form"} element={<Account/>}/>
                     <Route path={"/regis"} element={<Common/>}/>
-            </Routes>
+                    <Route path={"/restoration"} element={<Restoration/>}/>
+                    </Routes>
             <Footer/>
         </div>
     );
