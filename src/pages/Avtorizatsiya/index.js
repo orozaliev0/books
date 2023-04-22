@@ -7,7 +7,7 @@ import {useNavigate} from "react-router-dom";
 const Avtorizatsiya = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState(localStorage.getItem("email") || "");
-    const [isPassword, setIsPassword] = useState(false);
+    const [isPassword, setIsPassword] = useState(true);
     const [error, setError] = useState(false);
     const [userName, setUserName] = useState(localStorage.getItem("userName") || "");
     const [password, setPassword] = useState(""); // Добавляем состояние для пароля
@@ -34,8 +34,15 @@ const Avtorizatsiya = () => {
     const handleClicker = () => {
         if (email === "myemail@gmail.com" && password === "123"){
             setUserName(email.split('@')[0]);
-            navigate("/regis")
-        }else{
+            navigate("/")
+        }
+        else if (email === '' || password === ''){
+            setError(true       )
+        }
+        else if (email !== '' || password !== ''){
+            setError(false)
+        }
+        else{
            alert("не правильный email или пароль ")
         }
     }
@@ -45,6 +52,18 @@ const Avtorizatsiya = () => {
         const userNameWithoutDomain = email.split("@")[0];
         setUserName(userNameWithoutDomain);
     };
+    //
+
+    //
+    // const [correct, setCorrect] = useState(false);
+    // const [emailCorrect, setEmailCorrect] = useState(false);
+    // const [telCorrect, setTelCorrect] = useState(false);
+    // const [passwordCorrect, setPasswordCorrect]= useState(false);
+    //
+    // const emailTest = /[a-z]*@[a-z]*. [a-z]{2,5}$/;
+    // const passwordTest = /^[a-zA-Z0-9!@#$%^&*] {6, 16}$/;
+
+
 
     return (
         <div className="block flex flex-col items-center justify-evenly">
@@ -70,14 +89,14 @@ const Avtorizatsiya = () => {
                 </div>
                 <div className="chexavtori">
                     <div onClick={passwordClick}>
-                        {isPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
+                        {isPassword ? <AiFillEye /> : <AiFillEyeInvisible /> }
                     </div>
                 </div>
             </div>
             <button onClick={handleClicker}>
                    <h2 onClick={handleClick}>{userName ? `Привет, ${userName}` : "Войти"}</h2>
             </button>
-            <span>Забыли пароль?</span>
+            <span className={"cursor-pointer"} onClick={() => navigate("/newPassword")}>Забыли пароль?</span>
         </div>
     );
 };

@@ -13,6 +13,7 @@ import CreatingCommand from "./pages/OurCourses/CreatingCommand";
 import Account from "./components/main/Header/page";
 import AboutUs from "./pages/AboutUs";
 import Common from "./pages/common";
+import NewPassword from "./pages/Avtorizatsiya/NewPassword";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
                     <Route path={"/aboutUs"} element={<AboutUs/>} />
                     <Route path={"/form"} element={<Account/>}/>
                     <Route path={"/regis"} element={<Common/>}/>
+                    <Route path={"/newPassword"} element={<NewPassword/>}/>
             </Routes>
             <Footer/>
         </div>
