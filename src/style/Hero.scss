@@ -185,10 +185,11 @@
         }
 
         p {
-          font-size: 20px;
+          width:89%;
         }
       }
     }
+    //tabs4
   }
   #Hero {
     .Hero--right h1 {
@@ -222,26 +223,6 @@
 
 }
 
-@media (max-width: 320px) {
-  #Hero {
-    .Hero {
-      &--right {
-        h1 {
-          font-size: 36px;
-        }
-
-        p {
-          font-size: 23px;
-        }
-      }
-
-      button {
-        margin-left: 0;
-      }
-    }
-  }
-}
-
 @media (max-width: 376px) {
   #Hero .Hero button {
     margin-left: 0;
@@ -266,7 +247,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: 300px) {
@@ -275,34 +255,4 @@
     }
   }
 }
-@media (max-width: 300px) {
-  #Hero {
-    .Hero {
-  @media (max-width:376px) {
-      #Hero .Hero button {
-        margin-left: 0;
-      }
-    }
-      @media (max-width: 320px) {
-        #Hero {
-          .Hero {
-            &--right {
-              h1 {
-                font-size: 36px;
-              }
 
-              p {
-                font-size: 23px;
-              }
-            }
-
-            button {
-              margin-left: 0;
-            }
-          }
-        }
-      }
-
-    }
-  }
-}
