@@ -5,11 +5,14 @@ import {useNavigate} from "react-router-dom";
 
 
 const Avtorizatsiya = () => {
+
     const navigate = useNavigate()
     const [email, setEmail] = useState(localStorage.getItem("email") || "");
     const [isPassword, setIsPassword] = useState(false);
     const [error, setError] = useState(false);
     const [userName, setUserName] = useState(localStorage.getItem("userName") || "");
+    const [password, setPassword] = useState(""); // Добавляем состояние для пароля
+
     const [password, setPassword] = useState("");
     useEffect(() => {
         localStorage.setItem("email", email);
@@ -34,7 +37,7 @@ const Avtorizatsiya = () => {
     const handleClicker = () => {
         if (email === "myemail@gmail.com" && password === "123"){
             setUserName(email.split('@')[0]);
-            navigate("/regis")
+            navigate("/")
         }else{
            alert("не правильный email или пароль ")
         }
