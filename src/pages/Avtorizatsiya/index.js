@@ -10,7 +10,7 @@ const Avtorizatsiya = () => {
     const [isPassword, setIsPassword] = useState(false);
     const [error, setError] = useState(false);
     const [userName, setUserName] = useState(localStorage.getItem("userName") || "");
-    const [password, setPassword] = useState(""); // Добавляем состояние для пароля
+    const [password, setPassword] = useState("");
     useEffect(() => {
         localStorage.setItem("email", email);
         localStorage.setItem("userName", userName);
@@ -22,7 +22,7 @@ const Avtorizatsiya = () => {
             setEmail(value);
         }
         if (name === "password") {
-            setPassword(value); // Обновляем состояние пароля
+            setPassword(value);
         }
     };
 
