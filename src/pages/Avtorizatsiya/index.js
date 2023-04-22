@@ -12,8 +12,6 @@ const Avtorizatsiya = () => {
     const [error, setError] = useState(false);
     const [userName, setUserName] = useState(localStorage.getItem("userName") || "");
     const [password, setPassword] = useState(""); // Добавляем состояние для пароля
-
-    const [password, setPassword] = useState("");
     useEffect(() => {
         localStorage.setItem("email", email);
         localStorage.setItem("userName", userName);
@@ -38,7 +36,14 @@ const Avtorizatsiya = () => {
         if (email === "myemail@gmail.com" && password === "123"){
             setUserName(email.split('@')[0]);
             navigate("/")
-        }else{
+        }
+        else if (email === '' && password === ''){
+            setError(true)
+        }
+        else if (email !== '' && password !== ''){
+            setError(false)
+        }
+        else{
            alert("не правильный email или пароль ")
         }
     }
