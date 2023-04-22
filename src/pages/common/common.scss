@@ -1,0 +1,1011 @@
+/* CSS */
+
+#tabs {
+  .tabs {
+    padding: 150px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1300px;
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      width: 10%;
+
+      input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+
+      }
+
+      label {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+        color: #FFFFFF; /* Пример изменения цвета на красный */
+        width: 303px;
+        height: 69px;
+        border: 1px solid #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        gap: 5px;
+
+        &:hover {
+          transition: .4s;
+          background: rgba(255, 255, 255, 0.6);
+          border: 1px solid #FFFFFF;
+        }
+      }
+    }
+
+    &--right {
+      .right-itemOne {
+        width: 967px;
+        height: 483px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(7px);
+        border-radius: 1px;
+
+        h1 {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 44px;
+          color: #FFFFFF;
+          padding: 20px 0 20px 47px;
+        }
+
+        p {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #FFFFFF;
+          width: 785px;
+          height: 90px;
+          margin-left: 50px;
+        }
+
+        h2 {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          line-height: 44px;
+          display: flex;
+          align-items: center;
+          color: #FFFFFF;
+          margin-left: 48px;
+        }
+
+        &__all {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          &--fio {
+            h2 {
+              font-family: 'Montserrat', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+              color: #FFFFFF;
+              height: 60px;
+              margin-left: 4px;
+            }
+
+            h3 {
+              font-family: 'Montserrat', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+              color: #FFFFFF;
+              padding: 16px 0 13px 3px;
+            }
+
+            input {
+              background: rgba(255, 255, 255, 0);
+              border: 1px solid rgba(255, 255, 255, 0.65);
+              backdrop-filter: blur(7px);
+              border-radius: 1px;
+              width: 388px;
+              height: 38px;
+              outline: none;
+              padding-left: 1rem;
+              &::placeholder {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                padding: 10px;
+              }
+            }
+
+          }
+
+          &--muslim {
+            h2 {
+              font-family: 'Montserrat', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 20px;
+              color: #FFFFFF;
+              margin-top: -49px;
+              margin-left: 0;
+
+            }
+
+            input {
+              background: rgba(255, 255, 255, 0);
+              border: 1px solid rgba(255, 255, 255, 0.62);
+              backdrop-filter: blur(7px);
+              border-radius: 1px;
+              width: 388px;
+              height: 40px;
+              margin: 20px 0;
+              outline: none;
+              padding-left: 1rem;
+
+              &::placeholder {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                padding: 20px;
+
+              }
+            }
+          }
+
+        }
+
+        &__face {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding-top: 20px;
+          margin-left: 42px;
+
+
+          .pop {
+            button {
+              padding: 12px 24px;
+              gap: 10px;
+              width: 273px;
+              height: 48px;
+              background: rgba(255, 255, 255, 0.1);
+              border: 1px solid #FFFFFF;
+              border-radius: 1px;
+              font-family: 'Montserrat', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 19px;
+              line-height: 24px;
+              color: #FFFFFF;
+              transition: .4s;
+
+              &:hover {
+                transform: scale(1.0);
+              }
+
+            }
+
+          }
+
+          .lop {
+            button {
+              gap: 10px;
+              width: 285px;
+              height: 48px;
+              background: #FFFFFF;
+              border-radius: 1px;
+              font-family: 'Montserrat', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 24px;
+              color: #595FEB;
+              flex: none;
+              margin-left: 30px;
+            }
+
+
+          }
+        }
+
+
+        input[type="radio"]:checked ~ .tab-content .tab-item {
+          display: block;
+        }
+      }
+
+      .right-itemTwo {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-left: 3rem;
+        padding-top: 1rem;
+        width: 967px;
+        height: 530px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(7px);
+        border-radius: 1px;
+
+        .isOpenVISA {
+          width: 867px;
+          height: 1%;
+          border: 1px solid #FFFFFF;
+          border-radius: 1px;
+          display: flex;
+          gap: 20px;
+          padding-left: 20px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          transition: .4s;
+          &-group{
+            p{
+              font-weight: 400;
+              font-size: 14px;
+              color: #FFFFFF;
+            }
+            &-one input{
+              width: 730px;
+              padding-left: 20px;
+              outline: none;
+              color: white;
+              height: 40px;
+              border: 1px solid #FFFFFF;
+              border-radius: 1px;
+              background: transparent;
+            }
+            &-two input{
+              width: 355px;
+              padding-left: 20px;
+              outline: none;
+              height: 40px;
+              color: white;
+              border: 1px solid #FFFFFF;
+              background: transparent;
+              border-radius: 1px;
+            }
+            &-three input{
+              width: 355px;
+              padding-left: 20px;
+              outline: none;
+              height: 40px;
+              color: white;
+              border: 1px solid #FFFFFF;
+              background: transparent;
+              border-radius: 1px;
+            }
+          }
+          .flvisa{
+  display: flex;
+  flex-direction: column;
+}
+          &TEXT {
+            font-weight: 200;
+            font-size: 16px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+          }
+
+          &Chek input {
+            outline: none;
+            border: none;
+          }
+        }
+        .isOpenMaster {
+          p{
+            font-weight: 400;
+            font-size: 14px;
+            color: #FFFFFF;
+          }
+          width: 867px;
+          height: 1%;
+          border: 1px solid #FFFFFF;
+          border-radius: 1px;
+          display: flex;
+          gap: 20px;
+          padding-left: 20px;
+          padding-bottom: 8px;
+          padding-top: 8px;
+          transition: .4s;
+
+
+          &TEXT {
+            font-weight: 200;
+            font-size: 16px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+          }
+
+          &Chek input {
+            outline: none;
+            border: none;
+          }
+        }
+
+        &-h1 {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          color: #FFFFFF;
+        }
+
+        &-p {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+.icon{
+  transform: rotate(180deg);
+}
+        .btnVisa{
+          button{
+            width: 264px;
+            height: 45px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            margin-top: 4.5rem;
+            font-size: 20px;
+            color: #595FEB;
+            font-weight: 500;
+            &:hover{
+              background: rgba(48, 48, 182, 0.66);
+              color: white;
+              transition: .2s;
+            }
+          }
+        }
+        &-h1TWO {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
+          display: flex;
+          align-items: center;
+          color: #FFFFFF;
+        }
+
+        &-pTWO {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+
+        .rr {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+      }
+
+      .right-itemThree {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(7px);
+        border-radius: 1px;
+        width: 967px;
+        height: 355px;
+        padding-top: 2rem;
+        h1{
+          padding-left: 3rem;
+          font-weight: 600;
+          font-size: 36px;
+          color: white;
+        }
+        p{
+          padding-left: 3rem;
+          font-weight: 400;
+          font-size: 16px;
+          color: #FFFFFF;
+          padding-top: 3px;
+        }
+        &--bit {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 800px;
+          padding-top: 2rem;
+          &__keep {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &-textP{
+              padding-bottom: 13px;
+            }
+            &-pro{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            }
+            .text{
+              p{
+                font-family: 'Montserrat',sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+
+                color: #FFFFFF;
+
+              }
+            }
+          }
+        }
+      }
+      .right-item-fo{
+        width: 967px;
+        height: 480px;
+        padding-left: 30px;
+        padding-top:30px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid #FFFFFF;
+        backdrop-filter: blur(7px);
+        border-radius: 1px;
+        &-h1{
+          font-weight: 600;
+          font-size: 36px;
+          color: #FFFFFF;
+        }
+        &-p{
+          font-weight: 400;
+          font-size: 16px;
+          color: #FFFFFF;
+          padding-bottom: 3rem;
+        }
+        &-group{
+          display: flex;
+          &-right{
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            color: #FFFFFF;
+          }
+          &-left{
+            p{
+              font-weight: 500;
+              font-size: 16px;
+              color: white;
+              padding-bottom: 0.5rem;
+            }
+          }
+          &-left-flex{
+            display: flex;
+            justify-content: space-between;
+            width: 450px;
+          }
+          &-left-flex-input{
+            width: 403px;
+            height: 40px;
+            border: 1px solid #FFFFFF;
+            border-radius: 1px;
+            background: transparent;
+            color: white;
+            padding-left: 10px;
+            outline: none;
+            margin-bottom: 0.5rem;
+            &-passtext{
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              padding-left: 6.5px;
+              margin-left: -10px;
+              padding-top: 6px;
+              background: white;
+            }
+          }
+        }
+        .btnVisa{
+          button{
+            width: 264px;
+            height: 45px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            margin-top: 1.5rem;
+            font-size: 20px;
+            color: #595FEB;
+            font-weight: 500;
+            &:hover{
+              background: rgba(48, 48, 182, 0.66);
+              color: white;
+              transition: .2s;
+            }
+          }
+        }
+      }
+      .right-item-fife{
+          width: 967px;
+          height: 353px;
+          background: rgba(255, 255, 255, 0.2);
+          border: 1px solid #FFFFFF;
+          backdrop-filter: blur(7px);
+          border-radius: 1px;
+        &-group{
+          display: flex;
+          justify-content: space-between;
+          width: 900px;
+          margin-top: 2rem;
+          margin-left: 2.8rem;
+          &-ptwo{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-top: 1.3rem;
+          }
+        }
+        &-h1{
+          font-weight: 600;
+          font-size: 36px;
+          color: #FFFFFF;
+          margin-left: 2.8rem;
+          margin-top: 1rem;
+        }
+        &-p{
+          font-weight: 400;
+          font-size: 16px;
+          color: #FFFFFF;
+          margin-left: 2.8rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1440px) {
+  .container{
+    width: 90%;
+  }
+}
+@media (max-width: 1300px) {
+  //tabs1{
+  #tabs .tabs--right .right-itemOne {
+    width: 850px;
+  }
+  #tabs .tabs{
+    width: 1210px;
+  }
+  // }
+
+  //tabs2{
+  #tabs .tabs--right .right-itemTwo {
+    width: 880px;
+    height: 530px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA {
+    width: 785px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenMaster {
+    width: 785px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-one input {
+    width: 645px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-two input {
+    width: 280px;
+  }
+  // }
+
+}
+@media (max-width: 1200px) {
+  //tabs1{
+  #tabs .tabs--right .right-itemOne {
+    width: 700px;
+  }
+  #tabs .tabs {
+    width: 1050px;
+  }
+  #tabs .tabs--right .right-itemOne p {
+    font-size: 17px;
+    width: 700px;
+    margin-left: 45px;
+  }
+  #tabs .tabs--right .right-itemOne h1 {
+    font-size: 30px;
+  }
+  #tabs .tabs--right .right-itemOne h2 {
+    font-size: 25px;
+  }
+  #tabs .tabs--right .right-itemOne__all--fio input {
+    width: 280px;
+  }
+  #tabs .tabs--right .right-itemOne__all--muslim input {
+    width: 270px;
+    padding-left: 0;
+  }
+  // }
+  //tabs2{
+  #tabs .tabs--right .right-itemTwo {
+    width: 720px;
+    height: 530px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA {
+    width: 630px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenMaster {
+    width: 630px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-one input {
+    width: 510px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-three input {
+    width: 310px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-two input {
+    width: 185px;
+  }
+  // }
+}
+@media (max-width: 980px){
+  //tabs1{
+  #tabs .tabs--right .right-itemOne {
+    width: 700px;
+  }
+  .tabs{
+    flex-direction: column;
+  }
+  #tabs .tabs {
+    width: 875px;
+  }
+  // }
+}
+@media (max-width: 780px){
+  //tabs1{
+  #tabs .tabs{
+    width: 740px;
+  }
+  // }
+}
+@media (max-width: 580px){
+  //tabs1{
+  #tabs .tabs--right .right-itemOne {
+    width: 530px;
+  }
+  #tabs .tabs{
+    width: 548px;
+  }
+  #tabs .tabs--right .right-itemOne p {
+    font-size: 15px;
+    width: 500px;
+    margin-left: 45px;
+  }
+  #tabs .tabs--right .right-itemOne h2 {
+    font-size: 20px;
+  }
+  #tabs .tabs--right .right-itemOne__all--fio input {
+    width: 210px;
+    padding-left: 0;
+  }
+  #tabs .tabs--right .right-itemOne__all--muslim input {
+    width: 230px;
+    padding-left: 0;
+  }
+  #tabs .tabs--right .right-itemOne__face {
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+  #tabs .tabs--right .right-itemOne__face .pop button {
+    width: 215px;
+    font-size: 14px;
+  }
+  #tabs .tabs--right .right-itemOne__face .lop button {
+    width: 245px;
+    font-size: 18px;
+  }
+  // }
+  //tabs2{
+  #tabs .tabs--right .right-itemTwo {
+    width: 515px;
+    height: 530px;
+  }
+  #tabs .tabs--right .right-itemTwo-h1 {
+    font-size: 33px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA {
+    width: 420px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenMaster {
+    width: 420px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-one input {
+    width: 380px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-one{
+    margin-left: -80px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-two{
+    margin-left: -80px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-three input {
+    width: 185px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-two input {
+    width: 170px;
+  }
+  // }
+}
+@media (max-width: 480px){
+  //tabs1{
+  #tabs .tabs--right .right-itemOne {
+    width: 430px;
+    height: 675px;
+  }
+  #tabs .tabs--right .right-itemOne p {
+    font-size: 14px;
+    width: 360px;
+    margin-left: 30px;
+  }
+  #tabs .tabs--right .right-itemOne__face {
+    padding-top: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+  }
+  #tabs .tabs--right .right-itemOne__all {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 65px;
+  }
+  #tabs .tabs--right .right-itemOne__all--fio input {
+    width: 390px;
+    padding-left: 0;
+  }
+  #tabs .tabs--right .right-itemOne__all--muslim input {
+    width: 390px;
+    padding-left: 0;
+  }
+  #tabs .tabs--right .right-itemOne__face .pop button {
+    width: 400px;
+    font-size: 20px;
+    margin-left: -20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  #tabs .tabs--right .right-itemOne__face .lop button {
+    width: 400px;
+    font-size: 20px;
+    margin-left: -20px;
+    padding-top: 5px;
+  }
+  #tabs .tabs--right .right-itemOne h1 {
+    font-size: 30px;
+    padding-left: 30px;
+  }
+  #tabs .tabs {
+    width: 455px;
+  }
+  // }
+  //tabs2{
+  #tabs .tabs--right .right-itemTwo {
+    width: 435px;
+    height: 530px;
+  }
+  #tabs .tabs--right .right-itemTwo-h1 {
+    font-size: 32px;
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo-p {
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo-h1TWO {
+    font-size: 25px;
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo-pTWO {
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo .rr {
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo .btnVisa button {
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA {
+    width: 380px;
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenMaster {
+    width: 380px;
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-two input {
+    width: 150px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-one input {
+    width: 345px;
+  }
+  // }
+}
+@media (max-width: 400px){
+  //tabs1{
+  #tabs .tabs--right .right-itemOne {
+    width: 360px;
+    height: 675px;
+  }
+  #tabs .tabs--right .right-itemOne__all--fio input {
+    width: 335px;
+    padding-left: 0;
+  }
+  #tabs .tabs--right .right-itemOne__all--muslim input {
+    width: 338px;
+    padding-left: 0;
+  }
+  #tabs .tabs--right .right-itemOne__face .pop button{
+    width: 340px;
+    font-size: 20px;
+    margin-left: -20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #tabs .tabs--right .right-itemOne__face .lop button {
+    width: 340px;
+    font-size: 20px;
+    margin-left: -20px;
+    margin-bottom: 10px;
+  }
+  #tabs .tabs--right .right-itemOne p {
+    font-size: 14px;
+    width: 340px;
+    margin-left: 25px;
+  }
+  #tabs .tabs {
+    width: 390px;
+  }
+  // }
+  //tabs2{
+  #tabs .tabs--right .right-itemTwo .isOpenVISA {
+    width: 300px;
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenMaster {
+    width: 300px;
+    margin-left: -15px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-one input {
+    width: 260px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-three input {
+    width: 115px;
+  }
+  #tabs .tabs--right .right-itemTwo {
+    width: 350px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-two input {
+    width: 135px;
+  }
+  #tabs .tabs--right .right-itemTwo {
+    width: 350px;
+    height: 610px;
+  }
+  #tabs .tabs--right .right-itemTwo .btnVisa button {
+    margin-top: 0.5rem;
+  }
+  // }
+}
+@media (max-width: 320px){
+  //tabs1{
+  #tabs .tabs--right .right-itemOne {
+    width: 303px;
+    height: 680px;
+  }
+  #tabs .tabs--right .right-itemOne h2{
+    margin-left: 28px;
+  }
+  #tabs .tabs--right .right-itemOne__all--fio input {
+    width: 285px;
+    padding-left: 0;
+  }
+  #tabs .tabs--right .right-itemOne__all--muslim input {
+    width: 285px;
+    padding-left: 0;
+  }
+  #tabs .tabs--right .right-itemOne h2 {
+    margin-left: 15px;
+  }
+  #tabs .tabs {
+    width: 300px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-one input {
+    width: 220px;
+  }
+  #tabs .tabs--right .right-itemOne__face .pop button {
+    width: 285px;
+  }
+  #tabs .tabs--right .right-itemOne__face .lop button {
+    width: 285px;
+    padding-top: 0;
+  }
+  #tabs .tabs--right .right-itemOne p {
+    font-size: 14px;
+    width: 255px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+  }
+  // }
+  //tabs2{
+  #tabs .tabs--right .right-itemTwo {
+    width: 303px;
+    height: 610px;
+  }
+  #tabs .tabs--right .right-itemTwo-h1 {
+    font-size: 30px;
+    margin-left: -25px;
+  }
+  #tabs .tabs--right .right-itemTwo-p {
+    margin-left: -25px;
+  }
+  #tabs .tabs--right .right-itemTwo-h1TWO {
+    font-size: 25px;
+    margin-left: -27px;
+  }
+  #tabs .tabs--right .right-itemTwo-pTWO {
+    margin-left: -25px;
+  }
+  #tabs .tabs--right .right-itemTwo .rr {
+    margin-left: -25px;
+  }
+  #tabs .tabs--right .right-itemTwo .btnVisa button {
+    margin-left: -30px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA {
+    width: 260px;
+    margin-left: -27px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenMaster {
+    width: 260px;
+    margin-left: -27px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-three input {
+    width: 220px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-three{
+    margin-left: -80px;
+  }
+  #tabs .tabs--right .right-itemTwo .isOpenVISA-group-two input {
+    width: 220px;
+  }
+  .justify-between {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  // }
+}

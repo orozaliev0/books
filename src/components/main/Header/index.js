@@ -8,14 +8,55 @@ import AfterButton from "./AfterButton";
 import {useDispatch, useSelector} from "react-redux";
 import {IoMdClose} from "react-icons/io";
 import {GiHamburgerMenu} from "react-icons/gi";
+
+
+
 const Header = ({userName}) => {
+
     const [burger, setBurger] = useState(false)
     const navigate = useNavigate()
     const {page, setPage} = useContext(PageConText)
     const dispatch = useDispatch()
     const {payment} = useSelector(state => state)
+    const [isOpensss, setisOpensss] = useState(false)
+
+    const myDrop = () => {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
 
 
+
+    const user = localStorage.getItem("email")
+    // console.log(user.length === 0)
+
+    const getLogin = () => {
+        if (user === '') {
+            return <div className='Header--btn'>
+                <button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}</button>
+            </div>
+          // return  <button className={"button"} onClick={()=> navigate("/form")}>
+          //     <img className='w-[50%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
+          // </button>
+        }
+        else if (user !== ''){
+            return <div className={"button"}>
+                <div className="dropdown">
+                    <button onClick={myDrop} className="dropdown_dropbtn"><img className='w-[90%] text-blue-900' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}</button>
+                            <div id="myDropdown" className="dropdown_drop-content" style={{transition:"3s"}}>
+                                <Link onClick={ () => window.scroll(0,0)}  to="/regis"> Account</Link>
+                                <div className='dropdown_drop-content_line'></div>
+                                <Link to="/" onClick={() => localStorage.removeItem('email')}> Sign out</Link>
+                            </div>
+                </div>
+
+                {/*<button>*/}
+                {/*    <img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}*/}
+                {/*</button>*/}
+
+            </div>
+        }
+
+    }
     return (
         <header
             style={{
@@ -30,18 +71,20 @@ const Header = ({userName}) => {
                         </div>
                     </NavLink>
                     <div className="header--text">
-                        <NavLink to={'/'}>
+                        <NavLink onClick={() =>  window.scroll(0,0)} to={'/'}>
                             <a href="">Главная</a>
                         </NavLink>
-                        <NavLink to={'/our-courses'}>
+                        <NavLink onClick={() => window.scroll(0,0)} to={'/our-courses'}>
                             <a href="">Наши курсы</a>
                         </NavLink>
-                        <NavLink to={'/aboutUs'}>
+                        <NavLink onClick={() => window.scroll(0,0)} to={'/aboutUs'}>
                             <a href="">О нас</a>
                         </NavLink>
                     </div>
+
                     <div className="header--btn">
-                        <button style={{}} onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>Войти</button>
+                                <div className={"button"} onClick={() => getLogin()}>{getLogin()}</div>
+
                     </div>
                     <div className="header--menu">
                         {
@@ -67,12 +110,12 @@ const Header = ({userName}) => {
                                <a href="">О нас</a>
                            </NavLink>
                        </div>
+
                        <div className="header--btn-mn">
-                           <button style={{}} onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{userName || "войти"}</button>
+                           <button onClick={ () => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{}</button>
                        </div>
                    </div>
                 </div>
-
             </div>
             <hr className={burger ? "header--hr" : "header--hr-close"}/>
         </header>
