@@ -14,6 +14,13 @@ import Account from "./components/main/Header/page";
 import AboutUs from "./pages/AboutUs";
 import Common from "./pages/common";
 
+import PasswordChange from "./pages/Avtorizatsiya/PasswordChange";
+import Avtorizatsiya from "./pages/Avtorizatsiya";
+import NewPassword from "./pages/Avtorizatsiya/NewPassword";
+
+import Restoration from "./pages/restoration";
+
+
 function App() {
 
     return (
@@ -33,7 +40,13 @@ function App() {
                     <Route path={"/aboutUs"} element={<AboutUs/>} />
                     <Route path={"/form"} element={<Account/>}/>
                     <Route path={"/regis"} element={<Common/>}/>
+                    <Route path={"/changePassword"} element={<PasswordChange/>}/>
+                    <Route path={"/registration"} element={<Account/>}/>
+                    <Route path={"/newPassword"} element={<NewPassword/>}/>
             </Routes>
+                    <Route path={"/restoration"} element={<Restoration/>}/>
+                    </Routes>
+
             <Footer/>
         </div>
     );
