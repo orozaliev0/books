@@ -762,6 +762,14 @@
   // }
 }
 @media (max-width: 480px){
+  //tabs4
+  #tabs .tabs--right .right-itemThree{
+    width: 50%;
+    p{
+      display: flex;
+      flex-direction: column;
+    }
+  }
   //tabs1{
   #tabs .tabs--right .right-itemOne {
     width: 430px;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import "../../style/avtor.css"
-import {useNavigate} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 
 
 const Avtorizatsiya = () => {
@@ -86,7 +86,11 @@ const Avtorizatsiya = () => {
             <button onClick={handleClicker}>
                    <h2 onClick={handleClick}>{userName ? `Привет, ${userName}` : "Войти"}</h2>
             </button>
+
             <span className={"cursor-pointer"} onClick={() => navigate("/changePassword")}>Забыли пароль?</span>
+
+              <span onClick={() => navigate("/restoration")}>Забыли пароль?</span>
+
         </div>
     );
 };
