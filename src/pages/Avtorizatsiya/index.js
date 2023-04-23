@@ -47,8 +47,9 @@ const Avtorizatsiya = () => {
            alert("не правильный email или пароль ")
         }
     }
-
     const handleClick = () => {
+
+
         // Извлекаем только имя пользователя из email
         const userNameWithoutDomain = email.split("@")[0];
         setUserName(userNameWithoutDomain);
@@ -58,7 +59,7 @@ const Avtorizatsiya = () => {
         <div className="block flex flex-col items-center justify-evenly">
             <h1>Войти в аккаунт</h1>
             <input
-                className={error ? "border-2 border-red-700" : "border-2 border-amber-50"}
+                className={error ? "border-2 border-red-600" : "border-2 border-amber-50"}
                 name={"email"}
                 onChange={handleChange}
                 type="email"
@@ -68,7 +69,7 @@ const Avtorizatsiya = () => {
             <div>
                 <div>
                     <input
-                        className={error ? "border-2 border-red-700" : "border-2 border-amber-50"}
+                        className={error ? "border-2 border-red-600" : "border-2 border-amber-50"}
                         name={"password"}
                         onChange={handleChange}
                         type={isPassword ? "password" : "text"}
@@ -85,7 +86,11 @@ const Avtorizatsiya = () => {
             <button onClick={handleClicker}>
                    <h2 onClick={handleClick}>{userName ? `Привет, ${userName}` : "Войти"}</h2>
             </button>
+
+            <span className={"cursor-pointer"} onClick={() => navigate("/changePassword")}>Забыли пароль?</span>
+
               <span onClick={() => navigate("/restoration")}>Забыли пароль?</span>
+
         </div>
     );
 };
