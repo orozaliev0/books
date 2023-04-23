@@ -69,6 +69,7 @@ const Avtorizatsiya = () => {
             <div>
                 <div>
                     <input
+                        className={error ? "border-2 border-red-700" : "border-2 border-white-700"}
                         className={error ? "border-2 border-red-600" : "border-2 border-amber-50"}
                         name={"password"}
                         onChange={handleChange}
