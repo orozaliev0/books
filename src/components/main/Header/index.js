@@ -12,7 +12,6 @@ import {FaUserAlt} from "react-icons/fa";
 
 
 const Header = ({userName}) => {
-
     const [burger, setBurger] = useState(false)
     const navigate = useNavigate()
     const {page, setPage} = useContext(PageConText)

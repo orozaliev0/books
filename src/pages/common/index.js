@@ -609,13 +609,13 @@ const Common = () => {
                                     <div className="right-item-fife-group">
                                         <div>
                                             <p className="right-item-fife-group-ptwo">Сегодня</p>
-                                            <p className="right-item-fife-group-ptwo">05.09.22-----Прохождния курса по
+                                            <p className="right-item-fife-group-ptwo">05.09.22 <i style={{opacity:"0"}}>''''''''''''''''''''</i> Прохождния курса по
                                                 созданию команды</p>
-                                            <p className="right-item-fife-group-ptwo">05.09.22-----Прохождния курса по
+                                            <p className="right-item-fife-group-ptwo">05.09.22 <i style={{opacity:"0"}}>''''''''''''''''''''</i> Прохождния курса по
                                                 созданию команды</p>
-                                            <p className="right-item-fife-group-ptwo">05.09.22-----Прохождния курса по
+                                            <p className="right-item-fife-group-ptwo">05.09.22 <i style={{opacity:"0"}}>''''''''''''''''''''</i> Прохождния курса по
                                                 созданию команды</p>
-                                        </div>
+                                            </div>
                                     </div>
                                 </div>
                             )}

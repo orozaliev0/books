@@ -43,10 +43,8 @@ function App() {
                     <Route path={"/changePassword"} element={<PasswordChange/>}/>
                     <Route path={"/registration"} element={<Account/>}/>
                     <Route path={"/newPassword"} element={<NewPassword/>}/>
-            </Routes>
                     <Route path={"/restoration"} element={<Restoration/>}/>
-                    </Routes>
-
+            </Routes>
             <Footer/>
         </div>
     );
