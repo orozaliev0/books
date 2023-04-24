@@ -46,16 +46,21 @@ const Header = ({userName}) => {
     const getLogin = () => {
         if (user === null) {
             return <div className='Header--btn'>
-                <button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/><AfterButton page={page}/>{"Войти"}</button>
+                <button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/>{"Войти"}</button>
             </div>
             // return  <button className={"button"} onClick={()=> navigate("/form")}>
             //     <img className='w-[50%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
             // </button>
         } else if (user !== '') {
             return <div className={"button"}>
+
+                <div className="dropdown">
+                    <button onClick={myDrop} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/>{user ? user.slice(0, 6) : "Войти"}</button>
+
                 <div className="">
                     <button onClick={handleOpen} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}</button>
                     {/*<button onClick={handleOpen}><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}</button>*/}
+
                 </div>
                 <div>
                     {open ?
@@ -73,6 +78,12 @@ const Header = ({userName}) => {
                         // </div>
                      : ''}
                 </div>
+
+
+                {/* <button>
+                   <img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
+                </button> */}
+
             </div>
         }
 
@@ -131,7 +142,11 @@ const Header = ({userName}) => {
                             </NavLink>
                         </div>
 
+
+                        <div className="">
+                            <button onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/>{}</button>
                         <div className="dropdown_dropbtn">
+
                             <button onClick={() => getLogin()}>{getLogin()}</button>
                             {/*<button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/><AfterButton page={page}/>{"Войти"}</button>*/}
                         </div>

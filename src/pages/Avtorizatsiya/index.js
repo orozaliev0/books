@@ -12,10 +12,15 @@ const Avtorizatsiya = () => {
     const [error, setError] = useState(false);
     const [userName, setUserName] = useState(localStorage.getItem("userName") || "");
     const [password, setPassword] = useState(""); // Добавляем состояние для пароля
+    
     useEffect(() => {
         localStorage.setItem("email", email);
         localStorage.setItem("userName", userName);
     }, [email, userName]);
+
+    console.log(password);  
+    console.log(userName);  
+    console.log(email);  
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -51,7 +56,7 @@ const Avtorizatsiya = () => {
     const handleClick = () => {
 
 
-        // Извлекаем только имя пользователя из email
+        // Извлекаем только имя пользователя из email   
         const userNameWithoutDomain = email.split("@")[0];
         setUserName(userNameWithoutDomain);
     };
@@ -70,7 +75,6 @@ const Avtorizatsiya = () => {
             <div>
                 <div>
                     <input
-                        className={error ? "border-2 border-red-700" : "border-2 border-white-700"}
                         className={error ? "border-2 border-red-600" : "border-2 border-amber-50"}
                         name={"password"}
                         onChange={handleChange}
@@ -91,7 +95,6 @@ const Avtorizatsiya = () => {
 
             <span className={"cursor-pointer"} onClick={() => navigate("/changePassword")}>Забыли пароль?</span>
 
-            <span onClick={() => navigate("/restoration")}>Забыли пароль?</span>
         </div>
     );
 };
