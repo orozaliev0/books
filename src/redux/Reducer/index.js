@@ -3,7 +3,6 @@ const initialState = {
     payment: false,
 }
 
-
 export const Reducer = (state = initialState, action) => {
     switch (action.type) {
         case "OPEN_LOGIN":

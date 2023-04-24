@@ -23,7 +23,7 @@ const Books = () => {
                         <div className="books--start__startBook">
                             {
                                 data.slice(0,1).map(el => (
-                                    <div className="books--start__startBook--block">
+                                    <div className="books--start__startBook--block" key={data.id}>
 
                                         <div className="books--start__startBook--block__title">
                                             <h2>С какой книги начать?</h2>
