@@ -22,15 +22,15 @@
 
       label {
         flex: 1;
-        padding: 10px;
+        padding: 22px;
         display: flex;
         text-align: center;
         justify-content: center;
         background: rgba(255, 255, 255, 0.2);
         cursor: pointer;
         color: #FFFFFF; /* Пример изменения цвета на красный */
-        width: 303px;
-        height: 69px;
+        width: 281px;
+        height: 69px !important;
         border: 1px solid #FFFFFF;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
@@ -50,7 +50,7 @@
     &--right {
       .right-itemOne {
         width: 967px;
-        height: 483px;
+        height: 650px;
         background: rgba(255, 255, 255, 0.2);
         border: 1px solid #FFFFFF;
         backdrop-filter: blur(7px);
@@ -63,7 +63,7 @@
           font-size: 36px;
           line-height: 44px;
           color: #FFFFFF;
-          padding: 20px 0 20px 47px;
+          padding: 45px 0 20px 47px;
         }
 
         p {
@@ -182,7 +182,7 @@
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          padding-top: 20px;
+          padding-top: 100px;
           margin-left: 42px;
 
 
@@ -466,7 +466,7 @@
       }
       .right-item-fo{
         width: 967px;
-        height: 480px;
+        height: 521px;
         padding-left: 30px;
         padding-top:30px;
         background: rgba(255, 255, 255, 0.2);
@@ -549,7 +549,7 @@
       }
       .right-item-fife{
           width: 967px;
-          height: 353px;
+          height: 523px;
           background: rgba(255, 255, 255, 0.2);
           border: 1px solid #FFFFFF;
           backdrop-filter: blur(7px);

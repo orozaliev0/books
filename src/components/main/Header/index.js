@@ -19,14 +19,13 @@ const Header = ({userName}) => {
     const dispatch = useDispatch()
     const {payment} = useSelector(state => state)
     const [isOpensss, setisOpensss] = useState(false)
+    const [open, setOpen] = useState(false);
 
     // const myDrop = () => {
     //     document.getElementById("myDropdown").classList.toggle("show");
     // }
 
 
-
-    const [open, setOpen] = React.useState(false);
 
     const handleOpen = () => {
         // document.getElementById("myDropdown").classList.toggle("show");
@@ -35,7 +34,7 @@ const Header = ({userName}) => {
     console.log(open)
 
     const handleMenuOne = () => {
-        setOpen(false);
+        setOpen(true);
         window.scroll(0, 0)
         };
 
@@ -43,13 +42,6 @@ const Header = ({userName}) => {
         setOpen(false);
         localStorage.removeItem('email')
     };
-
-
-
-
-
-
-
     const user = localStorage.getItem("email")
     const getLogin = () => {
         if (user === null) {
@@ -99,7 +91,7 @@ const Header = ({userName}) => {
                         </div>
                     </NavLink>
                     <div className="header--text">
-                        <NavLink onClick={() => window.scroll(0, 0)} to={'/'}>
+                        <NavLink onClick={handleOpen}>
                             <a href="">Главная</a>
                         </NavLink>
                         <NavLink onClick={() => window.scroll(0, 0)} to={'/our-courses'}>
@@ -128,13 +120,13 @@ const Header = ({userName}) => {
                         <h5 className="header--menu-h">SELF DEVELOPING SCHOOL</h5>
 
                         <div className="header--text-mn">
-                            <NavLink onClick={() => window.scroll(0, 0)} to={'/'}>
+                            <NavLink onClick={() => setBurger(false)} to={'/'}>
                                 <a href="">Главная</a>
                             </NavLink>
-                            <NavLink onClick={() => window.scroll(0, 0)} to={'/our-courses'}>
+                            <NavLink onClick={() => setBurger(false)} to={'/our-courses'}>
                                 <a href="">Наши курсы</a>
                             </NavLink>
-                            <NavLink onClick={() => window.scroll(0, 0)} to={'/aboutUs'}>
+                            <NavLink onClick={() => setBurger(false)} to={'/aboutUs'}>
                                 <a href="">О нас</a>
                             </NavLink>
                         </div>
