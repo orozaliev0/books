@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import React, {useState, useEffect} from "react";
+import {AiFillEye, AiFillEyeInvisible} from "react-icons/ai";
 import "../../style/avtor.css"
 import {NavLink, useNavigate} from "react-router-dom";
 
@@ -18,7 +18,7 @@ const Avtorizatsiya = () => {
     }, [email, userName]);
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
+        const {name, value} = e.target;
         if (name === "email") {
             setEmail(value);
         }
@@ -33,18 +33,15 @@ const Avtorizatsiya = () => {
     };
 
     const handleClicker = () => {
-        if (email === "myemail@gmail.com" && password === "123"){
+        if (email === "myemail@gmail.com" && password === "123") {
             setUserName(email.split('@')[0]);
             navigate("/")
-        }
-        else if (email === '' && password === ''){
+        } else if (email === '' && password === '') {
             setError(true)
-        }
-        else if (email !== '' && password !== ''){
+        } else if (email !== '' && password !== '') {
             setError(false)
-        }
-        else{
-           alert("не правильный email или пароль ")
+        } else {
+            alert("не правильный email или пароль ")
         }
     }
     const handleClick = () => {
@@ -80,18 +77,17 @@ const Avtorizatsiya = () => {
                 </div>
                 <div className="chexavtori">
                     <div onClick={passwordClick}>
-                        {isPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
+                        {isPassword ? <AiFillEyeInvisible/> : <AiFillEye/>}
                     </div>
                 </div>
             </div>
             <button onClick={handleClicker}>
-                   <h2 onClick={handleClick}>{userName ? `Привет, ${userName}` : "Войти"}</h2>
+                <h2 onClick={handleClick}>{userName ? `Привет, ${userName}` : "Войти"}</h2>
             </button>
 
             <span className={"cursor-pointer"} onClick={() => navigate("/changePassword")}>Забыли пароль?</span>
 
-              <span onClick={() => navigate("/restoration")}>Забыли пароль?</span>
-
+            <span onClick={() => navigate("/restoration")}>Забыли пароль?</span>
         </div>
     );
 };
