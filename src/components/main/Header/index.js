@@ -37,7 +37,7 @@ const Header = ({userName}) => {
     const getLogin = () => {
         if (user === null) {
             return <div className='Header--btn'>
-                <button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/><AfterButton page={page}/>{"Войти"}</button>
+                <button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/>{"Войти"}</button>
             </div>
             // return  <button className={"button"} onClick={()=> navigate("/form")}>
             //     <img className='w-[50%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
@@ -45,7 +45,7 @@ const Header = ({userName}) => {
         } else if (user !== '') {
             return <div className={"button"}>
                 <div className="dropdown">
-                    <button onClick={myDrop} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}</button>
+                    <button onClick={myDrop} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/>{user ? user.slice(0, 6) : "Войти"}</button>
                 </div>
                 <div id="myDropdown" className="dropdown_drop-content" style={{transition: "3s"}}>
                     <Link onClick={drop} to="/regis"> Account</Link>
@@ -53,9 +53,9 @@ const Header = ({userName}) => {
                     <Link to="/" onClick={() => localStorage.removeItem('email')}> Sign out</Link>
                 </div>
 
-                {/*<button>*/}
-                {/*    <img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}*/}
-                {/*</button>*/}
+                {/* <button>
+                   <img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
+                </button> */}
             </div>
         }
 
@@ -115,7 +115,7 @@ const Header = ({userName}) => {
                         </div>
 
                         <div className="">
-                            {/*<button onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{}</button>*/}
+                            <button onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/>{}</button>
                             <button onClick={() => getLogin()}>{getLogin()}</button>
                         </div>
                     </div>
