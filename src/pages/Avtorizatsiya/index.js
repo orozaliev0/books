@@ -27,6 +27,10 @@ const Avtorizatsiya = () => {
         }
     };
 
+    
+
+
+
 
     const passwordClick = () => {
         setIsPassword(!isPassword);
