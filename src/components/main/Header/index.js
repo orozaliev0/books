@@ -20,20 +20,37 @@ const Header = ({userName}) => {
     const {payment} = useSelector(state => state)
     const [isOpensss, setisOpensss] = useState(false)
 
-    const myDrop = () => {
-        document.getElementById("myDropdown").classList.toggle("show");
-        setOpen(true)
-    }
-    const [open, setOpen] = useState(false)
+    // const myDrop = () => {
+    //     document.getElementById("myDropdown").classList.toggle("show");
+    // }
 
-    const drop = () => {
-        setOpen(false)
+
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+        // document.getElementById("myDropdown").classList.toggle("show");
+        setOpen(!open);
+    };
+    console.log(open)
+
+    const handleMenuOne = () => {
+        setOpen(false);
         window.scroll(0, 0)
-    }
+        };
+
+    const handleMenuTwo = () => {
+        setOpen(false);
+        localStorage.removeItem('email')
+    };
+
+
+
+
+
+
 
     const user = localStorage.getItem("email")
-    // console.log(user)
-
     const getLogin = () => {
         if (user === null) {
             return <div className='Header--btn'>
@@ -44,18 +61,26 @@ const Header = ({userName}) => {
             // </button>
         } else if (user !== '') {
             return <div className={"button"}>
-                <div className="dropdown">
-                    <button onClick={myDrop} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}</button>
+                <div className="">
+                    <button onClick={handleOpen} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}</button>
+                    {/*<button onClick={handleOpen}><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}</button>*/}
                 </div>
-                <div id="myDropdown" className="dropdown_drop-content" style={{transition: "3s"}}>
-                    <Link onClick={drop} to="/regis"> Account</Link>
-                    <div className='dropdown_drop-content_line'></div>
-                    <Link to="/" onClick={() => localStorage.removeItem('email')}> Sign out</Link>
+                <div>
+                    {open ?
+                        <div id="myDropdown" >
+                            <div className="dropdown_drop-content">
+                                <Link onClick={handleMenuOne} to='/regis'>Account</Link>
+                                <div className='dropdown_drop-content_line'></div>
+                                <Link onClick={handleMenuTwo}>Sign out</Link>
+                            </div>
+                        </div>
+                        // <div id="myDropdown"  className="dropdown_drop-content">
+                        //     <Link onClick={() => window.scroll(0, 0)} to="/regis"> Account</Link>
+                        //     <div className='dropdown_drop-content_line'></div>
+                        //     <Link to="/" onClick={() => localStorage.removeItem('email')}> Sign out</Link>
+                        // </div>
+                     : ''}
                 </div>
-
-                {/*<button>*/}
-                {/*    <img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}*/}
-                {/*</button>*/}
             </div>
         }
 
@@ -114,9 +139,9 @@ const Header = ({userName}) => {
                             </NavLink>
                         </div>
 
-                        <div className="">
-                            {/*<button onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{}</button>*/}
+                        <div className="dropdown_dropbtn">
                             <button onClick={() => getLogin()}>{getLogin()}</button>
+                            {/*<button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/><AfterButton page={page}/>{"Войти"}</button>*/}
                         </div>
                     </div>
                 </div>
