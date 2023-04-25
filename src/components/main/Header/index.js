@@ -19,16 +19,14 @@ const Header = ({userName}) => {
     const {payment} = useSelector(state => state)
     const [isOpensss, setisOpensss] = useState(false)
 
-    // const myDrop = () => {
-    //     document.getElementById("myDropdown").classList.toggle("show");
-    // }
+
 
 
     const [open, setOpen] = React.useState(false);
 
     const handleOpen = () => {
-        // document.getElementById("myDropdown").classList.toggle("show");
         setOpen(!open);
+        getLogin()
     };
     console.log(open)
 
@@ -50,17 +48,12 @@ const Header = ({userName}) => {
             return <div className='Header--btn'>
                 <button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/>{"Войти"}</button>
             </div>
-            // return  <button className={"button"} onClick={()=> navigate("/form")}>
-            //     <img className='w-[50%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
-            // </button>
+
         } else if (user !== '') {
             return <div className={"button"}>
                 <div className="dropdown">
-                    {/*<button className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/>{user ? user.slice(0, 6) : "Войти"}</button>*/}
                     <div className="">
-                        <button onClick={handleOpen} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}
-                        </button>
-                        {/*<button onClick={handleOpen}><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}</button>*/}
+                        <button onClick={handleOpen} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}</button>
                     </div>
                     <div>
                         {open ?
@@ -71,17 +64,8 @@ const Header = ({userName}) => {
                                     <Link onClick={handleMenuTwo}>Sign out</Link>
                                 </div>
                             </div>
-                            // <div id="myDropdown"  className="dropdown_drop-content">
-                            //     <Link onClick={() => window.scroll(0, 0)} to="/regis"> Account</Link>
-                            //     <div className='dropdown_drop-content_line'></div>
-                            //     <Link to="/" onClick={() => localStorage.removeItem('email')}> Sign out</Link>
-                            // </div>
                             : ''}
                     </div>
-
-                    {/* <button>
-                        <img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
-                    </button> */}
                 </div>
             </div>
         }
@@ -98,6 +82,7 @@ const Header = ({userName}) => {
                             <img className=' lol   pl-16' src={row} alt=""/>
                             <h1 className="l"> SELF DEVELOPING SCHOOL</h1>
                         </div>
+
                     </NavLink>
                     <div className="header--text">
                         <NavLink onClick={() => window.scroll(0, 0)} to={'/'}>
@@ -140,10 +125,8 @@ const Header = ({userName}) => {
                             </NavLink>
                         </div>
                         <div className="">
-                            {/*<button onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/>{}</button>*/}
-                            <div className="dropdown_dropbtn">
-                                {/*<button onClick={() => getLogin()}>{getLogin()}</button>*/}
-                                {/*<button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/><AfterButton page={page}/>{"Войти"}</button>*/}
+                            <div className="dropdown">
+                                <button onClick={handleOpen} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : getLogin()}</button>
                             </div>
                         </div>
                     </div>
