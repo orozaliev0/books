@@ -289,7 +289,9 @@
     width: 20%;
     display: none;
   }
-
+  #header .header--btn button {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -298,23 +300,27 @@
     padding: 2px;
     height: 50px;
   }
-  #header .dropdown_dropbtn {
-    width: 100px;
-    height: 37px;
-    justify-content: center;
+
+  #header .dropdown_drop-content a {
+    padding: 5px 13px;
+    display: block;
   }
-  .dropBtn {
-    margin: 10px 0 0 3px;
+  #header .dropdown_dropbtn {
+    width: 128px;
+    height: 40px;
   }
   #header .dropdown_drop-content {
-    top: 276px;
-    left: 207px;
-    min-width: 2px;
-    height: 71px;
+    position: absolute;
+    top: 279px;
+    left: 195px;
+    min-width: 128px;
+    height: 84px;
     padding-left: 11px;
   }
   #header .dropdown_drop-content a {
-    padding: 5px 11px;
+    color: #B3B5FF;
+    padding: 8px 16px;
+    text-decoration: none;
     display: block;
   }
 
@@ -327,7 +333,7 @@
     margin-left: -164px;
   }
   #header .dropdown_dropbtn {
-    width: 100px;
+    width: 120px;
     height: 37px;
     justify-content: center;
   }
@@ -336,9 +342,9 @@
   }
   #header .dropdown_drop-content {
     top: 276px;
-    left: 163px;
-    min-width: 2px;
-    height: 71px;
+    left: 147px;
+    min-width: 120px;
+    height: 76px;
     padding-left: 11px;
   }
 }
@@ -346,8 +352,8 @@
 @media (max-width: 400px) {
   #header .dropdown_drop-content {
     top: 276px;
-    left: 144px;
-    min-width: 2px;
+    left: 137px;
+    min-width: 117px;
     height: 71px;
     padding-left: 11px;
   }
@@ -357,7 +363,7 @@
     margin-left: -146px;
   }
   #header .dropdown_dropbtn {
-    width: 100px;
+    width: 117px;
     height: 37px;
     justify-content: center;
   }
@@ -377,16 +383,16 @@
 @media (max-width: 376px) {
   #header .dropdown_drop-content {
     top: 276px;
-    left: 119px;
-    min-width: 2px;
-    height: 71px;
+    left: 117px;
+    min-width: 112px;
+    height: 76px;
     padding-left: 11px;
   }
   #header {
     width: 93%;
   }
   #header .dropdown_dropbtn {
-    width: 100px;
+    width: 113px;
     height: 37px;
     justify-content: center;
   }
@@ -399,21 +405,28 @@
   #header {
   }
   #header .dropdown_dropbtn {
-    width: 100px;
+    width: 118px;
     height: 37px;
     justify-content: center;
   }
   .dropBtn {
     margin: 10px 0 0 22px;
   }
+  #header .dropdown_drop-content {
+    top: 276px;
+    left: 109px;
+    min-width: 118px;
+    height: 76px;
+    padding-left: 11px;
+  }
 }
 
 @media (max-width: 320px) {
   #header .dropdown_drop-content {
     top: 276px;
-    left: 77px;
-    min-width: 2px;
-    height: 71px;
+    left: 93px;
+    min-width: 112px;
+    height: 76px;
     padding-left: 11px;
   }
   #header {
@@ -422,11 +435,9 @@
     margin-left: -40px;
   }
   #header .dropdown_dropbtn {
-    width: 100px;
+    width: 113px;
     height: 37px;
     justify-content: center;
-    margin-left: 13px;
-
   }
   .dropBtn {
     margin: 10px 0 0 22px;
