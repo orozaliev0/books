@@ -10,7 +10,10 @@ import {RxHamburgerMenu} from "react-icons/rx";
 
 const Common = () => {
     const [selectedTab, setSelectedTab] = useState(0);
-
+const [imodal,setimodal] = useState(false)
+    const iclick = () => {
+    setimodal(!imodal)
+    }
     const handleTabChange = (index) => {
         setSelectedTab(index);
     };
@@ -261,7 +264,7 @@ const Common = () => {
                                                                         <div className="isOpenVISA-group">
                                                                             <div className="isOpenVISA-group-one">
                                                                                 <p>Номер карты</p>
-                                                                                <input type="number"
+                                                                                    <input type="number"
                                                                                        placeholder="1983 3892 8398 8281"/>
                                                                             </div>
                                                                             <div className="flex justify-between">
@@ -414,6 +417,16 @@ const Common = () => {
                                     <div>
                                         <div>
                                             <div className="right-item-fo-group">
+                                                <div className="right-item-fo-group-right">
+                                                    <div><p>Пароль</p></div>
+                                                    <p>
+                                                        <div>Новый пароль должен отличаться от 5 последних
+                                                            использованных паролей
+                                                        </div>
+                                                    </p>
+                                                    <div><p>В пароле должно быть как минимум 7 символов.</p></div>
+                                                    <div><p>В пароле должна быть как минимум 1 цифра.</p></div>
+                                                </div>
                                                 <div className="right-item-fo-group-left">
                                                     <div>
                                                         <p>Текущий пароль</p>
@@ -456,16 +469,6 @@ const Common = () => {
                                                         <button>Сохранить изменение</button>
                                                     </div>
                                                 </div>
-                                                <div className="right-item-fo-group-right">
-                                                    <div><p>Пароль</p></div>
-                                                    <p>
-                                                        <div>Новый пароль должен отличаться от 5 последних
-                                                            использованных паролей
-                                                        </div>
-                                                    </p>
-                                                    <div><p>В пароле должно быть как минимум 7 символов.</p></div>
-                                                    <div><p>В пароле должна быть как минимум 1 цифра.</p></div>
-                                                </div>
                                             </div>
 
                                         </div>
@@ -478,126 +481,134 @@ const Common = () => {
                                     <h1 className="right-item-fife-h1">Сертефикаты</h1>
                                     <p className="right-item-fife-p">Здесь хроняться ваши сертификаты</p>
                                     <div className="right-item-fife-group">
-                                        <div>
-                                            <p className="right-item-fife-group-ptwo">Дата получения</p>
-                                            <p className="right-item-fife-group-ptwo">05.09.22</p>
-                                            <p className="right-item-fife-group-ptwo">05.09.22</p>
-                                            <p className="right-item-fife-group-ptwo">05.09.22</p>
-                                        </div>
-                                        <div>
-                                            <p className="right-item-fife-group-ptwo">Сертификат за:</p>
-                                            <p className="right-item-fife-group-ptwo">Прохождния курса по созданию
-                                                команды</p>
-                                            <p className="right-item-fife-group-ptwo">Прохождния курса по созданию
-                                                команды</p>
-                                            <p className="right-item-fife-group-ptwo">Прохождния курса по созданию
-                                                команды</p>
-                                        </div>
-                                        <div>
-                                            <p className="right-item-fife-group-ptwo">Статус</p>
-                                            <p className="right-item-fife-group-ptwo">Пройден</p>
-                                            <p className="right-item-fife-group-ptwo">Пройден</p>
-                                            <p className="right-item-fife-group-ptwo">Пройден</p>
-                                        </div>
-                                        <div>
-                                            <p className="right-item-fife-group-ptwo">Просмотреть</p>
-                                            <div className="flex">
-                                                <div className="flex-col flex gap-4 mt-3">
+                                        <div onClick={iclick}><h1>OPEN!</h1></div>
+                                        {
+                                            imodal && (
+                                                <div className="right-item-fife-group-gl">
                                                     <div>
-                                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M22.1424 11.4184C22.6361 12.0643 22.6361 12.9361 22.1424 13.5809C20.5872 15.6111 16.8559 19.7913 12.4997 19.7913C8.14342 19.7913 4.41217 15.6111 2.85696 13.5809C2.61673 13.2717 2.48633 12.8913 2.48633 12.4997C2.48633 12.1081 2.61673 11.7277 2.85696 11.4184C4.41217 9.38822 8.14342 5.20801 12.4997 5.20801C16.8559 5.20801 20.5872 9.38822 22.1424 11.4184V11.4184Z"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                            <path
-                                                                d="M12.5 15.625C14.2259 15.625 15.625 14.2259 15.625 12.5C15.625 10.7741 14.2259 9.375 12.5 9.375C10.7741 9.375 9.375 10.7741 9.375 12.5C9.375 14.2259 10.7741 15.625 12.5 15.625Z"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                        </svg>
+                                                        <p className="right-item-fife-group-ptwo">Дата получения</p>
+                                                        <p className="right-item-fife-group-ptwo">05.09.22</p>
+                                                        <p className="right-item-fife-group-ptwo">05.09.22</p>
+                                                        <p className="right-item-fife-group-ptwo">05.09.22</p>
+                                                    </div>
+                                                    <div className="pgroup">
+                                                        <p className="right-item-fife-group-ptwo">Сертификат за:</p>
+                                                        <p className="right-item-fife-group-ptwo">Прохождния курса по созданию
+                                                            команды</p>
+                                                        <p className="right-item-fife-group-ptwo">Прохождния курса по созданию
+                                                            команды</p>
+                                                        <p className="right-item-fife-group-ptwo">Прохождния курса по созданию
+                                                            команды</p>
                                                     </div>
                                                     <div>
-                                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M22.1424 11.4184C22.6361 12.0643 22.6361 12.9361 22.1424 13.5809C20.5872 15.6111 16.8559 19.7913 12.4997 19.7913C8.14342 19.7913 4.41217 15.6111 2.85696 13.5809C2.61673 13.2717 2.48633 12.8913 2.48633 12.4997C2.48633 12.1081 2.61673 11.7277 2.85696 11.4184C4.41217 9.38822 8.14342 5.20801 12.4997 5.20801C16.8559 5.20801 20.5872 9.38822 22.1424 11.4184V11.4184Z"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                            <path
-                                                                d="M12.5 15.625C14.2259 15.625 15.625 14.2259 15.625 12.5C15.625 10.7741 14.2259 9.375 12.5 9.375C10.7741 9.375 9.375 10.7741 9.375 12.5C9.375 14.2259 10.7741 15.625 12.5 15.625Z"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                        </svg>
+                                                        <p className="right-item-fife-group-ptwo">Статус</p>
+                                                        <p className="right-item-fife-group-ptwo">Пройден</p>
+                                                        <p className="right-item-fife-group-ptwo">Пройден</p>
+                                                        <p className="right-item-fife-group-ptwo">Пройден</p>
                                                     </div>
                                                     <div>
-                                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M22.1424 11.4184C22.6361 12.0643 22.6361 12.9361 22.1424 13.5809C20.5872 15.6111 16.8559 19.7913 12.4997 19.7913C8.14342 19.7913 4.41217 15.6111 2.85696 13.5809C2.61673 13.2717 2.48633 12.8913 2.48633 12.4997C2.48633 12.1081 2.61673 11.7277 2.85696 11.4184C4.41217 9.38822 8.14342 5.20801 12.4997 5.20801C16.8559 5.20801 20.5872 9.38822 22.1424 11.4184V11.4184Z"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                            <path
-                                                                d="M12.5 15.625C14.2259 15.625 15.625 14.2259 15.625 12.5C15.625 10.7741 14.2259 9.375 12.5 9.375C10.7741 9.375 9.375 10.7741 9.375 12.5C9.375 14.2259 10.7741 15.625 12.5 15.625Z"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                        </svg>
+                                                        <p className="right-item-fife-group-ptwo">Просмотреть</p>
+                                                        <div className="flex">
+                                                            <div className="flex-col flex gap-4 mt-3">
+                                                                <div>
+                                                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                                                         xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M22.1424 11.4184C22.6361 12.0643 22.6361 12.9361 22.1424 13.5809C20.5872 15.6111 16.8559 19.7913 12.4997 19.7913C8.14342 19.7913 4.41217 15.6111 2.85696 13.5809C2.61673 13.2717 2.48633 12.8913 2.48633 12.4997C2.48633 12.1081 2.61673 11.7277 2.85696 11.4184C4.41217 9.38822 8.14342 5.20801 12.4997 5.20801C16.8559 5.20801 20.5872 9.38822 22.1424 11.4184V11.4184Z"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                        <path
+                                                                            d="M12.5 15.625C14.2259 15.625 15.625 14.2259 15.625 12.5C15.625 10.7741 14.2259 9.375 12.5 9.375C10.7741 9.375 9.375 10.7741 9.375 12.5C9.375 14.2259 10.7741 15.625 12.5 15.625Z"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div>
+                                                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                                                         xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M22.1424 11.4184C22.6361 12.0643 22.6361 12.9361 22.1424 13.5809C20.5872 15.6111 16.8559 19.7913 12.4997 19.7913C8.14342 19.7913 4.41217 15.6111 2.85696 13.5809C2.61673 13.2717 2.48633 12.8913 2.48633 12.4997C2.48633 12.1081 2.61673 11.7277 2.85696 11.4184C4.41217 9.38822 8.14342 5.20801 12.4997 5.20801C16.8559 5.20801 20.5872 9.38822 22.1424 11.4184V11.4184Z"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                        <path
+                                                                            d="M12.5 15.625C14.2259 15.625 15.625 14.2259 15.625 12.5C15.625 10.7741 14.2259 9.375 12.5 9.375C10.7741 9.375 9.375 10.7741 9.375 12.5C9.375 14.2259 10.7741 15.625 12.5 15.625Z"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div>
+                                                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                                                         xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M22.1424 11.4184C22.6361 12.0643 22.6361 12.9361 22.1424 13.5809C20.5872 15.6111 16.8559 19.7913 12.4997 19.7913C8.14342 19.7913 4.41217 15.6111 2.85696 13.5809C2.61673 13.2717 2.48633 12.8913 2.48633 12.4997C2.48633 12.1081 2.61673 11.7277 2.85696 11.4184C4.41217 9.38822 8.14342 5.20801 12.4997 5.20801C16.8559 5.20801 20.5872 9.38822 22.1424 11.4184V11.4184Z"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                        <path
+                                                                            d="M12.5 15.625C14.2259 15.625 15.625 14.2259 15.625 12.5C15.625 10.7741 14.2259 9.375 12.5 9.375C10.7741 9.375 9.375 10.7741 9.375 12.5C9.375 14.2259 10.7741 15.625 12.5 15.625Z"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div className="flex-col flex gap-4 ml-5 mt-3">
+                                                                <div>
+                                                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                                                         xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M12.4995 22.9169V13.5419M12.4995 22.9169L9.89536 20.8335M12.4995 22.9169L15.1037 20.8335M5.24327 9.49707C4.25808 9.74498 3.39731 10.3441 2.8227 11.1819C2.24809 12.0197 1.99919 13.0385 2.12276 14.0468C2.24633 15.0552 2.73386 15.9838 3.49376 16.658C4.25366 17.3323 5.23362 17.7058 6.24952 17.7085H7.29119"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                        <path
+                                                                            d="M16.489 7.43577C16.133 6.02595 15.2542 4.80425 14.0308 4.01833C12.8074 3.23241 11.331 2.94108 9.90076 3.20338C8.47054 3.46569 7.19356 4.26201 6.32869 5.43092C5.46381 6.59983 5.07577 8.05387 5.2432 9.49827C5.2432 9.49827 5.40258 10.417 5.72862 10.9379"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                        <path
+                                                                            d="M17.7077 17.7087C18.4431 17.7082 19.1702 17.5519 19.8409 17.2502C20.5116 16.9485 21.1108 16.5081 21.5991 15.9581C22.0873 15.4081 22.4536 14.761 22.6737 14.0592C22.8938 13.3575 22.9628 12.6171 22.8762 11.8867C22.7896 11.1564 22.5492 10.4527 22.171 9.82193C21.7928 9.19117 21.2853 8.64767 20.6819 8.22718C20.0785 7.8067 19.3929 7.51878 18.6702 7.38237C17.9475 7.24595 17.2041 7.26414 16.4889 7.43574L15.1035 7.81282"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div>
+                                                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                                                         xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M12.4995 22.9169V13.5419M12.4995 22.9169L9.89536 20.8335M12.4995 22.9169L15.1037 20.8335M5.24327 9.49707C4.25808 9.74498 3.39731 10.3441 2.8227 11.1819C2.24809 12.0197 1.99919 13.0385 2.12276 14.0468C2.24633 15.0552 2.73386 15.9838 3.49376 16.658C4.25366 17.3323 5.23362 17.7058 6.24952 17.7085H7.29119"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                        <path
+                                                                            d="M16.489 7.43577C16.133 6.02595 15.2542 4.80425 14.0308 4.01833C12.8074 3.23241 11.331 2.94108 9.90076 3.20338C8.47054 3.46569 7.19356 4.26201 6.32869 5.43092C5.46381 6.59983 5.07577 8.05387 5.2432 9.49827C5.2432 9.49827 5.40258 10.417 5.72862 10.9379"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                        <path
+                                                                            d="M17.7077 17.7087C18.4431 17.7082 19.1702 17.5519 19.8409 17.2502C20.5116 16.9485 21.1108 16.5081 21.5991 15.9581C22.0873 15.4081 22.4536 14.761 22.6737 14.0592C22.8938 13.3575 22.9628 12.6171 22.8762 11.8867C22.7896 11.1564 22.5492 10.4527 22.171 9.82193C21.7928 9.19117 21.2853 8.64767 20.6819 8.22718C20.0785 7.8067 19.3929 7.51878 18.6702 7.38237C17.9475 7.24595 17.2041 7.26414 16.4889 7.43574L15.1035 7.81282"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div>
+                                                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                                                         xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M12.4995 22.9169V13.5419M12.4995 22.9169L9.89536 20.8335M12.4995 22.9169L15.1037 20.8335M5.24327 9.49707C4.25808 9.74498 3.39731 10.3441 2.8227 11.1819C2.24809 12.0197 1.99919 13.0385 2.12276 14.0468C2.24633 15.0552 2.73386 15.9838 3.49376 16.658C4.25366 17.3323 5.23362 17.7058 6.24952 17.7085H7.29119"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                        <path
+                                                                            d="M16.489 7.43577C16.133 6.02595 15.2542 4.80425 14.0308 4.01833C12.8074 3.23241 11.331 2.94108 9.90076 3.20338C8.47054 3.46569 7.19356 4.26201 6.32869 5.43092C5.46381 6.59983 5.07577 8.05387 5.2432 9.49827C5.2432 9.49827 5.40258 10.417 5.72862 10.9379"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                        <path
+                                                                            d="M17.7077 17.7087C18.4431 17.7082 19.1702 17.5519 19.8409 17.2502C20.5116 16.9485 21.1108 16.5081 21.5991 15.9581C22.0873 15.4081 22.4536 14.761 22.6737 14.0592C22.8938 13.3575 22.9628 12.6171 22.8762 11.8867C22.7896 11.1564 22.5492 10.4527 22.171 9.82193C21.7928 9.19117 21.2853 8.64767 20.6819 8.22718C20.0785 7.8067 19.3929 7.51878 18.6702 7.38237C17.9475 7.24595 17.2041 7.26414 16.4889 7.43574L15.1035 7.81282"
+                                                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="flex-col flex gap-4 ml-5 mt-3">
-                                                    <div>
-                                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M12.4995 22.9169V13.5419M12.4995 22.9169L9.89536 20.8335M12.4995 22.9169L15.1037 20.8335M5.24327 9.49707C4.25808 9.74498 3.39731 10.3441 2.8227 11.1819C2.24809 12.0197 1.99919 13.0385 2.12276 14.0468C2.24633 15.0552 2.73386 15.9838 3.49376 16.658C4.25366 17.3323 5.23362 17.7058 6.24952 17.7085H7.29119"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                            <path
-                                                                d="M16.489 7.43577C16.133 6.02595 15.2542 4.80425 14.0308 4.01833C12.8074 3.23241 11.331 2.94108 9.90076 3.20338C8.47054 3.46569 7.19356 4.26201 6.32869 5.43092C5.46381 6.59983 5.07577 8.05387 5.2432 9.49827C5.2432 9.49827 5.40258 10.417 5.72862 10.9379"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                            <path
-                                                                d="M17.7077 17.7087C18.4431 17.7082 19.1702 17.5519 19.8409 17.2502C20.5116 16.9485 21.1108 16.5081 21.5991 15.9581C22.0873 15.4081 22.4536 14.761 22.6737 14.0592C22.8938 13.3575 22.9628 12.6171 22.8762 11.8867C22.7896 11.1564 22.5492 10.4527 22.171 9.82193C21.7928 9.19117 21.2853 8.64767 20.6819 8.22718C20.0785 7.8067 19.3929 7.51878 18.6702 7.38237C17.9475 7.24595 17.2041 7.26414 16.4889 7.43574L15.1035 7.81282"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                        </svg>
-                                                    </div>
-                                                    <div>
-                                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M12.4995 22.9169V13.5419M12.4995 22.9169L9.89536 20.8335M12.4995 22.9169L15.1037 20.8335M5.24327 9.49707C4.25808 9.74498 3.39731 10.3441 2.8227 11.1819C2.24809 12.0197 1.99919 13.0385 2.12276 14.0468C2.24633 15.0552 2.73386 15.9838 3.49376 16.658C4.25366 17.3323 5.23362 17.7058 6.24952 17.7085H7.29119"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                            <path
-                                                                d="M16.489 7.43577C16.133 6.02595 15.2542 4.80425 14.0308 4.01833C12.8074 3.23241 11.331 2.94108 9.90076 3.20338C8.47054 3.46569 7.19356 4.26201 6.32869 5.43092C5.46381 6.59983 5.07577 8.05387 5.2432 9.49827C5.2432 9.49827 5.40258 10.417 5.72862 10.9379"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                            <path
-                                                                d="M17.7077 17.7087C18.4431 17.7082 19.1702 17.5519 19.8409 17.2502C20.5116 16.9485 21.1108 16.5081 21.5991 15.9581C22.0873 15.4081 22.4536 14.761 22.6737 14.0592C22.8938 13.3575 22.9628 12.6171 22.8762 11.8867C22.7896 11.1564 22.5492 10.4527 22.171 9.82193C21.7928 9.19117 21.2853 8.64767 20.6819 8.22718C20.0785 7.8067 19.3929 7.51878 18.6702 7.38237C17.9475 7.24595 17.2041 7.26414 16.4889 7.43574L15.1035 7.81282"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                        </svg>
-                                                    </div>
-                                                    <div>
-                                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                                             xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M12.4995 22.9169V13.5419M12.4995 22.9169L9.89536 20.8335M12.4995 22.9169L15.1037 20.8335M5.24327 9.49707C4.25808 9.74498 3.39731 10.3441 2.8227 11.1819C2.24809 12.0197 1.99919 13.0385 2.12276 14.0468C2.24633 15.0552 2.73386 15.9838 3.49376 16.658C4.25366 17.3323 5.23362 17.7058 6.24952 17.7085H7.29119"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                            <path
-                                                                d="M16.489 7.43577C16.133 6.02595 15.2542 4.80425 14.0308 4.01833C12.8074 3.23241 11.331 2.94108 9.90076 3.20338C8.47054 3.46569 7.19356 4.26201 6.32869 5.43092C5.46381 6.59983 5.07577 8.05387 5.2432 9.49827C5.2432 9.49827 5.40258 10.417 5.72862 10.9379"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                            <path
-                                                                d="M17.7077 17.7087C18.4431 17.7082 19.1702 17.5519 19.8409 17.2502C20.5116 16.9485 21.1108 16.5081 21.5991 15.9581C22.0873 15.4081 22.4536 14.761 22.6737 14.0592C22.8938 13.3575 22.9628 12.6171 22.8762 11.8867C22.7896 11.1564 22.5492 10.4527 22.171 9.82193C21.7928 9.19117 21.2853 8.64767 20.6819 8.22718C20.0785 7.8067 19.3929 7.51878 18.6702 7.38237C17.9475 7.24595 17.2041 7.26414 16.4889 7.43574L15.1035 7.81282"
-                                                                stroke="white" stroke-width="2" stroke-linecap="round"
-                                                                stroke-linejoin="round"/>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                            )
+                                        }
+
                                     </div>
                                 </div>
                             )}
@@ -609,13 +620,16 @@ const Common = () => {
                                     <div className="right-item-fife-group">
                                         <div>
                                             <p className="right-item-fife-group-ptwo">Сегодня</p>
-                                            <p className="right-item-fife-group-ptwo">05.09.22 <i style={{opacity:"0"}}>''''''''''''''''''''</i> Прохождния курса по
+                                            <p className="right-item-fife-group-ptwo">05.09.22 <i
+                                                style={{opacity: "0"}}>''''''''''''''''''''</i> Прохождния курса по
                                                 созданию команды</p>
-                                            <p className="right-item-fife-group-ptwo">05.09.22 <i style={{opacity:"0"}}>''''''''''''''''''''</i> Прохождния курса по
+                                            <p className="right-item-fife-group-ptwo">05.09.22 <i
+                                                style={{opacity: "0"}}>''''''''''''''''''''</i> Прохождния курса по
                                                 созданию команды</p>
-                                            <p className="right-item-fife-group-ptwo">05.09.22 <i style={{opacity:"0"}}>''''''''''''''''''''</i> Прохождния курса по
+                                            <p className="right-item-fife-group-ptwo">05.09.22 <i
+                                                style={{opacity: "0"}}>''''''''''''''''''''</i> Прохождния курса по
                                                 созданию команды</p>
-                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             )}

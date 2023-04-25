@@ -125,6 +125,10 @@ const Header = ({userName}) => {
                             </NavLink>
                         </div>
                         <div className="">
+                            {/*<button onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/>{}</button>*/}
+                            <div className="dropdown_dropbtn">
+                                <button onClick={() => getLogin()}>{getLogin()}</button>
+                                {/*<button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/><AfterButton page={page}/>{"Войти"}</button>*/}
                             <div className="dropdown">
                                 <button onClick={handleOpen} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : getLogin()}</button>
                             </div>
