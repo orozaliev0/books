@@ -48,7 +48,8 @@ const Header = ({userName}) => {
     const getLogin = () => {
         if (user === null) {
             return <div className='Header--btn'>
-                <button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/>{"Войти"}</button>
+                <button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/>{"Войти"}
+                </button>
             </div>
             // return  <button className={"button"} onClick={()=> navigate("/form")}>
             //     <img className='w-[50%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
@@ -58,9 +59,11 @@ const Header = ({userName}) => {
                 <div className="dropdown">
                     {/*<button className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/>{user ? user.slice(0, 6) : "Войти"}</button>*/}
                     <div className="">
-                        <button onClick={handleOpen} className="dropdown_dropbtn"><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}
+                        <button onClick={handleOpen} className="dropdown_dropbtn"><FaUserAlt
+                            className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}
                         </button>
                         {/*<button onClick={handleOpen}><FaUserAlt className=' w=[30px]'/><AfterButton page={page}/>{user ? user.slice(0, 6) : "Войти"}</button>*/}
+
                     </div>
                     <div>
                         {open ?
@@ -80,8 +83,8 @@ const Header = ({userName}) => {
                     </div>
 
                     {/* <button>
-                        <img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
-                    </button> */}
+                   <img className='w-[90%]' src={vector} alt=""/><AfterButton page={page}/>{user ? user.toUpperCase().slice(0,6) : "Войти"}
+                </button> */}
                 </div>
             </div>
         }
@@ -129,20 +132,22 @@ const Header = ({userName}) => {
                     <div className="transition-all delay-700">
                         <h5 className="header--menu-h">SELF DEVELOPING SCHOOL</h5>
                         <div className="header--text-mn">
-                            <NavLink onClick={() => window.scroll(0, 0)} to={'/'}>
+                            <NavLink onClick={() => setBurger(false)} to={'/'}>
                                 <a href="">Главная</a>
                             </NavLink>
-                            <NavLink onClick={() => window.scroll(0, 0)} to={'/our-courses'}>
+                            <NavLink onClick={() => setBurger(false)} to={'/our-courses'}>
                                 <a href="">Наши курсы</a>
                             </NavLink>
-                            <NavLink onClick={() => window.scroll(0, 0)} to={'/aboutUs'}>
+                            <NavLink onClick={() => () => setBurger(false)} to={'/aboutUs'}>
                                 <a href="">О нас</a>
                             </NavLink>
                         </div>
                         <div className="">
-                            {/*<button onClick={() => navigate("/form")}><img className='w-[90%]' src={vector} alt=""/>{}</button>*/}
+                            <button onClick={() => navigate("/form")}><img className='w-[90%]' src={vector}
+                                                                           alt=""/>{}</button>
                             <div className="dropdown_dropbtn">
-                                {/*<button onClick={() => getLogin()}>{getLogin()}</button>*/}
+
+                                <button onClick={() => getLogin()}>{getLogin()}</button>
                                 {/*<button onClick={() => navigate('/form')}><img className='w-[20%]' src={vector} alt=""/><AfterButton page={page}/>{"Войти"}</button>*/}
                             </div>
                         </div>
